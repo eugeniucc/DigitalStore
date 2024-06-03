@@ -1,8 +1,10 @@
-@import "./mixins/mixins";
-@import "./variables/variables";
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+// COMPONENTS
+@import "../components/header";
 
 // FONT STYLE
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 html {
@@ -11,7 +13,5 @@ html {
 
 .container {
   width: 12.4rem;
-  height: 20rem;
   margin: 0 auto;
-  border: 1px solid green;
 }

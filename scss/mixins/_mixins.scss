@@ -16,3 +16,441 @@ $success: #52ca76;
 $warning: #f6aa1c;
 $primaryG: linear-gradient(180deg, #c92071 0%, #edabca 100%);
 $secondaryG: linear-gradient(180deg, #b5b6f2 0%, #efefff 100%);
+
+// TYPOGRAPHY
+
+// DESKTOP TITLE
+
+@mixin title-large-h1 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6.6rem;
+  letter-spacing: 0.1rem;
+}
+@mixin title-medium-h2 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+@mixin title-small-h3 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0.1rem;
+}
+@mixin title-xsmall-h4 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0.2rem;
+}
+
+// DESKTOP TITLE BOLD
+
+@mixin title-large-bold-h1 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.6rem;
+  letter-spacing: 0.1rem;
+}
+@mixin title-medium-bold-h2 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+@mixin title-small-bold-h3 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0.1rem;
+}
+@mixin title-xsmall-bold-h4 {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0.2rem;
+}
+
+// DESKTOP TEXT
+
+@mixin text-large-p {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-medium-p {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-small-p {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-xsmall-p {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.25rem;
+}
+@mixin text-tinny-p {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0.5rem;
+}
+
+// DESKTOP TEXT INVERTED
+
+@mixin text-large-p-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-medium-p-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-small-p-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-xsmall-p-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.25rem;
+}
+@mixin text-tinny-p-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0.5rem;
+}
+
+// DESKTOP TEXT BOLD
+
+@mixin text-large-p-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-medium-p-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-small-p-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-xsmall-p-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-tinny-p-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.75rem;
+}
+// DESKTOP TEXT BOLD INVERTED
+
+@mixin text-large-p-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-medium-p-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-small-p-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-xsmall-p-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.75rem;
+}
+@mixin text-tinny-p-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.75rem;
+}
+
+// MOBILE TITLE
+
+@mixin display-large {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+@mixin display-medium {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0.1rem;
+}
+@mixin display-small {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+}
+@mixin display-xsmall {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.2rem;
+}
+
+// MOBILE TITLE BOLD
+
+@mixin display-large-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+@mixin display-medium-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0.1rem;
+}
+@mixin display-small-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.1rem;
+}
+@mixin display-xsmall-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0.2rem;
+}
+
+// MOBILE TEXT
+
+@mixin display-text-large {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-medium {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-small {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+@mixin display-text-xsmall {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0.2rem;
+}
+@mixin display-text-tinny {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0.2rem;
+}
