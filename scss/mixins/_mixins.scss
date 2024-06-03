@@ -438,19 +438,177 @@ $secondaryG: linear-gradient(180deg, #b5b6f2 0%, #efefff 100%);
   color: $dark-gray100;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 3.4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
   letter-spacing: 0.2rem;
 }
 @mixin display-text-tinny {
   color: $dark-gray100;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+// MOBILE TEXT INVERTED
+
+@mixin display-text-large-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-medium-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-small-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+@mixin display-text-xsmall-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+@mixin display-text-tinny-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+// MOBILE TEXT BOLD
+
+@mixin display-text-large-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-medium-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-small-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+@mixin display-text-xsmall-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
   letter-spacing: 0.2rem;
+}
+@mixin display-text-tinny-bold {
+  color: $dark-gray100;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+// MOBILE TEXT BOLD
+
+@mixin display-text-large-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-medium-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.75rem;
+}
+@mixin display-text-small-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+@mixin display-text-xsmall-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.2rem;
+}
+@mixin display-text-tinny-bold-inverted {
+  color: $dark-gray10;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
 }
