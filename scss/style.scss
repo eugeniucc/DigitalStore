@@ -1,11 +1,20 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/btn.scss";
 
 // COMPONENTS
 @import "../components/header";
 
+// MEDIA
+
+@import "../media-queries/media_header.scss";
+
 // FONT STYLE
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 10px;

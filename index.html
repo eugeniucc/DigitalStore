@@ -10,22 +10,66 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header_search">
-          <div class="header_search-logo">
-            <a href="./index.html" class="header_search-logo--link"
-              ><img src="./icons/logo.svg" alt="Digital Store" />
-              <span class="header_search-logo--span">Digital Store</span></a
-            >
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./icons/logo.svg"
+                alt="Digital Store"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
           </div>
-          <div class="header_search-wrapper">
+          <div class="header_search">
             <input
-              class="header_search-wrapper--input"
+              class="header_search-input"
               type="text"
               placeholder="Pesquisar produto..."
             />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="header_profile">
+            <btn class="header_profile-register">Cadastre-se</btn>
+            <btn class="header_profile-login">Entrar</btn>
+            <a href="#" class="header_cart"
+              ><img class="header_cart-img" src="./icons/cart.svg" alt="cart"
+            /></a>
           </div>
         </div>
-        <nav class="header_nav"></nav>
+        <nav class="header_nav">
+          <a href="#" class="header_nav-links">Home</a>
+          <a href="#" class="header_nav-links">Produtos</a>
+          <a href="#" class="header_nav-links">Categorias</a>
+          <a href="#" class="header_nav-links">Meus Pedidos</a>
+        </nav>
       </div>
     </header>
   </body>

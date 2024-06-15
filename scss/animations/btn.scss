@@ -1,0 +1,79 @@
+@import "../mixins/mixins";
+
+@mixin primaryButtonHover {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $primary;
+  border-radius: 0.4rem;
+  &:hover {
+    transition: 0.4s ease-in-out;
+    background-color: $tertiary;
+  }
+}
+@mixin primaryButtonDisabled {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $light-gray2;
+  border-radius: 0.4rem;
+}
+@mixin secondaryButtonHover {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $light-gray3;
+  color: $primary;
+  border-radius: 0.4rem;
+  &:hover {
+    transition: 0.4s ease-in-out;
+    background-color: $secondary;
+    color: $white;
+  }
+}
+@mixin secondaryButtonDisabled {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $light-gray3;
+  color: $primary;
+  border: 1px solid $primary;
+  border-radius: 0.4rem;
+  opacity: 0.5;
+}
+@mixin shopButtonHover {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $shop-btn;
+  border-radius: 0.4rem;
+  &:hover {
+    transition: 0.4s ease-in-out;
+    background-color: $shop-btn--hover;
+  }
+}
+@mixin shopButtonDisabled {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $light-gray2;
+  border-radius: 0.4rem;
+}
+@mixin iconButtonHover {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $primary;
+  border-radius: 0.4rem;
+  &:hover {
+    transition: 0.4s ease-in-out;
+    background-color: $tertiary;
+  }
+}
+@mixin iconButtonDisabled {
+  @include text-xsmall-p-bold;
+  text-align: center;
+  cursor: pointer;
+  background-color: $light-gray2;
+  border-radius: 0.4rem;
+}
