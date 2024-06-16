@@ -1,0 +1,63 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/btn.scss";
+
+.presentation {
+  background-color: $light-gray3;
+  padding: 8rem 0rem 5.3rem 0rem;
+  &_ofer {
+    @include text-small-p-bold;
+    color: $warning;
+  }
+  &_title {
+    @include title-large-bold-h1;
+    padding: 2rem 0rem;
+  }
+  &_text {
+    @include text-medium-p;
+  }
+  &_btn {
+    @include primaryButtonHover;
+    padding: 1.3rem 6.5rem;
+    margin-top: 4rem;
+  }
+}
+
+// SWIPER PRESENTATION
+
+.swiper_presentation-slide {
+  height: 50rem;
+  display: flex;
+}
+
+.swiper_presentation-wrapper {
+  max-width: 49.5rem;
+}
+
+.swiper_presentation-content {
+  position: relative;
+  &--img {
+    display: block;
+    max-height: 64rem;
+    width: 64rem;
+  }
+  &-rotate {
+    transform: rotate(-19.343deg);
+  }
+  &--decoration {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -7rem;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary;
+}
+
+.swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.6rem) !important;
+}

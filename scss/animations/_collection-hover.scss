@@ -1,0 +1,14 @@
+@import "../variables/variables";
+
+@mixin collectionSvgHover {
+  &:hover svg #Vector {
+    transition: 0.4s ease-in-out;
+    fill: $primary;
+  }
+}
+@mixin collectionSvgHoverHeadphones {
+  &:hover svg path {
+    transition: 0.4s ease-in-out;
+    fill: $primary;
+  }
+}

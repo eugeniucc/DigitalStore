@@ -1,10 +1,13 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/animations/btn.scss";
 
 .header {
+  padding: 4.2rem 0rem 3.2rem 0rem;
   &_wrapper {
     display: flex;
-    padding: 3.4rem 0rem 4rem 0rem;
+    align-items: center;
+    padding-bottom: 4.8rem;
   }
   &_logo {
     &-link {
@@ -24,11 +27,12 @@
     max-width: 56rem;
     margin: 0rem 4.8rem 0rem 2.7rem;
     &-input {
-      padding: 1.6rem 0rem 1.6rem 2.4rem;
+      padding: 1.6rem 6rem 1.6rem 2.4rem;
       outline: none;
       border: none;
+      border-radius: 0.8rem;
       @include text-small-p;
-      background-color: $dark-gray10;
+      background-color: $light-gray3;
       width: 100%;
     }
     &-btn {
@@ -37,6 +41,34 @@
       border: none;
       top: 1.6rem;
       right: 1.6rem;
+    }
+  }
+  &_profile {
+    display: flex;
+    align-items: center;
+    &-register {
+      @include text-small-p;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    &-login {
+      @include primaryButtonHover;
+      padding: 1.1rem 3.3rem;
+      margin: 0rem 7rem 0rem 3rem;
+    }
+  }
+  &_cart {
+    cursor: pointer;
+    &-img {
+      display: block;
+    }
+  }
+  &_nav {
+    display: flex;
+    gap: 3.2rem;
+    &-links {
+      @include text-small-p;
+      text-decoration: none;
     }
   }
 }

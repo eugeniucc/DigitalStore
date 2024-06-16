@@ -1,15 +1,26 @@
-@import "../scss/mixins/mixins";
-@import "../scss/variables/variables";
-@import "../scss/animations/btn.scss";
-
 // COMPONENTS
 @import "../components/header";
+@import "../components/presentation";
+@import "../components/collection";
+@import "../components/products";
 
 // MEDIA
+@import "../media-queries/media-header";
+@import "../media-queries/media-presentation";
+@import "../media-queries/media-collection";
+@import "../media-queries/media-products";
 
-@import "../media-queries/media_header.scss";
+// ANIMATIONS
+@import "../scss/animations/btn";
+@import "../scss/animations/collection-hover";
 
-// FONT STYLE
+// MIXINS
+@import "../scss/mixins/mixins";
+
+// VARIABLES
+@import "../scss/variables/variables";
+
+// FONT STYLES
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
@@ -21,6 +32,6 @@ html {
 }
 
 .container {
-  width: 126rem;
+  width: 124rem;
   margin: 0 auto;
 }
