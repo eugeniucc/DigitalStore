@@ -1,2 +1,88 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+.header_wrapper-tablet {
+  display: none;
+}
+
+@media (max-width: $breakpoint-xl) {
+  .header {
+    padding: 4.2rem 1.8rem 3.2rem 1.8rem;
+  }
+}
+@media (max-width: 1220px) {
+  .header {
+    &_profile {
+      &-login {
+        margin: 0rem 3rem 0rem 3rem;
+      }
+    }
+  }
+}
+@media (max-width: 1176px) {
+  .header {
+    &_search {
+      max-width: 48rem;
+    }
+  }
+}
+@media (max-width: 1096px) {
+  .header {
+    &_search {
+      max-width: 40rem;
+    }
+  }
+}
+@media (max-width: $breakpoint-lg) {
+  .header {
+    &_search {
+      max-width: 32rem;
+    }
+  }
+}
+@media (max-width: 940px) {
+  .header {
+    &_search {
+      max-width: 24rem;
+    }
+  }
+}
+@media (max-width: 864px) {
+  .header {
+    &_wrapper {
+      display: none;
+      &-tablet {
+        display: block;
+      }
+    }
+    &_logo {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 2.4rem;
+    }
+    &_search {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 564px) {
+  .header {
+    &_logo {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.4rem;
+    }
+    &_nav {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 464px) {
+  .header {
+    &_nav {
+      gap: 1.6rem;
+    }
+  }
+}

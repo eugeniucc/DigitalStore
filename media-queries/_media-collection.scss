@@ -1,2 +1,29 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .collection {
+    &_discount {
+      &-text {
+        text-align: center;
+      }
+      &-wrapper {
+        padding: 0rem 1.8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (max-width: 920px) {
+  .collection {
+    &_content {
+      &-wrapper {
+        padding: 0rem 1.8rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-left: 30%;
+      }
+    }
+  }
+}

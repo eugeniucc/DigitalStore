@@ -1,2 +1,36 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .special {
+    &_wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 0rem 1.8rem;
+    }
+    &_details {
+      display: flex;
+      flex-direction: column;
+      max-width: 55rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .special {
+    &_content {
+      width: 100%;
+      &-img {
+        width: 100%;
+      }
+      &-ellipse {
+        width: 95%;
+        top: -4rem;
+        right: 0;
+      }
+    }
+    &_details {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}

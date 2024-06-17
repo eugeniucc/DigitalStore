@@ -2,13 +2,19 @@
 
 @mixin collectionSvgHover {
   &:hover svg #Vector {
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
     fill: $primary;
+  }
+  :not(:hover) {
+    transition: 0.3s ease-in-out;
   }
 }
 @mixin collectionSvgHoverHeadphones {
   &:hover svg path {
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
     fill: $primary;
+  }
+  :not(:hover) {
+    transition: 0.3s ease-in-out;
   }
 }

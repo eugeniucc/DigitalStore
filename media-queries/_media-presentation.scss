@@ -1,2 +1,33 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .presentation {
+    padding: 8rem 1.8rem 5.3rem 1.8rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  // SWIPER PRESENTATION
+
+  .swiper_presentation-slide {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .swiper_presentation-content {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    &--img {
+      max-width: 60rem;
+    }
+  }
+  .swiper_presentation-content-rotate {
+    margin: 1rem 0rem 5rem 0rem;
+  }
+  .swiper_presentation-wrapper {
+    margin: 0 auto 5rem auto;
+    text-align: center;
+  }
+}

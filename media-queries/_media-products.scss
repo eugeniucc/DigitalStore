@@ -1,2 +1,12 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: 1290px) {
+  .products {
+    padding: 0rem 1.8rem 12rem 1.8rem;
+    &_wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
