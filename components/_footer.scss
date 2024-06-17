@@ -1,0 +1,94 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.footer {
+  padding: 7.2rem 0rem 2.2rem 0rem;
+  background-color: $dark-gray;
+  &_wrapper {
+    border-bottom: 0.1rem solid rgba($dark-gray3, 0.3);
+    display: flex;
+    padding-bottom: 3.4rem;
+    justify-content: space-between;
+  }
+  &_social {
+    width: 100%;
+    max-width: 30.7rem;
+    &-logo {
+      display: flex;
+      gap: 0.8rem;
+      &--img {
+        display: block;
+      }
+      &--span {
+        @include logo-font;
+        display: block;
+        color: $white;
+      }
+    }
+    &-text {
+      @include text-small-p;
+      letter-spacing: 0;
+      color: $white;
+      padding: 3.5rem 0rem 4rem 0rem;
+    }
+    &-wrapper {
+      display: flex;
+      gap: 1.6rem;
+      &--links {
+        text-decoration: none;
+      }
+      &--svg {
+        display: block;
+      }
+    }
+  }
+  &_info {
+    &-name {
+      @include footer-titles;
+      padding-bottom: 2.8rem;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      &--links {
+        text-decoration: none;
+        @include footer-text;
+      }
+    }
+  }
+  &_category {
+    &-name {
+      @include footer-titles;
+      padding-bottom: 2.8rem;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      &--links {
+        text-decoration: none;
+        @include footer-text;
+      }
+    }
+  }
+  &_contacts {
+    width: 100%;
+    max-width: 23.1rem;
+    &-name {
+      @include footer-titles;
+      padding-bottom: 2.8rem;
+    }
+    &-address {
+      padding-bottom: 1.4rem;
+    }
+    &-address,
+    &-phone {
+      @include footer-text;
+      line-height: 2.6rem;
+    }
+  }
+  &_copyrights {
+    @include copyrights;
+    padding-top: 2.2rem;
+    text-align: center;
+  }
+}

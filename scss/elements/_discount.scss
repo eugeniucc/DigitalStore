@@ -1,0 +1,6 @@
+@mixin discount {
+  padding: 0.5rem 1.5rem;
+  background-color: $discount;
+  border-radius: 3rem;
+  max-width: 9.9rem;
+}

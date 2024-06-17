@@ -1,3 +1,82 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+@import "../scss/elements/text-ellipsis";
+@import "../scss/animations/keyframes";
 
+.products {
+  padding-bottom: 12rem;
+  background-color: $background;
+  &_trending {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    &-text {
+      @include text-large-p;
+    }
+    &-all {
+      @include text-medium-p;
+      color: $primary;
+      display: flex;
+      gap: 1rem;
+      text-decoration: none;
+      &--span,
+      &--svg {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    &-card {
+      width: 100%;
+      max-width: 29.2rem;
+      &:hover {
+        animation: liftUp 1s ease-in-out;
+      }
+      &--discount {
+        @include text-xsmall-p-bold;
+        @include discount;
+      }
+      &--link {
+        text-decoration: none;
+      }
+      &--category {
+        @include text-tinny-p-bold;
+        color: $light-gray;
+      }
+      &--name {
+        @include text-large-p;
+        @include text-ellipsis;
+        color: $dark-gray2;
+      }
+    }
+    &-content {
+      height: 32.1rem;
+      background-color: $white;
+      box-shadow: 0.6rem 1.6rem 3rem 0rem rgba(105, 98, 98, 0.05);
+      border-radius: 0.8rem;
+      background-repeat: no-repeat;
+      background-position-x: -2rem;
+      background-position-y: 4rem;
+      padding: 2rem 0rem 0rem 2rem;
+    }
+    &-details {
+      padding: 1.8rem 0rem 1.6rem 0rem;
+    }
+    &-price {
+      display: flex;
+      gap: 1rem;
+      &--old {
+        @include text-large-p;
+        color: $light-gray;
+        text-decoration: line-through;
+      }
+      &--new {
+        @include text-large-p-bold;
+      }
+    }
+  }
+}

@@ -603,3 +603,28 @@
   line-height: 2.2rem;
   letter-spacing: 0.1rem;
 }
+@mixin footer-titles {
+  color: $white;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@mixin footer-text {
+  color: $white;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+}
+@mixin copyrights {
+  color: $white;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}

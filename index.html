@@ -72,6 +72,7 @@
                 class="header_logo-img"
                 src="./logo/logo.svg"
                 alt="Digital Store"
+                loading="eager"
               />
               <span class="header_logo-span">Digital Store</span>
             </a>
@@ -115,7 +116,12 @@
             <btn class="header_profile-register">Cadastre-se</btn>
             <btn class="header_profile-login">Entrar</btn>
             <btn class="header_cart">
-              <img class="header_cart-img" src="./icons/cart.svg" alt="cart" />
+              <img
+                class="header_cart-img"
+                src="./icons/cart.svg"
+                alt="cart"
+                loading="eager"
+              />
             </btn>
           </div>
         </div>
@@ -149,11 +155,13 @@
                     class="swiper_presentation-content--img"
                     src="./img/nike-air-presentation.png"
                     alt="Nike air shoes"
+                    loading="eager"
                   />
                   <img
                     class="swiper_presentation-content--decoration"
                     src="./icons/decoration-swiper.svg"
                     alt="Decoration"
+                    loading="eager"
                   />
                 </div>
               </div>
@@ -176,11 +184,13 @@
                     class="swiper_presentation-content--img swiper_presentation-content-rotate"
                     src="./img/adidas-yeezy-presentation.png"
                     alt="Nike air shoes"
+                    loading="lazy"
                   />
                   <img
                     class="swiper_presentation-content--decoration"
                     src="./icons/decoration-swiper.svg"
                     alt="Decoration"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -204,11 +214,13 @@
                       class="swiper_presentation-content--img"
                       src="./img/nike-air-presentation.png"
                       alt="Nike air shoes"
+                      loading="lazy"
                     />
                     <img
                       class="swiper_presentation-content--decoration"
                       src="./icons/decoration-swiper.svg"
                       alt="Decoration"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -235,11 +247,13 @@
                       class="swiper_presentation-content--img swiper_presentation-content-rotate"
                       src="./img/adidas-yeezy-presentation.png"
                       alt="Nike air shoes"
+                      loading="lazy"
                     />
                     <img
                       class="swiper_presentation-content--decoration"
                       src="./icons/decoration-swiper.svg"
                       alt="Decoration"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -255,21 +269,30 @@
         <div class="collection_discount">
           <p class="collection_discount-text">Coleções em destaque</p>
           <div class="collection_discount-wrapper">
-            <div class="collection_discount-card">
+            <div
+              class="collection_discount-card"
+              style="background-image: url(./img/tshirt-discount.png)"
+            >
               <div class="collection_discount-card--sign">
                 <p class="collection_discount-card--text">30% OFF</p>
               </div>
               <h3 class="collection_discount-card--title">Novo drop Supreme</h3>
               <button class="collection_discount-card--btn">Comprar</button>
             </div>
-            <div class="collection_discount-card">
+            <div
+              class="collection_discount-card"
+              style="background-image: url(./img/shoes-discount.png)"
+            >
               <div class="collection_discount-card--sign">
                 <p class="collection_discount-card--text">30% OFF</p>
               </div>
               <h3 class="collection_discount-card--title">Coleção Adidas</h3>
               <button class="collection_discount-card--btn">Comprar</button>
             </div>
-            <div class="collection_discount-card">
+            <div
+              class="collection_discount-card"
+              style="background-image: url(./img/headphones-discount.png)"
+            >
               <div class="collection_discount-card--sign">
                 <p class="collection_discount-card--text">30% OFF</p>
               </div>
@@ -455,8 +478,369 @@
       </div>
     </section>
     <section class="products">
-      <div class="container"></div>
+      <div class="container">
+        <div class="products_trending">
+          <h3 class="products_trending-text">Produtos em alta</h3>
+          <a class="products_trending-all" href="#" target="_blank"
+            ><span class="products_trending-all--span">Ver todos</span>
+            <span class="products_trending-all--svg"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4"
+                  stroke="#C92071"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="products_wrapper">
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              >
+                <p class="products_wrapper-card--discount">30% OFF</p>
+              </div></a
+            >
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              >
+                <p class="products_wrapper-card--discount">30% OFF</p>
+              </div></a
+            >
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              ></div
+            ></a>
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              ></div
+            ></a>
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              ></div
+            ></a>
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              ></div
+            ></a>
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              ></div
+            ></a>
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+          <div class="products_wrapper-card">
+            <a href="#" class="products_wrapper-card--link" target="_blank">
+              <div
+                class="products_wrapper-content"
+                style="background-image: url(./img/shoes-products.png)"
+              ></div
+            ></a>
+            <div class="products_wrapper-details">
+              <p class="products_wrapper-card--category">Tênis</p>
+              <p class="products_wrapper-card--name">K-Swiss V8 - Masculino</p>
+              <div class="products_wrapper-price">
+                <p class="products_wrapper-price--old">$200</p>
+                <p class="products_wrapper-price--new">$100</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="special">
+      <div class="container">
+        <div class="special_wrapper">
+          <div class="special_content">
+            <img
+              class="special_content-img"
+              src="./img/jordan-special.png"
+              alt="Air Jordan Shoes"
+              loading="lazy"
+            />
+            <img
+              class="special_content-ellipse"
+              src="./img/half-ellipse-special.png"
+              alt="Purple Ellipse"
+              loading="lazy"
+            />
+          </div>
+          <div class="special_details">
+            <p class="special_details-text--special">Oferta especial</p>
+            <h2 class="special_details-title">
+              Air Jordan edição de colecionador
+            </h2>
+            <p class="special_details-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip
+            </p>
+            <button class="special_details-btn">Ver Oferta</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_social">
+            <div class="footer_social-logo">
+              <img
+                class="footer_social-logo--img"
+                src="./logo/logo-white.svg"
+                alt="DigitalStore"
+              />
+              <span class="footer_social-logo--span">Digital Store</span>
+            </div>
+            <p class="footer_social-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="footer_social-wrapper">
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    width="24px"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    stroke="#000000"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-60.000000, -7521.000000)"
+                        fill="#ffffff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                            id="twitter-[#ffffff]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <p class="footer_info-name">Informação</p>
+            <ul class="footer_info-list">
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Sobre Drip Store</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Segurança</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Wishlist</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Trabalhe conosco</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Meus Pedidos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_category">
+            <p class="footer_category-name">Categorias</p>
+            <ul class="footer_category-list">
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Camisetas</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Calças</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Bonés</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Headphones</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Tênis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <p class="footer_contacts-name">Contato</p>
+            <p class="footer_contacts-address">
+              Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+              60150-161
+            </p>
+            <p class="footer_contacts-phone">(85) 3051-3411</p>
+          </div>
+        </div>
+        <p class="footer_copyrights">@ 2022 Digital College</p>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper-presentation.js"></script>
   </body>

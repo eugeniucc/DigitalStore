@@ -1,0 +1,39 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.special {
+  padding: 9rem 0rem 10.5rem 0rem;
+  &_wrapper {
+    display: flex;
+    gap: 6.7rem;
+  }
+  &_content {
+    position: relative;
+    &-ellipse {
+      position: absolute;
+      top: -3rem;
+      right: 2rem;
+      z-index: -1;
+    }
+  }
+  &_details {
+    &-title {
+      @include title-medium-bold-h2;
+      color: $dark-gray2;
+      padding: 1.7rem 0rem 2rem 0rem;
+    }
+    &-text {
+      @include text-small-p;
+      color: $dark-gray2;
+      padding-bottom: 3rem;
+      &--special {
+        @include text-xsmall-p-bold;
+        color: $primary;
+      }
+    }
+    &-btn {
+      @include primaryButtonHover;
+      padding: 0.9rem 5.9rem;
+    }
+  }
+}
