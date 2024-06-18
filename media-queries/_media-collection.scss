@@ -20,9 +20,8 @@
     &_content {
       &-wrapper {
         padding: 0rem 1.8rem;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        margin-left: 30%;
+        width: 100%;
+        overflow: scroll;
       }
     }
   }
