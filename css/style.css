@@ -302,7 +302,6 @@
   padding-bottom: 2rem;
 }
 .collection_content-wrapper {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 8.8rem;
@@ -814,9 +813,13 @@
 }
 @media (max-width: 920px) {
   .collection_content-wrapper {
-    padding: 0rem 1.8rem;
-    width: 100%;
-    overflow: scroll;
+    width: 71.2rem;
+    gap: 2rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .collection_content-card {
+    margin-left: 1.8rem;
   }
 }
 @media (max-width: 1290px) {

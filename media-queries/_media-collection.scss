@@ -19,9 +19,13 @@
   .collection {
     &_content {
       &-wrapper {
-        padding: 0rem 1.8rem;
-        width: 100%;
-        overflow: scroll;
+        width: 71.2rem;
+        gap: 2rem;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      &-card {
+        margin-left: 1.8rem;
       }
     }
   }
