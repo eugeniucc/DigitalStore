@@ -15,17 +15,49 @@
     }
   }
 }
+
 @media (max-width: 920px) {
   .collection {
     &_content {
       &-wrapper {
-        width: 71.2rem;
-        gap: 2rem;
-        overflow-x: auto;
-        white-space: nowrap;
+        gap: 5.8rem;
       }
-      &-card {
-        margin-left: 1.8rem;
+    }
+  }
+}
+@media (max-width: 810px) {
+  .collection {
+    &_content {
+      &-wrapper {
+        gap: 3.8rem;
+      }
+    }
+  }
+}
+@media (max-width: 710px) {
+  .collection {
+    &_content {
+      &-wrapper {
+        gap: 1.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 624px) {
+  .collection {
+    &_content {
+      &-wrapper {
+        gap: 4.4rem;
+        overflow-x: scroll;
+        justify-content: unset;
+        white-space: nowrap;
+        padding-left: 1.8rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
   }

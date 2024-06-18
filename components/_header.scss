@@ -64,11 +64,21 @@
     }
   }
   &_nav {
-    display: flex;
-    gap: 3.2rem;
+    &-list {
+      display: flex;
+      gap: 3.2rem;
+    }
     &-links {
       @include text-small-p;
       text-decoration: none;
+      &-active {
+        @include display-text-small-bold;
+        border-bottom: 2px solid $primary;
+        padding-bottom: 0.3rem;
+        letter-spacing: 0.15rem;
+        font-size: 1.6rem;
+        color: $primary;
+      }
     }
   }
 }

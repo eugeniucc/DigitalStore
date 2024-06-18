@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- General Metagraph -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DigitalStore" />
+    <meta property="og:url" content="www.digitalstore.com" />
+    <meta property="og:image" content="./icons/logo.svg" />
+    <meta property="og:description" content="Best shoes store in our city." />
+
+    <!-- Twitter Metagraph -->
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DigitalStore" />
+    <meta name="twitter:site" content="www.digitalstore.com" />
+    <meta name="twitter:description" content="Best shoes store in our city." />
+    <meta name="twitter:image" content="./icons/logo.svg" />
+
+    <!-- Icons in browser  -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+
+    <!-- MsApp link ! -->
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+
+    <title>Digital Store</title>
+
+    <!-- Swiper cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- My styles -->
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/min_css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./logo/logo.svg"
+                alt="Digital Store"
+                loading="eager"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
+          </div>
+          <div class="header_search">
+            <input
+              class="header_search-input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="header_profile">
+            <btn class="header_profile-register">Cadastre-se</btn>
+            <btn class="header_profile-login">Entrar</btn>
+            <btn class="header_cart">
+              <img
+                class="header_cart-img"
+                src="./icons/cart.svg"
+                alt="cart"
+                loading="eager"
+              />
+            </btn>
+          </div>
+        </div>
+        <div class="header_wrapper header_wrapper-tablet">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./logo/logo.svg"
+                alt="Digital Store"
+                loading="eager"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
+            <div class="header_profile">
+              <btn class="header_profile-register">Cadastre-se</btn>
+              <btn class="header_profile-login">Entrar</btn>
+              <btn class="header_cart">
+                <img
+                  class="header_cart-img"
+                  src="./icons/cart.svg"
+                  alt="cart"
+                  loading="eager"
+                />
+              </btn>
+            </div>
+          </div>
+
+          <div class="header_search">
+            <input
+              class="header_search-input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="header_nav">
+          <ul class="header_nav-list">
+            <li>
+              <a href="./index.html" class="header_nav-links">Home</a>
+            </li>
+            <li>
+              <a href="./products.html" class="header_nav-links">Produtos</a>
+            </li>
+            <li><a href="#" class="header_nav-links">Categorias</a></li>
+            <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/nav-links-active.js"></script>
+  </body>
+</html>
