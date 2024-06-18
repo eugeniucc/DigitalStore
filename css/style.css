@@ -794,6 +794,11 @@
     text-align: center;
   }
 }
+@media (max-width: 660px) {
+  .swiper_presentation-content--img {
+    width: 100%;
+  }
+}
 @media (max-width: 1260px) {
   .collection_discount-text {
     text-align: center;
