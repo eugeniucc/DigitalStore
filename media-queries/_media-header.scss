@@ -10,8 +10,11 @@
     padding: 4.2rem 1.8rem 3.2rem 1.8rem;
   }
 }
-@media (max-width: 1220px) {
+@media (max-width: 1224px) {
   .header {
+    &_search {
+      margin: 0rem 3.8rem 0rem 2.7rem;
+    }
     &_profile {
       &-login {
         margin: 0rem 3rem 0rem 3rem;
