@@ -34,3 +34,31 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-smL) {
+  .special {
+    padding: 7rem 0rem 5rem 0rem;
+    &_wrapper {
+      gap: 9.2rem;
+    }
+    &_details {
+      text-align: left;
+      &-text {
+        @include text-xsmall-p;
+        color: $dark-gray2;
+        &--special {
+          color: $warning;
+        }
+      }
+      &-title {
+        @include h4-title-desktop-bold;
+        color: $dark-gray2;
+        padding: 1rem 0rem 2rem 0rem;
+      }
+      &-btn {
+        width: 100%;
+        max-width: 20rem;
+      }
+    }
+  }
+}

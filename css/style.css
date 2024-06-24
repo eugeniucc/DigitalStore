@@ -867,6 +867,34 @@
     width: 100%;
   }
 }
+@media (max-width: 390px) {
+  .swiper_presentation-content {
+    background-position-x: 32.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .swiper_presentation-content {
+    background-position-x: 31.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .swiper_presentation-wrapper {
+    max-width: 29.5rem;
+  }
+  .swiper_presentation-content {
+    background-position-x: 32.5rem;
+  }
+}
+@media (max-width: 355px) {
+  .swiper_presentation-content {
+    background-position-x: 29.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .swiper_presentation-content {
+    background-position-x: 28.5rem;
+  }
+}
 @media (max-width: 1260px) {
   .collection_discount-text {
     text-align: center;
@@ -1045,6 +1073,20 @@
     padding: 1.8rem 0rem 2rem 0rem;
   }
 }
+@media (max-width: 375px) {
+  .products_wrapper-card {
+    max-width: 16.3rem;
+  }
+}
+@media (max-width: 375px) {
+  .products_wrapper-card {
+    max-width: 13.3rem;
+  }
+  .products_wrapper-content {
+    background-position-x: -2rem;
+    background-position-y: 4rem;
+  }
+}
 @media (max-width: 1260px) {
   .special_wrapper {
     flex-direction: column;
@@ -1074,6 +1116,47 @@
     text-align: center;
   }
 }
+@media (max-width: 428px) {
+  .special {
+    padding: 7rem 0rem 5rem 0rem;
+  }
+  .special_wrapper {
+    gap: 9.2rem;
+  }
+  .special_details {
+    text-align: left;
+  }
+  .special_details-text {
+    color: #1f1f1f;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.25rem;
+    color: #474747;
+  }
+  .special_details-text--special {
+    color: #f6aa1c;
+  }
+  .special_details-title {
+    color: #1f1f1f;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Inter;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+    letter-spacing: 0.2rem;
+    color: #474747;
+    padding: 1rem 0rem 2rem 0rem;
+  }
+  .special_details-btn {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
 @media (max-width: 1260px) {
   .footer_wrapper {
     padding: 0rem 1.8rem 3.4rem 1.8rem;
@@ -1082,6 +1165,87 @@
     flex-wrap: wrap;
     justify-content: unset;
     gap: 5rem;
+  }
+}
+@media (max-width: 1260px) {
+  .footer {
+    padding: 5rem 0rem 4.6rem 0rem;
+  }
+  .footer_social-logo {
+    align-items: center;
+  }
+  .footer_social-logo--img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .footer_social-logo--span {
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.2rem;
+  }
+  .footer_social-text {
+    padding: 2rem 0rem 3rem 0rem;
+    color: #1f1f1f;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.2rem;
+    letter-spacing: 0.25rem;
+    color: #ffffff;
+  }
+  .footer_social-wrapper {
+    gap: 3.2rem;
+  }
+  .footer_wrapper {
+    width: 100%;
+    max-width: 36rem;
+    gap: 4rem;
+  }
+  .footer_info {
+    font-size: 1.6rem;
+    line-height: 3.1rem;
+  }
+  .footer_info-name {
+    padding-bottom: 1rem;
+  }
+  .footer_category {
+    font-size: 1.6rem;
+    line-height: 3.1rem;
+  }
+  .footer_category-name {
+    padding-bottom: 1rem;
+  }
+  .footer_contacts {
+    font-size: 1.6rem;
+    line-height: 3.1rem;
+    max-width: 28.1rem;
+  }
+  .footer_contacts-name {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .footer_wrapper {
+    max-width: 32rem;
+    gap: 3rem;
+  }
+}
+@media (max-width: 340px) {
+  .footer_wrapper {
+    max-width: 31rem;
+    gap: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .footer_wrapper {
+    max-width: 30rem;
+    gap: 3rem;
   }
 }
 .header_mobile {
@@ -1292,6 +1456,16 @@
   }
   .header_mobile-cart--btn svg path {
     transition: all 0.3s ease-in-out;
+  }
+}
+@media (max-width: 365px) {
+  .header_mobile-nav {
+    max-width: 30.8rem;
+  }
+}
+@media (max-width: 320px) {
+  .header_mobile-nav {
+    max-width: 28.8rem;
   }
 }
 .bar1 {

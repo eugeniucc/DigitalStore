@@ -62,3 +62,26 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-smM) {
+  .products {
+    &_wrapper {
+      &-card {
+        max-width: 16.3rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smM) {
+  .products {
+    &_wrapper {
+      &-card {
+        max-width: 13.3rem;
+      }
+      &-content {
+        background-position-x: -2rem;
+        background-position-y: 4rem;
+      }
+    }
+  }
+}

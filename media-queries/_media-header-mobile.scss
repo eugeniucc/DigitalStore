@@ -164,6 +164,25 @@
   }
 }
 
+@media (max-width: 365px) {
+  .header {
+    &_mobile {
+      &-nav {
+        max-width: 30.8rem;
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint-smS) {
+  .header {
+    &_mobile {
+      &-nav {
+        max-width: 28.8rem;
+      }
+    }
+  }
+}
+
 // BURGER STYLES
 
 .bar1 {

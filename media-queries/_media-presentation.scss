@@ -9,7 +9,6 @@
 
 @media (max-width: 1110px) {
   // SWIPER PRESENTATION
-
   .swiper_presentation-slide {
     flex-direction: column-reverse;
     height: fit-content;
@@ -69,5 +68,33 @@
   .swiper_presentation-wrapper {
     max-width: 33.5rem;
     width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .swiper_presentation-content {
+    background-position-x: 32.5rem;
+  }
+}
+@media (max-width: $breakpoint-smM) {
+  .swiper_presentation-content {
+    background-position-x: 31.5rem;
+  }
+}
+@media (max-width: $breakpoint-smM) {
+  .swiper_presentation-wrapper {
+    max-width: 29.5rem;
+  }
+  .swiper_presentation-content {
+    background-position-x: 32.5rem;
+  }
+}
+@media (max-width: 355px) {
+  .swiper_presentation-content {
+    background-position-x: 29.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .swiper_presentation-content {
+    background-position-x: 28.5rem;
   }
 }

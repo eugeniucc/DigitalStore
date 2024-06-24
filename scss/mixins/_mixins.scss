@@ -657,6 +657,16 @@
   font-size: 2.8rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 3.6rem; 
+  line-height: 3.6rem;
   letter-spacing: 0.2rem;
+}
+
+@mixin font-footer-mobile {
+  color: $white;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2rem;
 }
