@@ -37,3 +37,37 @@
     width: 100%;
   }
 }
+
+@media (max-width: $breakpoint-smL) {
+  .presentation {
+    padding: 0rem 0rem 4rem 0rem;
+    &_ofer {
+      @include text-xsmall-p-bold;
+      color: $primary;
+    }
+    &_title {
+      @include title-large-bold-h1--mobile;
+    }
+    &_btn {
+      width: 100%;
+    }
+  }
+
+  // SWIPER PRESENTATION
+  .swiper_presentation-content {
+    background-image: url(../../icons/decoration-swiper.svg);
+    background-repeat: no-repeat;
+    background-position-x: 35.5rem;
+    background-position-y: 2rem;
+  }
+  .swiper_presentation-content--decoration {
+    display: none;
+  }
+  .swiper_presentation-content-rotate {
+    margin: 1rem 0rem 5rem -6rem;
+  }
+  .swiper_presentation-wrapper {
+    max-width: 33.5rem;
+    width: 100%;
+  }
+}

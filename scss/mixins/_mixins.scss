@@ -11,6 +11,15 @@
   line-height: normal;
   letter-spacing: -0.3rem;
 }
+@mixin logo-mobile-font {
+  color: $primary;
+  font-family: Inter;
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+}
 
 @mixin title-large-h1 {
   color: $dark-gray;
@@ -627,4 +636,27 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
+}
+
+@mixin title-large-bold-h1--mobile {
+  color: $dark-gray;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+}
+
+@mixin h4-title-desktop-bold {
+  color: $dark-gray;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem; 
+  letter-spacing: 0.2rem;
 }

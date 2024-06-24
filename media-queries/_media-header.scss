@@ -82,10 +82,21 @@
     }
   }
 }
-@media (max-width: 464px) {
+@media (max-width: 472px) {
   .header {
     &_nav {
-      gap: 1.6rem;
+      &-list {
+        gap: 1.6rem;
+      }
+    }
+  }
+}
+@media (max-width: 428px) {
+  .header {
+    &_wrapper,
+    &_wrapper-tablet,
+    &_nav {
+      display: none;
     }
   }
 }

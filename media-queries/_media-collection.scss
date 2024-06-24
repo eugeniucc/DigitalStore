@@ -62,3 +62,30 @@
     }
   }
 }
+
+@media (max-width: $breakpoint-smL) {
+  .collection {
+    padding: 4rem 0rem 8rem 0rem;
+    &_discount {
+      padding-bottom: 8rem;
+      &-text {
+        padding-left: 1.8rem;
+        text-align: left;
+        @include text-small-p-bold;
+      }
+      &-card {
+        &--title {
+          @include h4-title-desktop-bold;
+          max-width: 19.4rem;
+        }
+      }
+    }
+    &_content {
+      &-text {
+        @include text-small-p-bold;
+        text-align: left;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+}

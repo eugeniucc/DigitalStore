@@ -1,12 +1,64 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+.products_trending-text--mobile {
+  display: none;
+}
+
 @media (max-width: 1290px) {
   .products {
     padding: 0rem 1.8rem 12rem 1.8rem;
     &_wrapper {
       flex-wrap: wrap;
       justify-content: center;
+    }
+  }
+}
+@media (max-width: $breakpoint-smL) {
+  .products {
+    padding: 0rem 1.8rem;
+    &_trending {
+      align-items: center;
+      &-text {
+        display: none;
+        &--mobile {
+          display: block;
+          @include text-small-p-bold;
+        }
+      }
+    }
+    &_wrapper {
+      gap: 0.9rem;
+      &-card {
+        max-width: 18rem;
+        &--discount {
+          @include text-tinny-p-bold;
+        }
+        &--name {
+          @include text-xsmall-p;
+        }
+      }
+      &-content {
+        height: 17.9rem;
+        background-image: url(../../img/shoes-product-mobile.png) !important;
+        background-position: center;
+        background-position-x: 0rem;
+        background-position-y: 3rem;
+        padding: 1.4rem 0rem 0rem 1.3rem;
+      }
+      &-price {
+        align-items: center;
+        &--old {
+          @include text-small-p;
+          color: $light-gray;
+        }
+        &--new {
+          @include text-small-p-bold;
+        }
+      }
+      &-details {
+        padding: 1.8rem 0rem 2rem 0rem;
+      }
     }
   }
 }
