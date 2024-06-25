@@ -1,0 +1,72 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.products-list {
+  background-color: $background;
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+    &-text {
+      @include text-small-p-bold;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      &::after {
+        content: "";
+        display: block;
+        width: 0.8rem;
+        height: 0.2rem;
+        background-color: $dark-gray;
+      }
+    }
+    &-amount {
+      @include text-small-p;
+      color: $dark-gray2;
+      margin-left: 0.8rem;
+    }
+  }
+  &_sort {
+    display: flex;
+    cursor: pointer;
+
+    align-items: center;
+    gap: 4rem;
+    border: 0.1rem solid $dark-gray2;
+    border-radius: 0.4rem;
+    background-color: $background;
+    padding: 1.6rem 1.5rem;
+
+    &-text {
+      @include text-small-p-bold;
+    }
+    &-span {
+      @include text-small-p;
+      color: $dark-gray2;
+    }
+    &-img {
+      display: flex;
+    }
+  }
+}
+
+.dropdown-all {
+  position: relative;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  flex-direction: column;
+  gap: 2.5rem;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-wrapper.show {
+  display: flex;
+}
