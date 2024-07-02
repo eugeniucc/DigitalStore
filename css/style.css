@@ -795,6 +795,18 @@
   position: relative;
 }
 
+.dropdown-selected {
+  width: 34.5rem;
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
 .dropdown-wrapper {
   position: absolute;
   display: none;
@@ -807,6 +819,17 @@
 
 .dropdown-wrapper.show {
   display: flex;
+}
+
+.dropdown-span {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
 }
 
 .header_wrapper-tablet {

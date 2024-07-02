@@ -56,6 +56,10 @@
 .dropdown-all {
   position: relative;
 }
+.dropdown-selected {
+  width: 34.5rem;
+  @include text-small-p;
+}
 
 .dropdown-wrapper {
   position: absolute;
@@ -69,4 +73,8 @@
 
 .dropdown-wrapper.show {
   display: flex;
+}
+
+.dropdown-span {
+  @include text-small-p-bold;
 }
