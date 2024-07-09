@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.3rem;
+  letter-spacing: -0.03rem;
 }
 @mixin logo-mobile-font {
   color: $primary;
@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.01rem;
 }
 
 @mixin title-large-h1 {
@@ -29,7 +29,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 6.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin title-medium-h2 {
   color: $dark-gray;
@@ -39,7 +39,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin title-small-h3 {
   color: $dark-gray;
@@ -49,7 +49,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin title-xsmall-h4 {
   color: $dark-gray;
@@ -59,7 +59,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 // DESKTOP TITLE BOLD
@@ -72,7 +72,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 6.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin title-medium-bold-h2 {
   color: $dark-gray;
@@ -82,7 +82,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin title-small-bold-h3 {
   color: $dark-gray;
@@ -92,7 +92,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin title-xsmall-bold-h4 {
   color: $dark-gray;
@@ -102,7 +102,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 // DESKTOP TEXT
@@ -115,7 +115,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-medium-p {
   color: $dark-gray;
@@ -125,7 +125,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-small-p {
   color: $dark-gray;
@@ -135,7 +135,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-xsmall-p {
   color: $dark-gray;
@@ -145,7 +145,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.2rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.025rem;
 }
 @mixin text-tinny-p {
   color: $dark-gray;
@@ -155,7 +155,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.8rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.05rem;
 }
 
 // DESKTOP TEXT INVERTED
@@ -168,7 +168,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-medium-p-inverted {
   color: $light-gray3;
@@ -178,7 +178,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-small-p-inverted {
   color: $light-gray3;
@@ -188,7 +188,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-xsmall-p-inverted {
   color: $light-gray3;
@@ -198,7 +198,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.2rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.025rem;
 }
 @mixin text-tinny-p-inverted {
   color: $light-gray3;
@@ -208,7 +208,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.8rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.05rem;
 }
 
 // DESKTOP TEXT BOLD
@@ -221,7 +221,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-medium-p-bold {
   color: $dark-gray;
@@ -231,7 +231,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-small-p-bold {
   color: $dark-gray;
@@ -241,7 +241,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-xsmall-p-bold {
   color: $dark-gray;
@@ -251,7 +251,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-tinny-p-bold {
   color: $dark-gray;
@@ -261,7 +261,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 // DESKTOP TEXT BOLD INVERTED
 
@@ -273,7 +273,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-medium-p-bold-inverted {
   color: $light-gray3;
@@ -283,7 +283,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-small-p-bold-inverted {
   color: $light-gray3;
@@ -293,7 +293,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-xsmall-p-bold-inverted {
   color: $light-gray3;
@@ -303,7 +303,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin text-tinny-p-bold-inverted {
   color: $light-gray3;
@@ -313,7 +313,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 
 // MOBILE TITLE
@@ -326,7 +326,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-medium {
   color: $dark-gray;
@@ -336,7 +336,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-small {
   color: $dark-gray;
@@ -346,7 +346,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-xsmall {
   color: $dark-gray;
@@ -356,7 +356,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.4rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 // MOBILE TITLE BOLD
@@ -369,7 +369,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-medium-bold {
   color: $dark-gray;
@@ -379,7 +379,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.6rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-small-bold {
   color: $dark-gray;
@@ -389,7 +389,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-xsmall-bold {
   color: $dark-gray;
@@ -399,7 +399,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.4rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 // MOBILE TEXT
@@ -412,7 +412,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-medium {
   color: $dark-gray;
@@ -422,7 +422,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-small {
   color: $dark-gray;
@@ -432,7 +432,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.025rem;
 }
 @mixin display-text-xsmall {
   color: $dark-gray;
@@ -442,7 +442,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 @mixin display-text-tinny {
   color: $dark-gray;
@@ -452,7 +452,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 // MOBILE TEXT INVERTED
 
@@ -464,7 +464,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-medium-inverted {
   color: $light-gray3;
@@ -474,7 +474,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-small-inverted {
   color: $light-gray3;
@@ -484,7 +484,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.025rem;
 }
 @mixin display-text-xsmall-inverted {
   color: $light-gray3;
@@ -494,7 +494,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 @mixin display-text-tinny-inverted {
   color: $light-gray3;
@@ -504,7 +504,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 
 // MOBILE TEXT BOLD
@@ -517,7 +517,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-medium-bold {
   color: $dark-gray;
@@ -527,7 +527,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-small-bold {
   color: $dark-gray;
@@ -537,7 +537,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.025rem;
 }
 @mixin display-text-xsmall-bold {
   color: $dark-gray;
@@ -547,7 +547,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 @mixin display-text-tinny-bold {
   color: $dark-gray;
@@ -557,7 +557,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 
 // MOBILE TEXT BOLD
@@ -570,7 +570,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-medium-bold-inverted {
   color: $light-gray3;
@@ -580,7 +580,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin display-text-small-bold-inverted {
   color: $light-gray3;
@@ -590,7 +590,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.025rem;
 }
 @mixin display-text-xsmall-bold-inverted {
   color: $light-gray3;
@@ -600,7 +600,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 @mixin display-text-tinny-bold-inverted {
   color: $light-gray3;
@@ -610,7 +610,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 @mixin footer-titles {
   color: $white;
@@ -647,7 +647,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 
 @mixin h4-title-desktop-bold {
@@ -658,7 +658,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 3.6rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 @mixin font-footer-mobile {
@@ -668,5 +668,5 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.02rem;
 }
