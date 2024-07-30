@@ -838,20 +838,25 @@
 }
 .market_content {
   display: flex;
+  align-items: flex-start;
 }
 .market_wrapper {
   width: 100%;
   display: flex;
   gap: 1.4rem;
+  flex-wrap: wrap;
+  row-gap: 4rem;
 }
 .market_wrapper-card {
-  background-color: #ffffff;
+  background-color: #f9f8fe;
   border: 0.4rem;
   box-shadow: 6px 16px 30px 0px rgba(105, 98, 98, 0.05);
-  width: 33.33%;
+  width: calc(33.33% - 1.4rem);
+  border-radius: 0.4rem;
 }
 .market_wrapper-card--deal {
   padding: 2rem 0rem 0rem 2rem;
+  height: 5.4rem;
 }
 .market_wrapper-card--discount {
   color: #1f1f1f;
@@ -870,7 +875,57 @@
 .market_wrapper-card--img {
   display: block;
   max-width: 24.8rem;
+  width: 100%;
   margin: 0 auto;
+}
+.market_wrapper-card--category {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.01rem;
+}
+.market_wrapper-card--title {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+  letter-spacing: 0.01rem;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+.market_wrapper-price {
+  display: flex;
+  gap: 1.1rem;
+}
+.market_wrapper-price--old {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.8rem;
+  letter-spacing: 0.01rem;
+  text-decoration: line-through;
+  color: #8f8f8f;
+}
+.market_wrapper-price--new {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.8rem;
+  letter-spacing: 0.01rem;
 }
 
 .sidebar {
@@ -1042,6 +1097,68 @@
 
 .sidebar_state-checkbox:checked + .sidebar_state-label::before {
   opacity: 1;
+}
+
+.dropdown_store {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.6rem 1.5rem;
+  border: 0.1rem solid #474747;
+  border-radius: 0.4rem;
+  background-color: transparent;
+}
+
+.dropdown-menu_store {
+  width: 100%;
+  border: 0.1rem solid #474747;
+  border-radius: 0.4rem;
+}
+
+.dropdown-menu_store li {
+  padding: 1rem 0rem;
+}
+
+.dropdown-item_store:active {
+  background: none;
+  color: unset;
+}
+
+.dropdown_store-span {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.dropdown_store-text {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.01rem;
+}
+
+.dropdown-item_store {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.01rem;
+}
+
+.dropdown_store::after {
+  display: none;
 }
 
 .header_wrapper-tablet {
@@ -1852,4 +1969,5 @@ html {
 .container {
   max-width: 124rem;
   margin: 0 auto;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
