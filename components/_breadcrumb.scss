@@ -1,0 +1,27 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem 4rem 0rem;
+}
+.breadcrumb-link {
+  @include text-xsmall-p;
+  text-decoration: none;
+  &-first {
+    @include text-small-p-bold;
+    text-decoration: none;
+  }
+}
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  &-last {
+    @include text-xsmall-p;
+  }
+}
+
+.breadcrumb-item::before {
+  font-size: 1.6rem;
+}

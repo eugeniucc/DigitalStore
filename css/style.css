@@ -12,7 +12,7 @@
   align-items: center;
   gap: 0.8rem;
   color: #c92071;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
@@ -36,7 +36,7 @@
   border-radius: 0.8rem;
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +59,7 @@
 .header_profile-register {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -71,7 +71,7 @@
 .header_profile-login {
   color: #f5f5f5;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -102,7 +102,7 @@
 .header_nav-links {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -113,7 +113,23 @@
 .header_nav-links-active {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.025rem;
+  border-bottom: 2px solid #c92071;
+  padding-bottom: 0.3rem;
+  letter-spacing: 0.15rem;
+  font-size: 1.6rem;
+  color: #c92071;
+}
+
+.nike__revolution-header {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -133,7 +149,7 @@
 .presentation_ofer {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -144,7 +160,7 @@
 .presentation_title {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 6.4rem;
   font-style: normal;
   font-weight: 700;
@@ -155,7 +171,7 @@
 .presentation_text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -165,7 +181,7 @@
 .presentation_btn {
   color: #f5f5f5;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -232,7 +248,7 @@
 .collection_discount-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -263,7 +279,7 @@
 .collection_discount-card--text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -273,19 +289,19 @@
 .collection_discount-card--title {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.6rem;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.1rem;
   padding: 1rem 0rem 2rem 0rem;
   max-width: 18.4rem;
 }
 .collection_discount-card--btn {
   color: #f5f5f5;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -307,7 +323,7 @@
 .collection_content-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -355,7 +371,7 @@
 .collection_content-card--category {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -386,7 +402,7 @@
 .products_trending-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -396,7 +412,7 @@
 .products_trending-all {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -426,7 +442,7 @@
 .products_wrapper-card--discount {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -443,7 +459,7 @@
 .products_wrapper-card--category {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -454,7 +470,7 @@
 .products_wrapper-card--name {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -485,7 +501,7 @@
 .products_wrapper-price--old {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -497,7 +513,7 @@
 .products_wrapper-price--new {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -524,7 +540,7 @@
 .special_details-title {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
@@ -536,7 +552,7 @@
 .special_details-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -548,7 +564,7 @@
 .special_details-text--special {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -559,7 +575,7 @@
 .special_details-btn {
   color: #f5f5f5;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -600,7 +616,7 @@
 }
 .footer_social-logo--span {
   color: #c92071;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
@@ -612,7 +628,7 @@
 .footer_social-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -634,7 +650,7 @@
 }
 .footer_info-name {
   color: #ffffff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -648,7 +664,7 @@
 .footer_info-list--links {
   text-decoration: none;
   color: #ffffff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -656,7 +672,7 @@
 }
 .footer_category-name {
   color: #ffffff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -670,7 +686,7 @@
 .footer_category-list--links {
   text-decoration: none;
   color: #ffffff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -682,7 +698,7 @@
 }
 .footer_contacts-name {
   color: #ffffff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -694,7 +710,7 @@
 }
 .footer_contacts-address, .footer_contacts-phone {
   color: #ffffff;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -704,7 +720,7 @@
 .footer_copyrights {
   color: #ffffff;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
@@ -719,6 +735,7 @@
 .products-list_wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 4rem;
 }
 .products-list_content {
   display: flex;
@@ -727,7 +744,7 @@
 .products-list_content-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -747,7 +764,7 @@
 .products-list_content-amount {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -769,7 +786,7 @@
 .products-list_sort-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -779,7 +796,7 @@
 .products-list_sort-span {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -799,7 +816,7 @@
   width: 34.5rem;
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -824,12 +841,16 @@
 .dropdown-span {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.4rem;
   letter-spacing: 0.01rem;
+}
+
+.dropdown_store {
+  padding: 1.2rem 1rem !important;
 }
 
 .market {
@@ -861,7 +882,7 @@
 .market_wrapper-card--discount {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -881,7 +902,7 @@
 .market_wrapper-card--category {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -891,7 +912,7 @@
 .market_wrapper-card--title {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -908,7 +929,7 @@
 .market_wrapper-price--old {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -920,7 +941,7 @@
 .market_wrapper-price--new {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -943,7 +964,7 @@
 .sidebar_filter-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -966,7 +987,7 @@
 .sidebar_brand-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -982,7 +1003,7 @@
 .sidebar_brand-label {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
@@ -1026,7 +1047,7 @@
 .sidebar_category-text, .sidebar_gender-text, .sidebar_state-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -1054,7 +1075,7 @@
 .sidebar_state-label {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
@@ -1127,7 +1148,7 @@
 .dropdown_store-span {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -1138,7 +1159,7 @@
 .dropdown_store-text {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -1149,7 +1170,7 @@
 .dropdown-item_store {
   color: #1f1f1f;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -1159,6 +1180,311 @@
 
 .dropdown_store::after {
   display: none;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem 4rem 0rem;
+}
+
+.breadcrumb-link {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+  text-decoration: none;
+}
+.breadcrumb-link-first {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  text-decoration: none;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-item-last {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+}
+
+.breadcrumb-item::before {
+  font-size: 1.6rem;
+}
+
+.nike {
+  padding-bottom: 8rem;
+}
+.nike__wrapper {
+  display: flex;
+  gap: 4rem;
+}
+.nike__swiper {
+  height: 57rem;
+  margin-bottom: 2rem;
+}
+.nike__swiper-purple {
+  background-color: #e2e3ff;
+}
+.nike__swiper-orange {
+  background-color: #ffe8bc;
+}
+.nike__swiper-pink {
+  background-color: #ffc0bc;
+}
+.nike__swiper-brown {
+  background-color: #dec699;
+}
+.nike__swiper-brownie {
+  background-color: #e8dfcf;
+}
+.nike__swiper-thumbs--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.nike__swiper-thumbs-content {
+  max-width: 11.7rem;
+  width: 100%;
+  margin-right: 0 !important;
+  border: 0.2rem solid transparent;
+  border-radius: 0.4rem;
+}
+.nike__swiper-thumbs--img {
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+}
+.nike__swiper-btn--next {
+  height: 5rem;
+  width: 2rem;
+}
+.nike__swiper-btn--next::after {
+  content: "";
+}
+.nike__swiper-btn--prev {
+  height: 5rem;
+  width: 2rem;
+}
+.nike__swiper-btn--prev::after {
+  content: "";
+}
+.nike__slider {
+  max-width: 70rem;
+  width: 100%;
+}
+.nike__img {
+  max-width: 100%;
+  width: 100%;
+}
+.nike__content {
+  max-width: 44rem;
+  width: 100%;
+}
+.nike__title {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0.1rem;
+}
+.nike__text {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0.05rem;
+  color: #666666;
+  margin: 1rem 0rem;
+}
+.nike__rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.nike__stars {
+  display: flex;
+  gap: 0.48rem;
+}
+.nike__review-count {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 4px;
+  background: var(--warning, #f6aa1c);
+  padding: 0.1rem 1rem;
+}
+.nike__review-number {
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+.nike__amount-reviews {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+  color: #8f8f8f;
+}
+.nike__price {
+  display: flex;
+  margin-bottom: 2.2rem;
+  align-items: flex-end;
+}
+.nike__price-currency {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+}
+.nike__price-actual {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0.01rem;
+  font-weight: 700;
+  margin-left: 0.6rem;
+}
+.nike__price-span {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  margin-right: 1rem;
+}
+.nike__price-old {
+  color: var(--light-gray-2, #ccc);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.075rem;
+  text-decoration-line: strikethrough;
+  text-decoration: line-through;
+}
+.nike__descr {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.nike__descr-title {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  color: #8f8f8f;
+}
+.nike__descr-text {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+}
+.nike__size {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.nike__sizes {
+  display: flex;
+  gap: 1rem;
+}
+.nike__sizes-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #ccc;
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+  transition: all 0.3s ease-in-out;
+}
+.nike__color {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.7rem;
+}
+.nike__colors {
+  display: flex;
+  gap: 1rem;
+}
+
+.nike__swiper-thumbs-content.active {
+  border: 0.2rem solid #c92071;
+}
+
+.main-nike {
+  background: #f9f8fe;
+}
+
+.nike__sizes-btn.active {
+  border: 0.1rem solid #c92071;
+  background: #c92071;
+  color: #fff;
 }
 
 .header_wrapper-tablet {
@@ -1276,7 +1602,7 @@
   .presentation_ofer {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 700;
@@ -1288,7 +1614,7 @@
     color: #1f1f1f;
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 4rem;
     font-style: normal;
     font-weight: 800;
@@ -1394,7 +1720,7 @@
     text-align: left;
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -1404,7 +1730,7 @@
   .collection_discount-card--title {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
@@ -1415,7 +1741,7 @@
   .collection_content-text {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -1452,7 +1778,7 @@
     display: block;
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -1468,7 +1794,7 @@
   .products_wrapper-card--discount {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 700;
@@ -1478,7 +1804,7 @@
   .products_wrapper-card--name {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -1499,7 +1825,7 @@
   .products_wrapper-price--old {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -1510,7 +1836,7 @@
   .products_wrapper-price--new {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -1577,7 +1903,7 @@
   .special_details-text {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -1591,7 +1917,7 @@
   .special_details-title {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: 700;
@@ -1628,7 +1954,7 @@
   }
   .footer_social-logo--span {
     color: #ffffff;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 600;
@@ -1639,7 +1965,7 @@
     padding: 2rem 0rem 3rem 0rem;
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 500;
@@ -1733,7 +2059,7 @@
   .header_mobile-nav--text {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
@@ -1749,7 +2075,7 @@
   .header_mobile-nav--links {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -1760,7 +2086,7 @@
   .header_mobile-nav--links-active {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 700;
@@ -1788,7 +2114,7 @@
     cursor: pointer;
     color: #f5f5f5;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 700;
@@ -1808,7 +2134,7 @@
   .header_mobile-nav--register {
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -1835,7 +2161,7 @@
     outline: none;
     color: #1f1f1f;
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -1884,7 +2210,7 @@
   }
   .header_mobile-wrapper--span {
     color: #c92071;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 1.9rem;
     font-style: normal;
     font-weight: 600;

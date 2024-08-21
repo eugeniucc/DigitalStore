@@ -4,7 +4,7 @@
 
 @mixin logo-font {
   color: $primary;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 600;
@@ -13,7 +13,7 @@
 }
 @mixin logo-mobile-font {
   color: $primary;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.9rem;
   font-style: normal;
   font-weight: 600;
@@ -24,7 +24,7 @@
 @mixin title-large-h1 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 6.4rem;
   font-style: normal;
   font-weight: 400;
@@ -34,7 +34,7 @@
 @mixin title-medium-h2 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@
 @mixin title-small-h3 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 400;
@@ -54,7 +54,7 @@
 @mixin title-xsmall-h4 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.8rem;
   font-style: normal;
   font-weight: 400;
@@ -67,7 +67,7 @@
 @mixin title-large-bold-h1 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 6.4rem;
   font-style: normal;
   font-weight: 700;
@@ -77,7 +77,7 @@
 @mixin title-medium-bold-h2 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
@@ -87,17 +87,17 @@
 @mixin title-small-bold-h3 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 3.6rem;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.1rem;
 }
 @mixin title-xsmall-bold-h4 {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.8rem;
   font-style: normal;
   font-weight: 700;
@@ -110,7 +110,7 @@
 @mixin text-large-p {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -120,7 +120,7 @@
 @mixin text-medium-p {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -130,7 +130,7 @@
 @mixin text-small-p {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -140,7 +140,7 @@
 @mixin text-xsmall-p {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
@@ -150,7 +150,7 @@
 @mixin text-tinny-p {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -163,7 +163,7 @@
 @mixin text-large-p-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -173,7 +173,7 @@
 @mixin text-medium-p-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
@@ -183,7 +183,7 @@
 @mixin text-small-p-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -193,7 +193,7 @@
 @mixin text-xsmall-p-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
@@ -203,7 +203,7 @@
 @mixin text-tinny-p-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -216,7 +216,7 @@
 @mixin text-large-p-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -226,7 +226,7 @@
 @mixin text-medium-p-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -236,7 +236,7 @@
 @mixin text-small-p-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -246,7 +246,7 @@
 @mixin text-xsmall-p-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -256,7 +256,7 @@
 @mixin text-tinny-p-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -268,7 +268,7 @@
 @mixin text-large-p-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -278,7 +278,7 @@
 @mixin text-medium-p-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -288,7 +288,7 @@
 @mixin text-small-p-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -298,7 +298,7 @@
 @mixin text-xsmall-p-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -308,7 +308,7 @@
 @mixin text-tinny-p-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -321,7 +321,7 @@
 @mixin display-large {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 400;
@@ -331,7 +331,7 @@
 @mixin display-medium {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 400;
@@ -341,7 +341,7 @@
 @mixin display-small {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 400;
@@ -351,7 +351,7 @@
 @mixin display-xsmall {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
@@ -364,7 +364,7 @@
 @mixin display-large-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 4.8rem;
   font-style: normal;
   font-weight: 700;
@@ -374,7 +374,7 @@
 @mixin display-medium-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 3.2rem;
   font-style: normal;
   font-weight: 700;
@@ -384,7 +384,7 @@
 @mixin display-small-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -394,7 +394,7 @@
 @mixin display-xsmall-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 700;
@@ -407,7 +407,7 @@
 @mixin display-text-large {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -417,7 +417,7 @@
 @mixin display-text-medium {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -427,7 +427,7 @@
 @mixin display-text-small {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
@@ -437,7 +437,7 @@
 @mixin display-text-xsmall {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -447,7 +447,7 @@
 @mixin display-text-tinny {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -459,7 +459,7 @@
 @mixin display-text-large-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
@@ -469,7 +469,7 @@
 @mixin display-text-medium-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -479,7 +479,7 @@
 @mixin display-text-small-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
@@ -489,7 +489,7 @@
 @mixin display-text-xsmall-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -499,7 +499,7 @@
 @mixin display-text-tinny-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -512,7 +512,7 @@
 @mixin display-text-large-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -522,7 +522,7 @@
 @mixin display-text-medium-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -532,7 +532,7 @@
 @mixin display-text-small-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -542,7 +542,7 @@
 @mixin display-text-xsmall-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -552,7 +552,7 @@
 @mixin display-text-tinny-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -565,7 +565,7 @@
 @mixin display-text-large-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -575,7 +575,7 @@
 @mixin display-text-medium-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -585,7 +585,7 @@
 @mixin display-text-small-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
@@ -595,7 +595,7 @@
 @mixin display-text-xsmall-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -605,7 +605,7 @@
 @mixin display-text-tinny-bold-inverted {
   color: $light-gray3;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
@@ -614,7 +614,7 @@
 }
 @mixin footer-titles {
   color: $white;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -622,7 +622,7 @@
 }
 @mixin footer-text {
   color: $white;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -631,7 +631,7 @@
 @mixin copyrights {
   color: $white;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
@@ -642,7 +642,7 @@
   color: $dark-gray;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 800;
@@ -653,7 +653,7 @@
 @mixin h4-title-desktop-bold {
   color: $dark-gray;
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.8rem;
   font-style: normal;
   font-weight: 700;
@@ -663,10 +663,33 @@
 
 @mixin font-footer-mobile {
   color: $white;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.02rem;
+}
+
+@mixin review-star-number {
+  color: #fff;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.4rem;
+  letter-spacing: 0.25rem;
+}
+@mixin nike-rev-old-price {
+  color: var(--light-gray-2, #ccc);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.075rem;
+  text-decoration-line: strikethrough;
+  text-decoration: line-through;
 }

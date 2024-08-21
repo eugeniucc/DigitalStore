@@ -6,6 +6,7 @@
   &_wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 4rem;
   }
   &_content {
     display: flex;
@@ -32,14 +33,12 @@
   &_sort {
     display: flex;
     cursor: pointer;
-
     align-items: center;
     gap: 4rem;
     border: 0.1rem solid $dark-gray2;
     border-radius: 0.4rem;
     background-color: $background;
     padding: 1.6rem 1.5rem;
-
     &-text {
       @include text-small-p-bold;
     }
@@ -77,4 +76,8 @@
 
 .dropdown-span {
   @include text-small-p-bold;
+}
+
+.dropdown_store {
+  padding: 1.2rem 1rem !important;
 }

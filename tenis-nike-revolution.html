@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General Metagraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DigitalStore" />
+    <meta property="og:url" content="www.digitalstore.com" />
+    <meta property="og:image" content="./icons/logo.svg" />
+    <meta property="og:description" content="Best shoes store in our city." />
+    <!-- Twitter Metagraph -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DigitalStore" />
+    <meta name="twitter:site" content="www.digitalstore.com" />
+    <meta name="twitter:description" content="Best shoes store in our city." />
+    <meta name="twitter:image" content="./icons/logo.svg" />
+    <!-- Icons in browser  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+    <!-- MsApp link ! -->
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+    <title>Digital Store</title>
+    <!-- Swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My scripts -->
+    <script defer src="./js/swiper-presentation.js"></script>
+    <script defer src="./js/nike-thumbs.js"></script>
+    <script defer src="./js/nav-links-active.js"></script>
+    <script defer src="./js/nike-rev.js"></script>
+    <!-- My styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/min_css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./logo/logo.svg"
+                alt="Digital Store"
+                loading="eager"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
+          </div>
+          <div class="header_search">
+            <input
+              class="header_search-input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="header_profile">
+            <btn class="header_profile-register">Cadastre-se</btn>
+            <btn class="header_profile-login">Entrar</btn>
+            <btn class="header_cart">
+              <img
+                class="header_cart-img"
+                src="./icons/cart.svg"
+                alt="cart"
+                loading="eager"
+              />
+            </btn>
+          </div>
+        </div>
+        <div class="header_wrapper header_wrapper-tablet">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./logo/logo.svg"
+                alt="Digital Store"
+                loading="eager"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
+            <div class="header_profile">
+              <btn class="header_profile-register">Cadastre-se</btn>
+              <btn class="header_profile-login">Entrar</btn>
+              <btn class="header_cart">
+                <img
+                  class="header_cart-img"
+                  src="./icons/cart.svg"
+                  alt="cart"
+                  loading="eager"
+                />
+              </btn>
+            </div>
+          </div>
+
+          <div class="header_search">
+            <input
+              class="header_search-input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="header_nav">
+          <ul class="header_nav-list">
+            <li>
+              <a href="./index.html" class="header_nav-links">Home</a>
+            </li>
+            <li>
+              <a
+                href="./products.html"
+                class="header_nav-links nike__revolution-header"
+                >Produtos</a
+              >
+            </li>
+            <li><a href="#" class="header_nav-links">Categorias</a></li>
+            <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-nike">
+      <div class="breadcrumbs">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link-first" href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="./products.html">Produtos</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="./tenis-nike-revolution.html"
+                  >Tênis</a
+                >
+              </li>
+              <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="./tenis-nike-revolution.html"
+                  >Nike</a
+                >
+              </li>
+              <li class="breadcrumb-item breadcrumb-item-last">
+                Tênis Nike Revolution 6 Next Nature Masculino
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <section class="nike">
+        <div class="container">
+          <div class="nike__wrapper">
+            <div class="nike__slider">
+              <div class="swiper nike__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide nike__swiper-purple">
+                    <img
+                      class="nike__img"
+                      src="./img/nike-air-presentation.png"
+                    />
+                  </div>
+                  <div class="swiper-slide nike__swiper-orange">
+                    <img
+                      class="nike__img"
+                      src="./img/nike-air-presentation.png"
+                    />
+                  </div>
+                  <div class="swiper-slide nike__swiper-pink">
+                    <img
+                      class="nike__img"
+                      src="./img/nike-air-presentation.png"
+                    />
+                  </div>
+                  <div class="swiper-slide nike__swiper-brown">
+                    <img
+                      class="nike__img"
+                      src="./img/nike-air-presentation.png"
+                    />
+                  </div>
+                  <div class="swiper-slide nike__swiper-brownie">
+                    <img
+                      class="nike__img"
+                      src="./img/nike-air-presentation.png"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-next nike__swiper-btn--next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="24"
+                    viewBox="0 0 14 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 23L12 12L0.999999 1"
+                      stroke="#474747"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div class="swiper-button-prev nike__swiper-btn--prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="24"
+                    viewBox="0 0 14 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13 1L2 12L13 23"
+                      stroke="#474747"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper nike__swiper-thumbs">
+                <div class="swiper-wrapper nike__swiper-thumbs--wrapper">
+                  <div
+                    class="swiper-slide nike__swiper-thumbs-content active nike__swiper-purple"
+                  >
+                    <img
+                      class="nike__swiper-thumbs--img"
+                      src="./img/nike-revolution-small.png"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide nike__swiper-thumbs-content nike__swiper-orange"
+                  >
+                    <img
+                      class="nike__swiper-thumbs--img"
+                      src="./img/nike-revolution-small.png"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide nike__swiper-thumbs-content nike__swiper-pink"
+                  >
+                    <img
+                      class="nike__swiper-thumbs--img"
+                      src="./img/nike-revolution-small.png"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide nike__swiper-thumbs-content nike__swiper-brown"
+                  >
+                    <img
+                      class="nike__swiper-thumbs--img"
+                      src="./img/nike-revolution-small.png"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide nike__swiper-thumbs-content nike__swiper-brownie"
+                  >
+                    <img
+                      class="nike__swiper-thumbs--img"
+                      src="./img/nike-revolution-small.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nike__content">
+              <h1 class="nike__title">
+                Tênis Nike Revolution 6 Next Nature Masculino
+              </h1>
+              <p class="nike__text">Casual | Nike | REF:38416711</p>
+              <div class="nike__rating">
+                <div class="nike__stars">
+                  <p class="nike__rating-star--full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.61294 1.2306L10.4622 5.65038L15.1966 6.06108C15.5249 6.08972 15.6585 6.50343 15.4092 6.72122L11.8182 9.86292L12.8943 14.5367C12.9689 14.8614 12.6204 15.1169 12.3383 14.9443L8.26965 12.4666L4.20097 14.9443C3.91814 15.1162 3.57037 14.8607 3.645 14.5367L4.72113 9.86292L1.12932 6.72047C0.88006 6.50268 1.0129 6.08896 1.342 6.06033L6.07636 5.64962L7.92562 1.2306C8.05398 0.923134 8.48458 0.923134 8.61294 1.2306Z"
+                        fill="#F6AA1C"
+                        stroke="#F6AA1C"
+                      />
+                    </svg>
+                  </p>
+                  <p class="nike__rating-star--full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.61294 1.2306L10.4622 5.65038L15.1966 6.06108C15.5249 6.08972 15.6585 6.50343 15.4092 6.72122L11.8182 9.86292L12.8943 14.5367C12.9689 14.8614 12.6204 15.1169 12.3383 14.9443L8.26965 12.4666L4.20097 14.9443C3.91814 15.1162 3.57037 14.8607 3.645 14.5367L4.72113 9.86292L1.12932 6.72047C0.88006 6.50268 1.0129 6.08896 1.342 6.06033L6.07636 5.64962L7.92562 1.2306C8.05398 0.923134 8.48458 0.923134 8.61294 1.2306Z"
+                        fill="#F6AA1C"
+                        stroke="#F6AA1C"
+                      />
+                    </svg>
+                  </p>
+                  <p class="nike__rating-star--full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.61294 1.2306L10.4622 5.65038L15.1966 6.06108C15.5249 6.08972 15.6585 6.50343 15.4092 6.72122L11.8182 9.86292L12.8943 14.5367C12.9689 14.8614 12.6204 15.1169 12.3383 14.9443L8.26965 12.4666L4.20097 14.9443C3.91814 15.1162 3.57037 14.8607 3.645 14.5367L4.72113 9.86292L1.12932 6.72047C0.88006 6.50268 1.0129 6.08896 1.342 6.06033L6.07636 5.64962L7.92562 1.2306C8.05398 0.923134 8.48458 0.923134 8.61294 1.2306Z"
+                        fill="#F6AA1C"
+                        stroke="#F6AA1C"
+                      />
+                    </svg>
+                  </p>
+                  <p class="nike__rating-star--full">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.61294 1.2306L10.4622 5.65038L15.1966 6.06108C15.5249 6.08972 15.6585 6.50343 15.4092 6.72122L11.8182 9.86292L12.8943 14.5367C12.9689 14.8614 12.6204 15.1169 12.3383 14.9443L8.26965 12.4666L4.20097 14.9443C3.91814 15.1162 3.57037 14.8607 3.645 14.5367L4.72113 9.86292L1.12932 6.72047C0.88006 6.50268 1.0129 6.08896 1.342 6.06033L6.07636 5.64962L7.92562 1.2306C8.05398 0.923134 8.48458 0.923134 8.61294 1.2306Z"
+                        fill="#F6AA1C"
+                        stroke="#F6AA1C"
+                      />
+                    </svg>
+                  </p>
+                  <p class="nike__rating-star--empty">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.15102 1.2306L10.0003 5.65038L14.7346 6.06108C15.063 6.08972 15.1966 6.50343 14.9473 6.72122L11.3563 9.86292L12.4324 14.5367C12.507 14.8614 12.1585 15.1169 11.8764 14.9443L7.80774 12.4666L3.73906 14.9443C3.45622 15.1162 3.10846 14.8607 3.18309 14.5367L4.25921 9.86292L0.667401 6.72047C0.418146 6.50268 0.550983 6.08896 0.880089 6.06033L5.61444 5.64962L7.46371 1.2306C7.59206 0.923134 8.02266 0.923134 8.15102 1.2306Z"
+                        stroke="#F6AA1C"
+                      />
+                    </svg>
+                  </p>
+                </div>
+                <div class="nike__review-count">
+                  <p class="nike__review-number">4.7</p>
+                  <p class="nike__review-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.73077 0.177339C5.89662 -0.0591129 6.28484 -0.059113 6.4507 0.177339L8.2009 2.6726C8.25925 2.7558 8.35195 2.8155 8.45924 2.83898L11.6773 3.54341C11.9822 3.61016 12.1022 3.93745 11.8997 4.15034L9.7634 6.39692C9.69217 6.47182 9.65677 6.56842 9.66472 6.66613L9.90337 9.59676C9.92598 9.87446 9.6119 10.0767 9.32093 9.97186L6.2504 8.86506C6.14802 8.82816 6.03344 8.82816 5.93107 8.86506L2.86053 9.97186C2.56957 10.0767 2.25548 9.87446 2.2781 9.59676L2.51674 6.66613C2.5247 6.56842 2.48929 6.47182 2.41806 6.39692L0.281722 4.15034C0.0792822 3.93745 0.199251 3.61016 0.504192 3.54341L3.72222 2.83898C3.82951 2.8155 3.92221 2.7558 3.98056 2.6726L5.73077 0.177339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </p>
+                </div>
+                <div class="nike__amount">
+                  <p class="nike__amount-reviews">(90 avaliações )</p>
+                </div>
+              </div>
+              <div class="nike__price">
+                <p class="nike__price-currency">R$</p>
+                <p class="nike__price-actual">219</p>
+                <span class="nike__price-span">,00</span>
+                <p class="nike__price-old">219,00</p>
+              </div>
+              <div class="nike__descr">
+                <p class="nike__descr-title">Descrição do produto</p>
+                <p class="nike__descr-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+              </div>
+              <div class="nike__size">
+                <p class="nike__size-text">Tamanho</p>
+                <div class="nike__sizes">
+                  <button class="nike__sizes-btn">39</button>
+                  <button class="nike__sizes-btn">40</button>
+                  <button class="nike__sizes-btn">41</button>
+                  <button class="nike__sizes-btn">42</button>
+                  <button class="nike__sizes-btn">43</button>
+                </div>
+              </div>
+              <div class="nike__color">
+                <p class="nike__color-text">Tamanho</p>
+                <div class="nike__colors">
+                  <button class="nike__colors-btn--blue">39</button>
+                  <button class="nike__colors-btn--pink">40</button>
+                  <button class="nike__colors-btn--gray">41</button>
+                  <button class="nike__colors-btn--purple">42</button>
+                </div>
+              </div>
+              <button class="nike__buy">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_social">
+            <div class="footer_social-logo">
+              <img
+                class="footer_social-logo--img"
+                src="./logo/logo-white.svg"
+                alt="DigitalStore"
+              />
+              <span class="footer_social-logo--span">Digital Store</span>
+            </div>
+            <p class="footer_social-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="footer_social-wrapper">
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    width="24px"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    stroke="#000000"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-60.000000, -7521.000000)"
+                        fill="#ffffff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                            id="twitter-[#ffffff]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <p class="footer_info-name">Informação</p>
+            <ul class="footer_info-list">
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Sobre Drip Store</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Segurança</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Wishlist</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Trabalhe conosco</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Meus Pedidos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_category">
+            <p class="footer_category-name">Categorias</p>
+            <ul class="footer_category-list">
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Camisetas</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Calças</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Bonés</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Headphones</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Tênis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <p class="footer_contacts-name">Contato</p>
+            <p class="footer_contacts-address">
+              Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+              60150-161
+            </p>
+            <p class="footer_contacts-phone">(85) 3051-3411</p>
+          </div>
+        </div>
+        <p class="footer_copyrights">@ 2022 Digital College</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/nav-links-active.js"></script>
+  </body>
+</html>

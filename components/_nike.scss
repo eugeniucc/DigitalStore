@@ -1,0 +1,184 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.nike {
+  padding-bottom: 8rem;
+  &__wrapper {
+    display: flex;
+    gap: 4rem;
+  }
+  &__swiper {
+    height: 57rem;
+    margin-bottom: 2rem;
+    &-purple {
+      background-color: #e2e3ff;
+    }
+    &-orange {
+      background-color: #ffe8bc;
+    }
+    &-pink {
+      background-color: #ffc0bc;
+    }
+    &-brown {
+      background-color: #dec699;
+    }
+    &-brownie {
+      background-color: #e8dfcf;
+    }
+    &-thumbs--wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-thumbs-content {
+      max-width: 11.7rem;
+      width: 100%;
+      margin-right: 0 !important;
+      border: 0.2rem solid transparent;
+      border-radius: 0.4rem;
+    }
+    &-thumbs--img {
+      display: block;
+      margin: 0 auto;
+      padding: 3rem 0rem;
+    }
+    &-btn--next {
+      height: 5rem;
+      width: 2rem;
+      &::after {
+        content: "";
+      }
+    }
+    &-btn--prev {
+      height: 5rem;
+      width: 2rem;
+      &::after {
+        content: "";
+      }
+    }
+  }
+  &__slider {
+    max-width: 70rem;
+    width: 100%;
+  }
+  &__img {
+    max-width: 100%;
+    width: 100%;
+  }
+  &__content {
+    max-width: 44rem;
+    width: 100%;
+  }
+  &__title {
+    @include title-small-bold-h3;
+  }
+  &__text {
+    @include text-tinny-p;
+    color: #666666;
+    margin: 1rem 0rem;
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  &__stars {
+    display: flex;
+    gap: 0.48rem;
+  }
+  &__review {
+    &-count {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      border-radius: 4px;
+      background: var(--warning, #f6aa1c);
+      padding: 0.1rem 1rem;
+    }
+    &-number {
+      @include review-star-number;
+    }
+  }
+  &__amount {
+    &-reviews {
+      @include text-xsmall-p;
+      color: #8f8f8f;
+    }
+  }
+  &__price {
+    display: flex;
+    margin-bottom: 2.2rem;
+    align-items: flex-end;
+    &-currency {
+      @include text-small-p;
+    }
+    &-actual {
+      @include title-small-h3;
+      font-weight: 700;
+      margin-left: 0.6rem;
+    }
+    &-span {
+      @include text-small-p-bold;
+      margin-right: 1rem;
+    }
+    &-old {
+      @include nike-rev-old-price;
+    }
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    &-title {
+      @include text-small-p-bold;
+      color: #8f8f8f;
+    }
+    &-text {
+      @include text-xsmall-p;
+    }
+  }
+  &__size {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__sizes {
+    display: flex;
+    gap: 1rem;
+    &-btn {
+      width: 4.8rem;
+      height: 4.8rem;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      border: 0.1rem solid #ccc;
+      @include text-small-p-bold;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__color {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.7rem;
+  }
+  &__colors {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.nike__swiper-thumbs-content.active {
+  border: 0.2rem solid #c92071;
+}
+
+.main-nike {
+  background: #f9f8fe;
+}
+
+.nike__sizes-btn.active {
+  border: 0.1rem solid $primary;
+  background: #c92071;
+  color: #fff;
+}
