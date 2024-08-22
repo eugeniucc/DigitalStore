@@ -9,6 +9,7 @@
 @import "../components/market";
 @import "../components/breadcrumb";
 @import "../components/nike";
+@import "../components/relevant";
 
 // MEDIA
 @import "../media-queries/media-header";
@@ -21,6 +22,7 @@
 @import "../media-queries/media-market";
 @import "../media-queries/media-breadcrumb";
 @import "../media-queries/media-nike";
+@import "../media-queries/media-relevant";
 
 // COMPONENT WITH MEDIA
 @import "../media-queries/media-header-mobile";
@@ -50,6 +52,9 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+}
+body.freeze {
+  overflow: hidden;
 }
 
 .container {
