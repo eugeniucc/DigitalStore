@@ -1556,32 +1556,18 @@
     padding: 4.2rem 1.8rem 3.2rem 1.8rem;
   }
 }
-@media (max-width: 1224px) {
+@media (max-width: 1250px) {
   .header_search {
     margin: 0rem 3.8rem 0rem 2.7rem;
   }
   .header_profile-login {
     margin: 0rem 3rem 0rem 3rem;
   }
-}
-@media (max-width: 1176px) {
-  .header_search {
-    max-width: 48rem;
+  .header_profile-register {
+    text-wrap: nowrap;
   }
-}
-@media (max-width: 1096px) {
-  .header_search {
-    max-width: 40rem;
-  }
-}
-@media (max-width: 1024px) {
-  .header_search {
-    max-width: 32rem;
-  }
-}
-@media (max-width: 940px) {
-  .header_search {
-    max-width: 24rem;
+  .header_logo-span {
+    text-wrap: nowrap;
   }
 }
 @media (max-width: 864px) {
@@ -1601,7 +1587,7 @@
     margin: 0;
   }
 }
-@media (max-width: 564px) {
+@media (max-width: 585px) {
   .header_logo {
     flex-direction: column;
     align-items: center;

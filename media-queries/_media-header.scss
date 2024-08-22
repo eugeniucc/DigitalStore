@@ -10,7 +10,7 @@
     padding: 4.2rem 1.8rem 3.2rem 1.8rem;
   }
 }
-@media (max-width: 1224px) {
+@media (max-width: 1250px) {
   .header {
     &_search {
       margin: 0rem 3.8rem 0rem 2.7rem;
@@ -19,34 +19,14 @@
       &-login {
         margin: 0rem 3rem 0rem 3rem;
       }
+      &-register {
+        text-wrap: nowrap;
+      }
     }
-  }
-}
-@media (max-width: 1176px) {
-  .header {
-    &_search {
-      max-width: 48rem;
-    }
-  }
-}
-@media (max-width: 1096px) {
-  .header {
-    &_search {
-      max-width: 40rem;
-    }
-  }
-}
-@media (max-width: $breakpoint-lg) {
-  .header {
-    &_search {
-      max-width: 32rem;
-    }
-  }
-}
-@media (max-width: 940px) {
-  .header {
-    &_search {
-      max-width: 24rem;
+    &_logo {
+      &-span {
+        text-wrap: nowrap;
+      }
     }
   }
 }
@@ -69,7 +49,7 @@
     }
   }
 }
-@media (max-width: 564px) {
+@media (max-width: 585px) {
   .header {
     &_logo {
       flex-direction: column;

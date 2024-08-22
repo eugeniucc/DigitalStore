@@ -9,3 +9,19 @@ burger.addEventListener("click", () => {
   body.classList.toggle("freeze");
   navMenuOverlay.classList.toggle("active");
 });
+
+navMenuOverlay.addEventListener("click", (e) => {
+  burger.classList.remove("active");
+  navMenu.classList.remove("nav-menu-show");
+  body.classList.remove("freeze");
+  navMenuOverlay.classList.remove("active");
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    burger.classList.remove("active");
+    navMenu.classList.remove("nav-menu-show");
+    body.classList.remove("freeze");
+    navMenuOverlay.classList.remove("active");
+  }
+});
