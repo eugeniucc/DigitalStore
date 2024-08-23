@@ -65,6 +65,20 @@
   width: 100%;
   padding: 3rem;
   margin-right: 2.8rem;
+  &__mobile {
+    position: absolute;
+    top: 6.4rem;
+    left: 0;
+    padding: 3rem;
+    background-color: #fff;
+    max-width: 30.8rem;
+    width: 100%;
+    height: calc(100vh - 6.4rem);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    overflow-y: scroll;
+  }
   &_filter {
     display: flex;
     flex-direction: column;
@@ -229,4 +243,8 @@
 }
 .dropdown_store::after {
   display: none;
+}
+.sidebar__mobile.active {
+  z-index: 3;
+  transform: translateX(0);
 }

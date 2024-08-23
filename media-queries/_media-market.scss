@@ -1,2 +1,50 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: 1260px) {
+  .market {
+    padding: 4rem 2rem 14rem 2rem;
+    &_wrapper {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 512px) {
+  .filter-card {
+    background-image: url(../../img/shoes-product-mobile.png) !important;
+    height: 17.9rem;
+    max-width: 16.3rem;
+  }
+  .filter-name {
+    @include text-xsmall-p;
+  }
+  .filter-old {
+    @include text-small-p;
+  }
+  .filter-new {
+    @include text-small-p-bold;
+  }
+  .filter-market-wrapper {
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 428px) {
+  .sidebar {
+    display: none;
+  }
+  .market {
+    padding: 4rem 2rem 12rem 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .filter-wrapper-card {
+    max-width: 13.3rem;
+  }
+  .filter-card {
+    background-position-x: -2rem;
+    background-position-y: 4rem;
+  }
+}

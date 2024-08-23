@@ -1,2 +1,49 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: 1260px) {
+  .products-list {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .products-list {
+    &_wrapper {
+      flex-direction: column-reverse;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    max-width: 100% !important;
+    width: 100% !important;
+    &_store {
+      max-width: 31rem;
+      width: 100%;
+      justify-content: space-around;
+    }
+    &-menu_store {
+      max-width: 31rem;
+    }
+    &_store-text {
+      font-size: 1.3rem;
+    }
+    &_store-span {
+      font-size: 1.3rem;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .dropdown {
+    &_store {
+      gap: 1rem;
+    }
+    &__category {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}

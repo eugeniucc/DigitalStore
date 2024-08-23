@@ -52,6 +52,19 @@
   }
 }
 
+.dropdown {
+  display: flex;
+  gap: 1rem;
+  &__category {
+    border: none;
+    background-color: $primary;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.8rem;
+    display: none;
+  }
+}
+
 .dropdown-all {
   position: relative;
 }
@@ -80,4 +93,20 @@
 
 .dropdown_store {
   padding: 1.2rem 1rem !important;
+}
+
+.sidebar__box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #ccc;
+}
+.sidebar_filter-text--mobile {
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+.sidebar_filter-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

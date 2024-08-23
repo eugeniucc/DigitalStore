@@ -4,23 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- General Metagraph -->
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="DigitalStore" />
     <meta property="og:url" content="www.digitalstore.com" />
     <meta property="og:image" content="./icons/logo.svg" />
     <meta property="og:description" content="Best shoes store in our city." />
-
     <!-- Twitter Metagraph -->
-
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="DigitalStore" />
     <meta name="twitter:site" content="www.digitalstore.com" />
     <meta name="twitter:description" content="Best shoes store in our city." />
     <meta name="twitter:image" content="./icons/logo.svg" />
-
     <!-- Icons in browser  -->
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -39,23 +34,16 @@
       href="./logo/favicon-16x16.png"
     />
     <link rel="manifest" href="./logo/site.webmanifest" />
-
     <!-- MsApp link ! -->
-
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-
     <meta name="msapplication-config" content="./logo/browserconfig.xml" />
-
     <title>Digital Store</title>
-
     <!-- Swiper cdn -->
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <!-- Bootstrap cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -69,9 +57,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
+    <!-- My scripts -->
+    <script defer src="./js/burger-mobile.js"></script>
     <!-- My styles -->
-
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
   </head>
@@ -211,6 +199,118 @@
             <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
           </ul>
         </nav>
+        <div class="header_mobile">
+          <div class="header_mobile-content">
+            <div class="header_mobile-burger">
+              <span id="bar-1"></span>
+              <span id="bar-2"></span>
+              <span id="bar-3"></span>
+            </div>
+            <div class="header_mobile-wrapper">
+              <div class="header_mobile-wrapper--logo">
+                <img
+                  class="header_mobile-wrapper--img"
+                  src="./logo/logo.svg"
+                  alt="Digital Store Logo"
+                />
+                <span class="header_mobile-wrapper--span">Digital Store</span>
+              </div>
+            </div>
+            <div class="header_mobile-cart">
+              <button class="header_mobile-cart--btn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="9.80547"
+                    cy="9.80553"
+                    r="7.49047"
+                    stroke="#CCCCCC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.0153 15.4043L17.9519 18.3334"
+                    stroke="#CCCCCC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <img
+                class="header_mobile-cart--img"
+                src="./icons/cart.svg"
+                alt="Cart"
+              />
+            </div>
+          </div>
+          <div class="header_mobile-search">
+            <input
+              class="header_mobile-search--input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_mobile-search--btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="9.80547"
+                  cy="9.80553"
+                  r="7.49047"
+                  stroke="#CCCCCC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.0153 15.4043L17.9519 18.3334"
+                  stroke="#CCCCCC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav class="header_mobile-nav">
+            <div class="header_mobile-nav--wrapper">
+              <p class="header_mobile-nav--text">Páginas</p>
+              <ul class="header_mobile-nav--list">
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="./products.html"
+                    >Produtos</a
+                  >
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="#">Categorias</a>
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_mobile-nav--content">
+              <button class="header_mobile-nav--login">Entrar</button>
+              <button class="header_mobile-nav--register">Cadastre-se</button>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <section class="products-list">
@@ -263,6 +363,23 @@
                 <a class="dropdown-item dropdown-item_store" href="#">Estado</a>
               </li>
             </ul>
+            <button class="dropdown__category">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+              >
+                <path
+                  d="M24.7858 1.25H1.21436L10.6429 13.075V21.25L15.3572 23.75V13.075L24.7858 1.25Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
           <div class="dropdown-wrapper">
             <div class="dropdown-options" data-value="option1">
@@ -505,15 +622,15 @@
               </div>
             </div>
           </div>
-          <div class="market_wrapper">
-            <div class="products_wrapper-card">
+          <div class="market_wrapper filter-market-wrapper">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 >
                   <p class="products_wrapper-card--discount">30% OFF</p>
@@ -521,23 +638,23 @@
               >
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 >
                   <p class="products_wrapper-card--discount">30% OFF</p>
@@ -545,232 +662,232 @@
               >
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card filter-wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
                 target="_blank"
               >
                 <div
-                  class="products_wrapper-content"
+                  class="products_wrapper-content filter-card"
                   style="background-image: url(./img/shoes-products.png)"
                 ></div
               ></a>
               <div class="products_wrapper-details">
                 <p class="products_wrapper-card--category">Tênis</p>
-                <p class="products_wrapper-card--name">
+                <p class="products_wrapper-card--name filter-name">
                   K-Swiss V8 - Masculino
                 </p>
                 <div class="products_wrapper-price">
-                  <p class="products_wrapper-price--old">$200</p>
-                  <p class="products_wrapper-price--new">$100</p>
+                  <p class="products_wrapper-price--old filter-old">$200</p>
+                  <p class="products_wrapper-price--new filter-new">$100</p>
                 </div>
               </div>
             </div>
@@ -948,6 +1065,200 @@
         <p class="footer_copyrights">@ 2022 Digital College</p>
       </div>
     </footer>
+    <div class="sidebar__mobile">
+      <div class="sidebar_filter">
+        <div class="sidebar__box">
+          <p class="sidebar_filter-text sidebar_filter-text--mobile">
+            Filtrar por
+          </p>
+          <button class="sidebar_filter-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                d="M1 1L13 13"
+                stroke="#474747"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M13 1L1 13"
+                stroke="#474747"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar_brand">
+          <p class="sidebar_brand-text">Marka</p>
+          <ul class="sidebar_brand-list">
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="brand-1-mobile"
+              />
+              <label class="sidebar_brand-label" for="brand-1-mobile"
+                >Adiddas</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="brand-2-mobile"
+              />
+              <label class="sidebar_brand-label" for="brand-2-mobile"
+                >Calenciaga</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="brand-3-mobile"
+              />
+              <label class="sidebar_brand-label" for="brand-3-mobile"
+                >K-Swiss</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="brand-4-mobile"
+              />
+              <label class="sidebar_brand-label" for="brand-4-mobile"
+                >Nike</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="brand-5-mobile"
+              />
+              <label class="sidebar_brand-label" for="brand-5-mobile"
+                >Puma</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar_category">
+          <p class="sidebar_category-text">Categoria</p>
+          <ul class="sidebar_brand-list">
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="category-1-mobile"
+              />
+              <label class="sidebar_brand-label" for="category-1-mobile"
+                >Esporte e lazer</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="category-2-mobile"
+              />
+              <label class="sidebar_brand-label" for="category-2-mobile"
+                >Casual</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="category-3-mobile"
+              />
+              <label class="sidebar_brand-label" for="category-3-mobile"
+                >Utilitário</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="category-4-mobile"
+              />
+              <label class="sidebar_brand-label" for="category-4-mobile"
+                >Corrida</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar_gender">
+          <p class="sidebar_gender-text">Gênero</p>
+          <ul class="sidebar_brand-list">
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="gender-1-mobile"
+              />
+              <label class="sidebar_brand-label" for="gender-1-mobile"
+                >Masculino</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="gender-2-mobile"
+              />
+              <label class="sidebar_brand-label" for="gender-2-mobile"
+                >Feminino</label
+              >
+            </li>
+            <li class="sidebar_brand-item">
+              <input
+                class="sidebar_brand-checkbox"
+                type="checkbox"
+                id="gender-3-mobile"
+              />
+              <label class="sidebar_brand-label" for="gender-3-mobile"
+                >Unisex</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar_state">
+          <p class="sidebar_state-text">Estado</p>
+          <ul class="sidebar_state-list">
+            <li class="sidebar_state-item">
+              <input
+                class="sidebar_state-checkbox"
+                type="radio"
+                id="state-1-mobile"
+                name="radio-group"
+              />
+              <label class="sidebar_state-label" for="state-1-mobile"
+                >Novo</label
+              >
+            </li>
+            <li class="sidebar_state-item">
+              <input
+                class="sidebar_state-checkbox"
+                type="radio"
+                id="state-2-mobile"
+                name="radio-group"
+              />
+              <label class="sidebar_state-label" for="state-2-mobile"
+                >Usado</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__mobile-nav--overlay"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/nav-links-active.js"></script>
   </body>
