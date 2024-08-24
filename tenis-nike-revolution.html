@@ -346,7 +346,7 @@
                   >Nike</a
                 >
               </li>
-              <li class="breadcrumb-item breadcrumb-item-last">
+              <li class="breadcrumb-item-last">
                 Tênis Nike Revolution 6 Next Nature Masculino
               </li>
             </ol>
@@ -359,34 +359,84 @@
             <div class="nike__slider">
               <div class="swiper nike__swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide nike__swiper-purple">
+                  <div
+                    class="swiper-slide nike__swiper-present--mobile nike__swiper-purple"
+                  >
                     <img
                       class="nike__img"
                       src="./img/nike-air-presentation.png"
+                      alt="Nike Revolution"
+                      loading="eager"
+                    />
+                    <img
+                      class="nike__img-mobile"
+                      src="./img/nike-air-presentation-mobile.png"
+                      alt="Nike Revolution"
+                      loading="eager"
                     />
                   </div>
-                  <div class="swiper-slide nike__swiper-orange">
+                  <div
+                    class="swiper-slide nike__swiper-present--mobile nike__swiper-orange"
+                  >
                     <img
                       class="nike__img"
                       src="./img/nike-air-presentation.png"
+                      alt="Nike Revolution"
+                      loading="eager"
+                    />
+                    <img
+                      class="nike__img-mobile"
+                      src="./img/nike-air-presentation-mobile.png"
+                      alt="Nike Revolution"
+                      loading="eager"
                     />
                   </div>
-                  <div class="swiper-slide nike__swiper-pink">
+                  <div
+                    class="swiper-slide nike__swiper-present--mobile nike__swiper-pink"
+                  >
                     <img
                       class="nike__img"
                       src="./img/nike-air-presentation.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__img-mobile"
+                      src="./img/nike-air-presentation-mobile.png"
+                      alt="Nike Revolution"
+                      loading="eager"
                     />
                   </div>
-                  <div class="swiper-slide nike__swiper-brown">
+                  <div
+                    class="swiper-slide nike__swiper-present--mobile nike__swiper-brown"
+                  >
                     <img
                       class="nike__img"
                       src="./img/nike-air-presentation.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__img-mobile"
+                      src="./img/nike-air-presentation-mobile.png"
+                      alt="Nike Revolution"
+                      loading="eager"
                     />
                   </div>
-                  <div class="swiper-slide nike__swiper-brownie">
+                  <div
+                    class="swiper-slide nike__swiper-present--mobile nike__swiper-brownie"
+                  >
                     <img
                       class="nike__img"
                       src="./img/nike-air-presentation.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__img-mobile"
+                      src="./img/nike-air-presentation-mobile.png"
+                      alt="Nike Revolution"
+                      loading="eager"
                     />
                   </div>
                 </div>
@@ -431,6 +481,14 @@
                     <img
                       class="nike__swiper-thumbs--img"
                       src="./img/nike-revolution-small.png"
+                      alt="Nike Revolution"
+                      loading="eager"
+                    />
+                    <img
+                      class="nike__swiper-thumbs--img-mobile"
+                      src="./img/ike-revolution-small-mobile.png"
+                      alt="Nike Revolution"
+                      loading="eager"
                     />
                   </div>
                   <div
@@ -439,6 +497,14 @@
                     <img
                       class="nike__swiper-thumbs--img"
                       src="./img/nike-revolution-small.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__swiper-thumbs--img-mobile"
+                      src="./img/ike-revolution-small-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
                     />
                   </div>
                   <div
@@ -447,6 +513,14 @@
                     <img
                       class="nike__swiper-thumbs--img"
                       src="./img/nike-revolution-small.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__swiper-thumbs--img-mobile"
+                      src="./img/ike-revolution-small-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
                     />
                   </div>
                   <div
@@ -455,6 +529,14 @@
                     <img
                       class="nike__swiper-thumbs--img"
                       src="./img/nike-revolution-small.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__swiper-thumbs--img-mobile"
+                      src="./img/ike-revolution-small-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
                     />
                   </div>
                   <div
@@ -463,6 +545,14 @@
                     <img
                       class="nike__swiper-thumbs--img"
                       src="./img/nike-revolution-small.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <img
+                      class="nike__swiper-thumbs--img-mobile"
+                      src="./img/ike-revolution-small-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -680,7 +770,12 @@
                   </button>
                 </div>
               </div>
-              <button class="nike__buy">Comprar</button>
+              <button
+                onclick="window.open('nike-cart.html', '_blank')"
+                class="nike__buy"
+              >
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -711,7 +806,7 @@
               </span>
             </a>
           </div>
-          <div class="products_wrapper">
+          <div class="products_wrapper nike__products">
             <div class="products_wrapper-card">
               <a
                 href="./tenis-nike-revolution.html"
@@ -760,7 +855,7 @@
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card nike__products-card--mobile">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"
@@ -782,7 +877,7 @@
                 </div>
               </div>
             </div>
-            <div class="products_wrapper-card">
+            <div class="products_wrapper-card nike__products-card--mobile">
               <a
                 href="./tenis-nike-revolution.html"
                 class="products_wrapper-card--link"

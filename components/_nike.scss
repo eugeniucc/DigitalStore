@@ -40,6 +40,9 @@
       display: block;
       margin: 0 auto;
       padding: 3rem 0rem;
+      &-mobile {
+        display: none;
+      }
     }
     &-btn--next {
       height: 5rem;
@@ -63,6 +66,9 @@
   &__img {
     max-width: 100%;
     width: 100%;
+    &-mobile {
+      display: none;
+    }
   }
   &__content {
     max-width: 44rem;
@@ -173,7 +179,6 @@
   }
   &__colors {
     display: flex;
-    gap: 1rem;
     &-btn {
       width: 4rem;
       height: 4rem;

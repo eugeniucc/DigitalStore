@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   padding: 2rem 0rem 4rem 0rem;
+  margin-bottom: 0;
 }
 .breadcrumb-link {
   @include text-xsmall-p;
@@ -24,4 +25,11 @@
 
 .breadcrumb-item::before {
   font-size: 1.6rem;
+}
+
+.breadcrumb-item-last {
+  padding-left: 0.7rem;
+  &::before {
+    content: "/";
+  }
 }

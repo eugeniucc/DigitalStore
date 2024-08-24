@@ -1236,6 +1236,7 @@
   display: flex;
   align-items: center;
   padding: 2rem 0rem 4rem 0rem;
+  margin-bottom: 0;
 }
 
 .breadcrumb-link {
@@ -1280,6 +1281,13 @@
   font-size: 1.6rem;
 }
 
+.breadcrumb-item-last {
+  padding-left: 0.7rem;
+}
+.breadcrumb-item-last::before {
+  content: "/";
+}
+
 .nike {
   padding-bottom: 8rem;
 }
@@ -1322,6 +1330,9 @@
   margin: 0 auto;
   padding: 3rem 0rem;
 }
+.nike__swiper-thumbs--img-mobile {
+  display: none;
+}
 .nike__swiper-btn--next {
   height: 5rem;
   width: 2rem;
@@ -1343,6 +1354,9 @@
 .nike__img {
   max-width: 100%;
   width: 100%;
+}
+.nike__img-mobile {
+  display: none;
 }
 .nike__content {
   max-width: 44rem;
@@ -1542,7 +1556,6 @@
 }
 .nike__colors {
   display: flex;
-  gap: 1rem;
 }
 .nike__colors-btn {
   width: 4rem;
@@ -1594,7 +1607,236 @@
 }
 
 .relevant {
-  margin-bottom: 12.7rem;
+  padding-bottom: 12.7rem;
+}
+
+.order {
+  background: #f9f8fe;
+  padding: 8rem 0rem 5rem 0rem;
+}
+.order__wrapper {
+  padding: 3rem;
+  background-color: #fff;
+  max-width: 89rem;
+  width: 100%;
+}
+.order__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #cccccc;
+  margin-bottom: 2rem;
+}
+.order__content-title {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.01rem;
+}
+.order__content-sort {
+  display: flex;
+  gap: 6.3rem;
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+}
+.order__descr {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #cccccc;
+  margin-bottom: 2rem;
+}
+.order__items {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.order__items-wrapper {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+.order__items-less, .order__items-more, .order__items-remove {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.order__items-remove {
+  color: var(--dark-gray-2, #474747);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 233.333% */
+  letter-spacing: 0.75px;
+  text-decoration-line: underline;
+}
+.order__items-default {
+  color: var(--dark-gray-2, #474747);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 11.667px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17.5px; /* 150% */
+  letter-spacing: 0.547px;
+}
+.order__box {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.order__title {
+  max-width: 22rem;
+  width: 100%;
+}
+.order__title-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.order__title-item {
+  display: flex;
+  gap: 1rem;
+}
+.order__title-text {
+  color: var(--dark-gray, #1f1f1f);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.75px;
+}
+.order__title-color, .order__title-size {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+  color: #8f8f8f;
+}
+.order__title-colors, .order__title-size--number {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+}
+.order__amount {
+  display: flex;
+  gap: 3.1rem;
+}
+.order__single, .order__total {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.order__single-old, .order__total-old {
+  color: var(--light-gray-2, #ccc);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 200% */
+  letter-spacing: 0.75px;
+  text-decoration: line-through;
+}
+.order__single-actual, .order__total-actual {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+}
+.order__special {
+  display: flex;
+  justify-content: space-between;
+}
+.order__coupon, .order__taxes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 39.5rem;
+  width: 100%;
+}
+.order__coupon-wrapper, .order__taxes-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.order__coupon-input, .order__taxes-input {
+  outline: none;
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+  opacity: 0.6;
+  max-width: 27rem;
+  width: 100%;
+  padding: 1.6rem 0rem 1.6rem 1.2rem;
+  border-radius: 0.8rem;
+  border: none;
+  background: rgba(71, 71, 71, 0.04);
+}
+.order__coupon-btn, .order__taxes-btn {
+  border: none;
+  background: rgba(71, 71, 71, 0.04);
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0.01rem;
+  color: #c92071;
+  text-transform: uppercase;
+  max-width: 11.4rem;
+  width: 100%;
+  cursor: pointer;
+}
+.order__coupon-text, .order__taxes-text {
+  color: #1f1f1f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.01rem;
+}
+.order__cover {
+  display: flex;
+  gap: 1.6rem;
 }
 
 .header_wrapper-tablet {
@@ -1859,6 +2101,15 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .products_trending {
+    padding: 0rem 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 468px) {
+  .products_trending-text {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 428px) {
   .products {
@@ -1941,6 +2192,9 @@
   }
   .products_wrapper-details {
     padding: 1.8rem 0rem 2rem 0rem;
+  }
+  .nike__products-card--mobile {
+    display: none;
   }
 }
 @media (max-width: 375px) {
@@ -2029,92 +2283,30 @@
 }
 @media (max-width: 1260px) {
   .footer_wrapper {
-    padding: 0rem 1.8rem 3.4rem 1.8rem;
-    width: 90%;
+    padding: 0rem 2rem 3.4rem 2rem;
     flex-wrap: wrap;
-    justify-content: unset;
-    gap: 5rem;
+    gap: 3rem;
   }
 }
-@media (max-width: 1260px) {
+@media (max-width: 428px) {
   .footer {
-    padding: 5rem 0rem 4.6rem 0rem;
+    padding: 4rem 0rem 4.6rem 0rem;
   }
-  .footer_social-logo {
-    align-items: center;
+  .footer_wrapper {
+    max-width: 30.7rem;
+    margin: 0 auto;
   }
-  .footer_social-logo--img {
-    width: 2.2rem;
-    height: 2.2rem;
+  .footer_contacts {
+    max-width: 28.1rem;
   }
   .footer_social-logo--span {
-    color: #ffffff;
-    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-family: Inter;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: -0.02rem;
-  }
-  .footer_social-text {
-    padding: 2rem 0rem 3rem 0rem;
-    color: #1f1f1f;
-    font-feature-settings: "clig" off, "liga" off;
-    font-family: "Inter", sans-serif;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2.2rem;
-    letter-spacing: 0.025rem;
-    color: #ffffff;
-  }
-  .footer_social-wrapper {
-    gap: 3.2rem;
-  }
-  .footer_wrapper {
-    width: 100%;
-    max-width: 36rem;
-    gap: 4rem;
-  }
-  .footer_info {
-    font-size: 1.6rem;
-    line-height: 3.1rem;
-  }
-  .footer_info-name {
-    padding-bottom: 1rem;
-  }
-  .footer_category {
-    font-size: 1.6rem;
-    line-height: 3.1rem;
-  }
-  .footer_category-name {
-    padding-bottom: 1rem;
-  }
-  .footer_contacts {
-    font-size: 1.6rem;
-    line-height: 3.1rem;
-    max-width: 28.1rem;
-  }
-  .footer_contacts-name {
-    padding-bottom: 1rem;
-  }
-}
-@media (max-width: 375px) {
-  .footer_wrapper {
-    max-width: 32rem;
-    gap: 3rem;
-  }
-}
-@media (max-width: 340px) {
-  .footer_wrapper {
-    max-width: 31rem;
-    gap: 3rem;
-  }
-}
-@media (max-width: 320px) {
-  .footer_wrapper {
-    max-width: 30rem;
-    gap: 3rem;
+    letter-spacing: -0.2rem;
   }
 }
 @media (max-width: 1260px) {
@@ -2229,10 +2421,143 @@
     padding: 0rem 2rem;
   }
 }
-@media (max-width: 590px) {
+@media (max-width: 655px) {
+  .breadcrumb-item-last {
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 660px) {
+  .breadcrumb-item-last {
+    padding: 0rem 10rem 0rem 0rem;
+  }
   .breadcrumb-item-last::before {
     content: "" !important;
-    padding: 0 !important;
+  }
+}
+@media (max-width: 578px) {
+  .breadcrumb-item-last {
+    padding: 0rem;
+  }
+}
+@media (max-width: 428px) {
+  .breadcrumb {
+    padding: 0;
+    margin: 2rem 0rem;
+  }
+  .breadcrumb-link {
+    color: #1f1f1f;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+  .breadcrumb-link-first {
+    color: #1f1f1f;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+  }
+  .breadcrumb-link-last {
+    color: #1f1f1f;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+  }
+}
+@media (max-width: 1260px) {
+  .nike {
+    padding: 0rem 2rem 8rem 2rem;
+  }
+}
+@media (max-width: 1082px) {
+  .nike__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nike__content {
+    max-width: 70rem;
+  }
+}
+@media (max-width: 768px) {
+  .nike__swiper {
+    height: 45rem;
+  }
+}
+@media (max-width: 658px) {
+  .nike__swiper-thumbs--wrapper {
+    gap: 0.9rem;
+  }
+  .nike__products {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 530px) {
+  .nike__swiper {
+    height: 35rem;
+  }
+}
+@media (max-width: 428px) {
+  .nike__products {
+    padding: 0rem;
+  }
+  .nike__img {
+    display: none;
+  }
+  .nike__img-mobile {
+    display: block;
+  }
+  .nike__swiper {
+    height: 33.5rem;
+  }
+  .nike__swiper-present--mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nike__swiper-btn--next, .nike__swiper-btn--prev {
+    width: 1.4rem;
+  }
+  .nike__swiper-thumbs--img {
+    display: none;
+  }
+  .nike__swiper-thumbs--img-mobile {
+    display: block;
+  }
+  .nike__swiper-thumbs-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 0.8rem;
+  }
+  .nike__title {
+    font-size: 2.4rem;
+  }
+  .nike__size {
+    margin-bottom: 3rem;
+  }
+  .nike__color {
+    margin-bottom: 4.8rem;
+  }
+  .nike__buy {
+    max-width: 100%;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 428px) {
+  .relevant {
+    padding-bottom: 8rem;
   }
 }
 .header_mobile {

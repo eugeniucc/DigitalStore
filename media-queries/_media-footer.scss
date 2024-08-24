@@ -4,89 +4,31 @@
 @media (max-width: $breakpoint-xl) {
   .footer {
     &_wrapper {
-      padding: 0rem 1.8rem 3.4rem 1.8rem;
-      width: 90%;
+      padding: 0rem 2rem 3.4rem 2rem;
       flex-wrap: wrap;
-      justify-content: unset;
-      gap: 5rem;
+      gap: 3rem;
     }
   }
 }
 
-@media (max-width: $breakpoint-xl) {
+@media (max-width: 428px) {
   .footer {
-    padding: 5rem 0rem 4.6rem 0rem;
-    &_social {
-      &-logo {
-        align-items: center;
-        &--img {
-          width: 2.2rem;
-          height: 2.2rem;
-        }
-        &--span {
-          @include font-footer-mobile;
-        }
-      }
-      &-text {
-        padding: 2rem 0rem 3rem 0rem;
-        @include text-xsmall-p;
-        color: $white;
-      }
-      &-wrapper {
-        gap: 3.2rem;
-      }
-    }
+    padding: 4rem 0rem 4.6rem 0rem;
     &_wrapper {
-      width: 100%;
-      max-width: 36rem;
-      gap: 4rem;
-    }
-    &_info {
-      font-size: 1.6rem;
-      line-height: 3.1rem;
-      &-name {
-        padding-bottom: 1rem;
-      }
-    }
-    &_category {
-      font-size: 1.6rem;
-      line-height: 3.1rem;
-      &-name {
-        padding-bottom: 1rem;
-      }
+      max-width: 30.7rem;
+      margin: 0 auto;
     }
     &_contacts {
-      font-size: 1.6rem;
-      line-height: 3.1rem;
       max-width: 28.1rem;
-      &-name {
-        padding-bottom: 1rem;
-      }
     }
   }
-}
-@media (max-width: $breakpoint-smM) {
-  .footer {
-    &_wrapper {
-      max-width: 32rem;
-      gap: 3rem;
-    }
-  }
-}
-@media (max-width: 340px) {
-  .footer {
-    &_wrapper {
-      max-width: 31rem;
-      gap: 3rem;
-    }
-  }
-}
-
-@media (max-width: $breakpoint-smS) {
-  .footer {
-    &_wrapper {
-      max-width: 30rem;
-      gap: 3rem;
-    }
+  .footer_social-logo--span {
+    color: #fff;
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.2rem;
   }
 }

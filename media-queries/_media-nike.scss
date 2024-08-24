@@ -1,2 +1,93 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: 1260px) {
+  .nike {
+    padding: 0rem 2rem 8rem 2rem;
+  }
+}
+@media (max-width: 1082px) {
+  .nike {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content {
+      max-width: 70rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .nike {
+    &__swiper {
+      height: 45rem;
+    }
+  }
+}
+@media (max-width: 658px) {
+  .nike {
+    &__swiper-thumbs--wrapper {
+      gap: 0.9rem;
+    }
+    &__products {
+      padding: 0rem 2rem;
+    }
+  }
+}
+@media (max-width: 530px) {
+  .nike {
+    &__swiper {
+      height: 35rem;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .nike {
+    &__products {
+      padding: 0rem;
+    }
+    &__img {
+      display: none;
+      &-mobile {
+        display: block;
+      }
+    }
+    &__swiper {
+      height: 33.5rem;
+    }
+    &__swiper-present--mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__swiper-btn--next,
+    &__swiper-btn--prev {
+      width: 1.4rem;
+    }
+    &__swiper-thumbs--img {
+      display: none;
+      &-mobile {
+        display: block;
+      }
+    }
+    &__swiper-thumbs-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.6rem 0.8rem;
+    }
+    &__title {
+      font-size: 2.4rem;
+    }
+    &__size {
+      margin-bottom: 3rem;
+    }
+    &__color {
+      margin-bottom: 4.8rem;
+    }
+    &__buy {
+      max-width: 100%;
+      text-transform: uppercase;
+    }
+  }
+}
