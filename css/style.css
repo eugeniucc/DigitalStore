@@ -1948,7 +1948,7 @@
     max-width: 16.3rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .products_wrapper-card {
     max-width: 13.3rem;
   }
@@ -2222,6 +2222,17 @@
   .filter-card {
     background-position-x: -2rem;
     background-position-y: 4rem;
+  }
+}
+@media (max-width: 1260px) {
+  .breadcrumbs {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 590px) {
+  .breadcrumb-item-last::before {
+    content: "" !important;
+    padding: 0 !important;
   }
 }
 .header_mobile {

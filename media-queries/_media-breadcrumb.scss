@@ -1,2 +1,16 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: 1260px) {
+  .breadcrumbs {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 590px) {
+  .breadcrumb-item-last {
+    &::before {
+      content: "" !important;
+      padding: 0 !important;
+    }
+  }
+}

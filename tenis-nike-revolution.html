@@ -44,7 +44,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
     <!-- Bootstrap cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -63,6 +66,9 @@
     <script defer src="./js/nike-thumbs.js"></script>
     <script defer src="./js/nav-links-active.js"></script>
     <script defer src="./js/nike-rev.js"></script>
+    <script defer src="./js/burger-mobile.js"></script>
+    <script defer src="./js/nav-links-active.js"></script>
+    <script defer src="./js/search-mobile.js"></script>
     <!-- My styles -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -206,6 +212,116 @@
             <li><a href="#" class="header_nav-links">Categorias</a></li>
             <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
           </ul>
+        </nav>
+      </div>
+      <div class="header_mobile">
+        <div class="header_mobile-content">
+          <div class="header_mobile-burger">
+            <span id="bar-1"></span>
+            <span id="bar-2"></span>
+            <span id="bar-3"></span>
+          </div>
+          <div class="header_mobile-wrapper">
+            <div class="header_mobile-wrapper--logo">
+              <img
+                class="header_mobile-wrapper--img"
+                src="./logo/logo.svg"
+                alt="Digital Store Logo"
+              />
+              <span class="header_mobile-wrapper--span">Digital Store</span>
+            </div>
+          </div>
+          <div class="header_mobile-cart">
+            <button class="header_mobile-cart--btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="9.80547"
+                  cy="9.80553"
+                  r="7.49047"
+                  stroke="#CCCCCC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.0153 15.4043L17.9519 18.3334"
+                  stroke="#CCCCCC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <img
+              class="header_mobile-cart--img"
+              src="./icons/cart.svg"
+              alt="Cart"
+            />
+          </div>
+        </div>
+        <div class="header_mobile-search">
+          <input
+            class="header_mobile-search--input"
+            type="text"
+            placeholder="Pesquisar produto..."
+          />
+          <button class="header_mobile-search--btn">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="9.80547"
+                cy="9.80553"
+                r="7.49047"
+                stroke="#CCCCCC"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.0153 15.4043L17.9519 18.3334"
+                stroke="#CCCCCC"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav class="header_mobile-nav">
+          <div class="header_mobile-nav--wrapper">
+            <p class="header_mobile-nav--text">Páginas</p>
+            <ul class="header_mobile-nav--list">
+              <li class="header_mobile-nav--item">
+                <a class="header_mobile-nav--links" href="./index.html">Home</a>
+              </li>
+              <li class="header_mobile-nav--item">
+                <a class="header_mobile-nav--links" href="./products.html"
+                  >Produtos</a
+                >
+              </li>
+              <li class="header_mobile-nav--item">
+                <a class="header_mobile-nav--links" href="#">Categorias</a>
+              </li>
+              <li class="header_mobile-nav--item">
+                <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header_mobile-nav--content">
+            <button class="header_mobile-nav--login">Entrar</button>
+            <button class="header_mobile-nav--register">Cadastre-se</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -862,7 +978,6 @@
         <p class="footer_copyrights">@ 2022 Digital College</p>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/nav-links-active.js"></script>
+    <div class="header__mobile-nav--overlay"></div>
   </body>
 </html>
