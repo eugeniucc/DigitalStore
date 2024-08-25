@@ -1,0 +1,27 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .relatives {
+    &_wrapper {
+      margin: 0rem 2rem;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width: 896px) {
+  .relatives {
+    padding-bottom: 5rem;
+    &_wrapper {
+      margin: 0rem 2rem;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      &-card {
+        max-width: 21.4rem;
+        width: 100%;
+      }
+    }
+  }
+}

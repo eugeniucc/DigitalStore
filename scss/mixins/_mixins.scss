@@ -693,3 +693,13 @@
   text-decoration-line: strikethrough;
   text-decoration: line-through;
 }
+@mixin medium-bold {
+  color: var(--dark-gray, #1f1f1f);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: 0.075rem;
+}

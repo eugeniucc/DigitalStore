@@ -10,7 +10,6 @@
 @media (max-width: $breakpoint-smL) {
   .header {
     position: relative;
-    z-index: 4;
     background: #fff;
     padding: 2rem;
     &_mobile {
@@ -228,4 +227,3 @@
   display: block;
   z-index: 2;
 }
-

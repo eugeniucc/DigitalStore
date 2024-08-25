@@ -8,6 +8,12 @@ burger.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu-show");
   body.classList.toggle("freeze");
   navMenuOverlay.classList.toggle("active");
+  if (cartWrapperMobile.classList.contains("active")) {
+    cartWrapperMobile.classList.remove("active");
+  }
+  if (searchContent.classList.contains("search_mobile-show")) {
+    searchContent.classList.remove("search_mobile-show");
+  }
 });
 
 navMenuOverlay.addEventListener("click", (e) => {

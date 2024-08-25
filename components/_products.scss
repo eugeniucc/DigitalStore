@@ -11,7 +11,7 @@
     justify-content: space-between;
     padding-bottom: 2rem;
     &-text {
-      @include text-large-p;
+      @include text-large-p-bold;
     }
     &-all {
       @include text-medium-p;

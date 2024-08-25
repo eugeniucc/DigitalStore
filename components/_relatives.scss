@@ -1,0 +1,64 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.relatives {
+  padding-bottom: 14.2rem;
+  background: #f9f8fe;
+  &__content {
+    max-width: 89rem;
+    width: 100%;
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      max-width: calc(25% - 1.2rem);
+      &--discount {
+        padding: 0.5rem 1.5rem;
+        @include text-xsmall-p-bold;
+        border-radius: 2.9rem;
+        background: #e7ff86;
+        max-width: 9.6rem;
+        margin-bottom: 1.5rem;
+      }
+      &--link {
+        text-decoration: none;
+      }
+      &--category {
+        @include text-tinny-p-bold;
+        color: $light-gray;
+      }
+      &--name {
+        @include text-small-p;
+      }
+    }
+    &-content {
+      background-color: #fff;
+      padding: 2rem 2rem 4.2rem 2rem;
+    }
+    &-no-discount {
+      padding: 5.4rem 2rem 5.5rem 2rem;
+    }
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    &-price {
+      display: flex;
+      gap: 1.4rem;
+      &--old {
+        @include text-small-p;
+        color: $light-gray;
+        text-decoration: line-through;
+      }
+      &--new {
+        @include text-small-p-bold;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}

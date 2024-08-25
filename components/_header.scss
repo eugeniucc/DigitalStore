@@ -46,6 +46,7 @@
   &_profile {
     display: flex;
     align-items: center;
+    position: relative;
     &-register {
       @include text-small-p;
       text-decoration: underline;
@@ -59,8 +60,41 @@
   }
   &_cart {
     cursor: pointer;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    &-tablet,
+    &-mobile {
+      cursor: pointer;
+      width: 1.8rem;
+      height: 1.8rem;
+      position: relative;
+    }
     &-img {
       display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+    &-amount {
+      position: absolute;
+      content: "";
+      width: 1.7rem;
+      height: 1.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $error;
+      top: -0.9rem;
+      right: -1rem;
+      color: var(--white, #fff);
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px; /* 150% */
+      letter-spacing: 0.5px;
     }
   }
   &_nav {
@@ -81,6 +115,132 @@
       }
     }
   }
+  &__cart {
+    &-desktop,
+    &-tablet {
+      position: absolute;
+      content: "";
+      top: 100%;
+      right: 0;
+      padding: 3rem;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    &-mobile {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      padding: 3rem;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      max-width: 31.5rem;
+      width: 100%;
+    }
+    &-title {
+      @include text-small-p-bold;
+      padding-bottom: 2rem;
+      border-bottom: 0.1rem solid #ccc;
+      margin-bottom: 2rem;
+    }
+    &-box {
+      display: flex;
+      gap: 2rem;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      max-width: 16.7rem;
+      width: 100%;
+      &-title {
+        color: var(--dark-gray, #1f1f1f);
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.75px;
+      }
+    }
+    &-block {
+      display: flex;
+      gap: 1rem;
+      &--actual {
+        @include text-small-p-bold;
+        line-height: 2.8rem;
+      }
+      &--old {
+        @include text-small-p;
+        font-size: 1.2rem;
+        color: #ccc;
+        text-decoration: line-through;
+      }
+    }
+    &-img {
+      display: flex;
+      align-self: baseline;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 0.1rem solid #ccc;
+    }
+    &-total {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      &--item {
+        display: flex;
+        justify-content: space-between;
+      }
+      &--remove {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--dark-gray-2, #474747);
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.25px;
+        text-decoration-line: underline;
+      }
+      &--check {
+        cursor: pointer;
+        border-radius: 0.8rem;
+        border: none;
+        background-color: $primary;
+        @include text-small-p-bold;
+        color: #fff;
+        max-width: 12.7rem;
+        width: 100%;
+        min-height: 4rem;
+        @include primaryButtonHover;
+      }
+      &-text {
+        @include text-small-p-bold;
+      }
+      &-amount {
+        @include text-small-p-bold;
+        color: $error;
+      }
+    }
+  }
 }
 
 .nike__revolution-header {
@@ -90,4 +250,19 @@
   letter-spacing: 0.15rem;
   font-size: 1.6rem;
   color: $primary;
+}
+
+.header__cart-desktop.active {
+  z-index: 4;
+  opacity: 1;
+}
+.header__cart-tablet.active {
+  z-index: 4;
+  opacity: 1;
+}
+.header__cart-mobile.active {
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 4;
+  opacity: 1;
 }

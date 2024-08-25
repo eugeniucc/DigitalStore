@@ -1,2 +1,177 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .order {
+    padding: 8rem 2rem 5rem 2rem;
+    &__special {
+      gap: 1.5rem;
+    }
+  }
+}
+@media (max-width: 1168px) {
+  .order {
+    &__single,
+    &__total {
+      &-actual {
+        text-align: center;
+      }
+    }
+    &__content {
+      &-sort {
+        gap: 5.3rem;
+      }
+    }
+  }
+}
+@media (max-width: 1168px) {
+  .order {
+    &__content {
+      &-sort {
+        gap: 4.3rem;
+      }
+    }
+    &__title-list {
+      padding-right: 1rem;
+    }
+  }
+}
+@media (max-width: 892px) {
+  .order {
+    &__cover {
+      flex-direction: column;
+    }
+    &__summary {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .order {
+    padding: 5rem 2rem;
+    &__box {
+      justify-content: center;
+    }
+    &__content-sort {
+      display: none;
+    }
+    &__descr {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__amount {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__single,
+    &__total {
+      flex-direction: row;
+      gap: 1rem;
+    }
+    &__total-actual {
+      line-height: 2.8rem;
+    }
+    &__single-mobile--text {
+      display: block;
+      @include text-xsmall-p;
+      line-height: 2.8rem;
+    }
+  }
+}
+@media (max-width: 654px) {
+  .order {
+    &__special {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .order {
+    padding: 5rem 3rem 12.3rem 3rem;
+    &__descr {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    &__coupon,
+    &__taxes,
+    &__summary {
+      display: none;
+      &-mobile {
+        padding: 3rem;
+        display: block;
+        border-radius: 0.4rem;
+        background: #fff;
+      }
+    }
+    &__coupon,
+    &__taxes {
+      &-wrapper {
+        flex-direction: column;
+      }
+      &-input {
+        max-width: 100%;
+      }
+      &-btn {
+        max-width: 100%;
+        min-height: 6rem;
+      }
+    }
+    &__title-list {
+      padding-right: 0;
+    }
+    &__img {
+      display: none;
+      &-mobile {
+        display: flex;
+        align-self: flex-start;
+      }
+    }
+    &__amount,
+    &__items {
+      align-items: unset;
+    }
+    &__single,
+    &__total {
+      justify-content: space-between;
+      &-mobile {
+        display: block;
+        padding: 3rem;
+      }
+    }
+    &__items {
+      &-wrapper {
+        justify-content: space-between;
+      }
+      &-less,
+      &-more {
+        &-span {
+          display: none;
+          &--mobile {
+            display: block;
+          }
+        }
+      }
+    }
+    &__currency-info {
+      margin-bottom: 0;
+    }
+    &__continue {
+      margin-top: 2rem;
+    }
+  }
+  .relatives {
+    display: none;
+  }
+}
+@media (max-width: 378px) {
+  .order {
+    &__single,
+    &__total {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

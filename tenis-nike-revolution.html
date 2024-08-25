@@ -69,6 +69,7 @@
     <script defer src="./js/burger-mobile.js"></script>
     <script defer src="./js/nav-links-active.js"></script>
     <script defer src="./js/search-mobile.js"></script>
+    <script defer src="./js/cart.js"></script>
     <!-- My styles -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -127,6 +128,7 @@
             <btn class="header_profile-register">Cadastre-se</btn>
             <btn class="header_profile-login">Entrar</btn>
             <btn class="header_cart">
+              <p class="header_cart-amount">2</p>
               <img
                 class="header_cart-img"
                 src="./icons/cart.svg"
@@ -134,6 +136,60 @@
                 loading="eager"
               />
             </btn>
+            <div class="header__cart-desktop">
+              <p class="header__cart-title">Meu Carrinho</p>
+              <div class="header__cart-wrapper">
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="header__cart-total">
+                <li class="header__cart-total--item">
+                  <p class="header__cart-total-text">Valor total:</p>
+                  <p class="header__cart-total-amount">R$ 219,00</p>
+                </li>
+                <li class="header__cart-total--item">
+                  <button class="header__cart-total--remove">Esvaziar</button>
+                  <button
+                    class="header__cart-total--check"
+                    onclick="window.open('nike-cart.html', '_blank')"
+                  >
+                    Ver Carrinho
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="header_wrapper header_wrapper-tablet">
@@ -150,7 +206,8 @@
             <div class="header_profile">
               <btn class="header_profile-register">Cadastre-se</btn>
               <btn class="header_profile-login">Entrar</btn>
-              <btn class="header_cart">
+              <btn class="header_cart-tablet">
+                <p class="header_cart-amount">2</p>
                 <img
                   class="header_cart-img"
                   src="./icons/cart.svg"
@@ -158,6 +215,60 @@
                   loading="eager"
                 />
               </btn>
+              <div class="header__cart-tablet">
+                <p class="header__cart-title">Meu Carrinho</p>
+                <div class="header__cart-wrapper">
+                  <div class="header__cart-box">
+                    <img
+                      class="header__cart-img"
+                      src="./img/order-img-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <div class="header__cart-content">
+                      <p class="header__cart-content-title">
+                        Tênis Nike Revolution 6 Next Nature Masculino
+                      </p>
+                      <div class="header__cart-block">
+                        <p class="header__cart-block--actual">R$ 219,00</p>
+                        <p class="header__cart-block--old">R$ 219,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__cart-box">
+                    <img
+                      class="header__cart-img"
+                      src="./img/order-img-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <div class="header__cart-content">
+                      <p class="header__cart-content-title">
+                        Tênis Nike Revolution 6 Next Nature Masculino
+                      </p>
+                      <div class="header__cart-block">
+                        <p class="header__cart-block--actual">R$ 219,00</p>
+                        <p class="header__cart-block--old">R$ 219,00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="header__cart-total">
+                  <li class="header__cart-total--item">
+                    <p class="header__cart-total-text">Valor total:</p>
+                    <p class="header__cart-total-amount">R$ 219,00</p>
+                  </li>
+                  <li class="header__cart-total--item">
+                    <button class="header__cart-total--remove">Esvaziar</button>
+                    <button
+                      class="header__cart-total--check"
+                      onclick="window.open('nike-cart.html', '_blank')"
+                    >
+                      Ver Carrinho
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -203,36 +314,128 @@
               <a href="./index.html" class="header_nav-links">Home</a>
             </li>
             <li>
-              <a
-                href="./products.html"
-                class="header_nav-links nike__revolution-header"
-                >Produtos</a
-              >
+              <a href="./products.html" class="header_nav-links">Produtos</a>
             </li>
             <li><a href="#" class="header_nav-links">Categorias</a></li>
             <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="header_mobile">
-        <div class="header_mobile-content">
-          <div class="header_mobile-burger">
-            <span id="bar-1"></span>
-            <span id="bar-2"></span>
-            <span id="bar-3"></span>
-          </div>
-          <div class="header_mobile-wrapper">
-            <div class="header_mobile-wrapper--logo">
-              <img
-                class="header_mobile-wrapper--img"
-                src="./logo/logo.svg"
-                alt="Digital Store Logo"
-              />
-              <span class="header_mobile-wrapper--span">Digital Store</span>
+        <div class="header_mobile">
+          <div class="header_mobile-content">
+            <div class="header_mobile-burger">
+              <span id="bar-1"></span>
+              <span id="bar-2"></span>
+              <span id="bar-3"></span>
+            </div>
+            <div class="header_mobile-wrapper">
+              <div class="header_mobile-wrapper--logo">
+                <img
+                  class="header_mobile-wrapper--img"
+                  src="./logo/logo.svg"
+                  alt="Digital Store Logo"
+                />
+                <span class="header_mobile-wrapper--span">Digital Store</span>
+              </div>
+            </div>
+            <div class="header_mobile-cart">
+              <button class="header_mobile-cart--btn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="9.80547"
+                    cy="9.80553"
+                    r="7.49047"
+                    stroke="#CCCCCC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.0153 15.4043L17.9519 18.3334"
+                    stroke="#CCCCCC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <btn class="header_cart-mobile">
+                <p class="header_cart-amount">2</p>
+                <img
+                  class="header_cart-img"
+                  src="./icons/cart.svg"
+                  alt="cart"
+                  loading="eager"
+                />
+              </btn>
+            </div>
+            <div class="header__cart-mobile">
+              <p class="header__cart-title">Meu Carrinho</p>
+              <div class="header__cart-wrapper">
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="header__cart-total">
+                <li class="header__cart-total--item">
+                  <p class="header__cart-total-text">Valor total:</p>
+                  <p class="header__cart-total-amount">R$ 219,00</p>
+                </li>
+                <li class="header__cart-total--item">
+                  <button class="header__cart-total--remove">Esvaziar</button>
+                  <button
+                    class="header__cart-total--check"
+                    onclick="window.open('nike-cart.html', '_blank')"
+                  >
+                    Ver Carrinho
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="header_mobile-cart">
-            <button class="header_mobile-cart--btn">
+          <div class="header_mobile-search">
+            <input
+              class="header_mobile-search--input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_mobile-search--btn">
               <svg
                 width="20"
                 height="20"
@@ -258,71 +461,35 @@
                 />
               </svg>
             </button>
-            <img
-              class="header_mobile-cart--img"
-              src="./icons/cart.svg"
-              alt="Cart"
-            />
           </div>
+          <nav class="header_mobile-nav">
+            <div class="header_mobile-nav--wrapper">
+              <p class="header_mobile-nav--text">Páginas</p>
+              <ul class="header_mobile-nav--list">
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="./products.html"
+                    >Produtos</a
+                  >
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="#">Categorias</a>
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_mobile-nav--content">
+              <button class="header_mobile-nav--login">Entrar</button>
+              <button class="header_mobile-nav--register">Cadastre-se</button>
+            </div>
+          </nav>
         </div>
-        <div class="header_mobile-search">
-          <input
-            class="header_mobile-search--input"
-            type="text"
-            placeholder="Pesquisar produto..."
-          />
-          <button class="header_mobile-search--btn">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="9.80547"
-                cy="9.80553"
-                r="7.49047"
-                stroke="#CCCCCC"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.0153 15.4043L17.9519 18.3334"
-                stroke="#CCCCCC"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <nav class="header_mobile-nav">
-          <div class="header_mobile-nav--wrapper">
-            <p class="header_mobile-nav--text">Páginas</p>
-            <ul class="header_mobile-nav--list">
-              <li class="header_mobile-nav--item">
-                <a class="header_mobile-nav--links" href="./index.html">Home</a>
-              </li>
-              <li class="header_mobile-nav--item">
-                <a class="header_mobile-nav--links" href="./products.html"
-                  >Produtos</a
-                >
-              </li>
-              <li class="header_mobile-nav--item">
-                <a class="header_mobile-nav--links" href="#">Categorias</a>
-              </li>
-              <li class="header_mobile-nav--item">
-                <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
-              </li>
-            </ul>
-          </div>
-          <div class="header_mobile-nav--content">
-            <button class="header_mobile-nav--login">Entrar</button>
-            <button class="header_mobile-nav--register">Cadastre-se</button>
-          </div>
-        </nav>
       </div>
     </header>
     <main class="main-nike">
