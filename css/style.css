@@ -3012,6 +3012,9 @@
   text-decoration-line: underline;
 }
 .login__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   width: 100%;
   min-height: 4.8rem;
@@ -3070,7 +3073,7 @@
 
 .register-inner {
   padding: 7rem 0rem 15rem 0rem;
-  background-color: black;
+  background-color: #f9f8fe;
 }
 .register-inner__wrapper {
   display: flex;
@@ -3339,7 +3342,7 @@
 
 .info {
   padding: 8rem 0rem 25rem 0rem;
-  background-color: black;
+  background: #f9f8fe;
 }
 .info__descr {
   background-color: #fff;

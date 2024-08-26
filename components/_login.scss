@@ -99,6 +99,9 @@
     text-decoration-line: underline;
   }
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
     width: 100%;
     min-height: 4.8rem;
