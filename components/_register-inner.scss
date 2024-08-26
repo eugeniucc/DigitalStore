@@ -1,0 +1,74 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.register-inner {
+  padding: 7rem 0rem 15rem 0rem;
+  //   background-color: #f9f8fe;
+  background-color: black;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    @include title-small-bold-h3;
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2.2rem;
+  }
+  &__label {
+    @include text-xsmall-p;
+  }
+  &__subscription {
+    padding: 0rem 3rem;
+  }
+  &__btn {
+    @include text-small-p-bold;
+    color: #fff;
+    min-height: 5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: $primary;
+  }
+  &__subscription {
+    position: relative;
+    margin: 3rem 0rem 4rem 0rem;
+  }
+  &__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  &__label {
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      border: 0.1rem solid #ccc;
+      top: 0.5rem;
+      left: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__span {
+    position: absolute;
+    content: "";
+    top: 0.5rem;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.register-inner__checkbox:checked + .register-inner__label::before {
+  opacity: 0;
+}
+.register-inner__checkbox:checked
+  + .register-inner__label
+  .register-inner__span {
+  opacity: 1;
+}

@@ -1,0 +1,132 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.success {
+  padding: 5rem 0rem 12rem 0rem;
+  background: #f9f8fe;
+  &__wrapper {
+    max-width: 83.8rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  &__purchase {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    &-emoji {
+      font-size: 7.2rem;
+    }
+    &-title {
+      @include title-small-bold-h3;
+      text-align: center;
+      max-width: 35rem;
+      width: 100%;
+    }
+  }
+  &__purchase,
+  &__delivery,
+  &__payment,
+  &__delivery,
+  &__personal {
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__title {
+    @include text-xsmall-p-bold;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__item {
+    display: flex;
+    gap: 1rem;
+    &-resume {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+  &__text {
+    @include text-xsmall-p;
+    display: flex;
+    &-gray {
+      @include text-xsmall-p;
+      color: $light-gray;
+    }
+    &-stars {
+      font-family: sans-serif;
+    }
+    &-resume {
+      @include text-xsmall-p-bold;
+      max-width: 30rem;
+      width: 100%;
+    }
+  }
+  &__resume {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__total {
+    padding: 2rem;
+    border-radius: 0.4rem;
+    border: 0.1rem solid rgba(246, 170, 28, 0.15);
+    background: rgba(246, 170, 28, 0.05);
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__total {
+    &-text,
+    &-price {
+      @include medium-bold;
+    }
+    &-currency {
+      @include text-xsmall-p;
+      color: $light-gray;
+      text-align: right;
+    }
+  }
+  &__receipt {
+    color: var(--dark-gray-2, #474747);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.75px;
+    text-decoration-line: underline;
+    margin: 0 auto;
+  }
+  &__home {
+    max-width: 77.8rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 0rem 0rem 0rem;
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 0.8rem;
+      min-height: 5rem;
+      background-color: $warning;
+      @include yellow-btn;
+      @include text-small-p-bold;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General Metagraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DigitalStore" />
+    <meta property="og:url" content="www.digitalstore.com" />
+    <meta property="og:image" content="./icons/logo.svg" />
+    <meta property="og:description" content="Best shoes store in our city." />
+    <!-- Twitter Metagraph -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DigitalStore" />
+    <meta name="twitter:site" content="www.digitalstore.com" />
+    <meta name="twitter:description" content="Best shoes store in our city." />
+    <meta name="twitter:image" content="./icons/logo.svg" />
+    <!-- Icons in browser  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+    <!-- MsApp link ! -->
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+    <title>Digital Store</title>
+    <!-- My styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/min_css/style.min.css" />
+  </head>
+  <body>
+    <header class="header__login">
+      <div class="container">
+        <nav class="header__login-nav">
+          <a href="./index.html" class="header_logo-link header-logo-login">
+            <img
+              class="header_logo-img"
+              src="./logo/logo.svg"
+              alt="Digital Store"
+              loading="eager"
+            />
+            <span class="header_logo-span">Digital Store</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="login">
+        <div class="container">
+          <div class="login__wrapper">
+            <form action="#" class="login__content">
+              <div class="login__check">
+                <h1 class="login__title">Acesse sua conta</h1>
+                <div class="login__register">
+                  <p class="login__register-text">
+                    Novo cliente? Então registre-se
+                  </p>
+                  <a class="login__register-link" href="./register.html"
+                    >aqui.</a
+                  >
+                </div>
+              </div>
+              <div class="login__data">
+                <ul class="login__list">
+                  <li class="login__item">
+                    <p class="login__item-title">Login *</p>
+                    <input
+                      type="email"
+                      class="login__input"
+                      placeholder="Insira seu login ou email"
+                    />
+                  </li>
+                  <li class="login__item">
+                    <p class="login__item-title">Senha *</p>
+                    <input
+                      type="text"
+                      class="login__input"
+                      placeholder="Insira sua senha"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="login__forgot">
+                <a class="login__forgot-link" href="#" target="_blank"
+                  >Esqueci minha senha</a
+                >
+              </div>
+              <div class="login__access">
+                <button
+                  class="login__btn"
+                  onclick="window.location.href = 'orders.html'"
+                >
+                  Acessar Conta
+                </button>
+              </div>
+              <div class="login__another">
+                <p class="login__another-text">Ou faça login com</p>
+                <div class="login__platforms">
+                  <btn class="login__platforms-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="18"
+                      viewBox="0 0 24 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.63636 18.0022H5.45456V8.72949L2.95434 4.36365L0 4.63857V16.3659C0 17.2699 0.732281 18.0022 1.63636 18.0022Z"
+                        fill="#0085F7"
+                      />
+                      <path
+                        d="M18.5447 18.0022H22.3629C23.267 18.0022 23.9992 17.2699 23.9992 16.3659V4.63857L21.0492 4.36365L18.5447 8.72949V18.0022H18.5447Z"
+                        fill="#00A94B"
+                      />
+                      <path
+                        d="M18.5453 1.63856L16.3025 5.91839L18.5453 8.72948L23.9999 4.63856V2.45676C23.9999 0.434483 21.6912 -0.720517 20.0726 0.493124L18.5453 1.63856Z"
+                        fill="#FFBC00"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.45407 8.72948L3.31689 4.21494L5.45407 1.63855L11.9995 6.54763L18.5449 1.63855V8.72948L11.9995 13.6386L5.45407 8.72948Z"
+                        fill="#FF4131"
+                      />
+                      <path
+                        d="M0 2.45676V4.63856L5.45456 8.72948V1.63856L3.92728 0.493124C2.30864 -0.720517 0 0.434483 0 2.45676H0Z"
+                        fill="#E51C19"
+                      />
+                    </svg>
+                  </btn>
+                  <btn class="login__platforms-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_476_2915)">
+                        <path
+                          d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4688H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                          fill="#1877F2"
+                        />
+                        <path
+                          d="M16.6711 15.4688L17.2031 12H13.875V9.75C13.875 8.80102 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C11.3674 24.0486 12.6326 24.0486 13.875 23.8542V15.4688H16.6711Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_476_2915">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </btn>
+                </div>
+              </div>
+            </form>
+            <div class="login__box">
+              <img
+                class="login__box-img login__box-img-left"
+                src="./img/login-melvin1.png"
+                alt="Adidas Melvin"
+                loading="eager"
+              />
+              <img
+                class="login__box-img login__box-img-right"
+                src="./img/login-melvin2.png"
+                alt="Adidas Melvin"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_social">
+            <div class="footer_social-logo">
+              <img
+                class="footer_social-logo--img"
+                src="./logo/logo-white.svg"
+                alt="DigitalStore"
+              />
+              <span class="footer_social-logo--span">Digital Store</span>
+            </div>
+            <p class="footer_social-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="footer_social-wrapper">
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    width="24px"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    stroke="#000000"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-60.000000, -7521.000000)"
+                        fill="#ffffff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                            id="twitter-[#ffffff]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <p class="footer_info-name">Informação</p>
+            <ul class="footer_info-list">
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Sobre Drip Store</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Segurança</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Wishlist</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Trabalhe conosco</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Meus Pedidos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_category">
+            <p class="footer_category-name">Categorias</p>
+            <ul class="footer_category-list">
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Camisetas</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Calças</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Bonés</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Headphones</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Tênis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <p class="footer_contacts-name">Contato</p>
+            <p class="footer_contacts-address">
+              Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+              60150-161
+            </p>
+            <p class="footer_contacts-phone">(85) 3051-3411</p>
+          </div>
+        </div>
+        <p class="footer_copyrights">@ 2022 Digital College</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -125,8 +125,16 @@
             </button>
           </div>
           <div class="header_profile">
-            <btn class="header_profile-register">Cadastre-se</btn>
-            <btn class="header_profile-login">Entrar</btn>
+            <btn
+              class="header_profile-register"
+              onclick="window.location.href='register.html'"
+              >Cadastre-se</btn
+            >
+            <btn
+              class="header_profile-login"
+              onclick="window.open('login.html', '_blank')"
+              >Entrar</btn
+            >
             <btn class="header_cart">
               <p class="header_cart-amount">2</p>
               <img
@@ -204,8 +212,16 @@
               <span class="header_logo-span">Digital Store</span>
             </a>
             <div class="header_profile">
-              <btn class="header_profile-register">Cadastre-se</btn>
-              <btn class="header_profile-login">Entrar</btn>
+              <btn
+                class="header_profile-register"
+                onclick="window.location.href='register.html'"
+                >Cadastre-se</btn
+              >
+              <btn
+                class="header_profile-login"
+                onclick="window.open('login.html', '_blank')"
+                >Entrar</btn
+              >
               <btn class="header_cart-tablet">
                 <p class="header_cart-amount">2</p>
                 <img
@@ -316,8 +332,12 @@
             <li>
               <a href="./products.html" class="header_nav-links">Produtos</a>
             </li>
-            <li><a href="#" class="header_nav-links">Categorias</a></li>
-            <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
+            <li>
+              <a href="./category.html" class="header_nav-links">Categorias</a>
+            </li>
+            <li>
+              <a href="./orders.html" class="header_nav-links">Meus Pedidos</a>
+            </li>
           </ul>
         </nav>
         <div class="header_mobile">
@@ -328,14 +348,14 @@
               <span id="bar-3"></span>
             </div>
             <div class="header_mobile-wrapper">
-              <div class="header_mobile-wrapper--logo">
+              <a class="header_mobile-wrapper--logo" href="./index.html">
                 <img
                   class="header_mobile-wrapper--img"
                   src="./logo/logo.svg"
                   alt="Digital Store Logo"
                 />
                 <span class="header_mobile-wrapper--span">Digital Store</span>
-              </div>
+              </a>
             </div>
             <div class="header_mobile-cart">
               <button class="header_mobile-cart--btn">
@@ -477,10 +497,14 @@
                   >
                 </li>
                 <li class="header_mobile-nav--item">
-                  <a class="header_mobile-nav--links" href="#">Categorias</a>
+                  <a class="header_mobile-nav--links" href="./category.html"
+                    >Categorias</a
+                  >
                 </li>
                 <li class="header_mobile-nav--item">
-                  <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+                  <a class="header_mobile-nav--links" href="./orders.html"
+                    >Meus Pedidos</a
+                  >
                 </li>
               </ul>
             </div>

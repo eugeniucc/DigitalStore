@@ -123,8 +123,16 @@
             </button>
           </div>
           <div class="header_profile">
-            <btn class="header_profile-register">Cadastre-se</btn>
-            <btn class="header_profile-login">Entrar</btn>
+            <btn
+              class="header_profile-register"
+              onclick="window.location.href='register.html'"
+              >Cadastre-se</btn
+            >
+            <btn
+              class="header_profile-login"
+              onclick="window.location.href='login.html'"
+              >Entrar</btn
+            >
             <btn class="header_cart">
               <p class="header_cart-amount">2</p>
               <img
@@ -202,8 +210,16 @@
               <span class="header_logo-span">Digital Store</span>
             </a>
             <div class="header_profile">
-              <btn class="header_profile-register">Cadastre-se</btn>
-              <btn class="header_profile-login">Entrar</btn>
+              <btn
+                class="header_profile-register"
+                onclick="window.location.href='register.html'"
+                >Cadastre-se</btn
+              >
+              <btn
+                class="header_profile-login"
+                onclick="window.location.href='login.html'"
+                >Entrar</btn
+              >
               <btn class="header_cart-tablet">
                 <p class="header_cart-amount">2</p>
                 <img
@@ -314,8 +330,12 @@
             <li>
               <a href="./products.html" class="header_nav-links">Produtos</a>
             </li>
-            <li><a href="#" class="header_nav-links">Categorias</a></li>
-            <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
+            <li>
+              <a href="./category.html" class="header_nav-links">Categorias</a>
+            </li>
+            <li>
+              <a href="./orders.html" class="header_nav-links">Meus Pedidos</a>
+            </li>
           </ul>
         </nav>
         <div class="header_mobile">
@@ -326,14 +346,14 @@
               <span id="bar-3"></span>
             </div>
             <div class="header_mobile-wrapper">
-              <div class="header_mobile-wrapper--logo">
+              <a class="header_mobile-wrapper--logo" href="./index.html">
                 <img
                   class="header_mobile-wrapper--img"
                   src="./logo/logo.svg"
                   alt="Digital Store Logo"
                 />
                 <span class="header_mobile-wrapper--span">Digital Store</span>
-              </div>
+              </a>
             </div>
             <div class="header_mobile-cart">
               <button class="header_mobile-cart--btn">
@@ -475,10 +495,14 @@
                   >
                 </li>
                 <li class="header_mobile-nav--item">
-                  <a class="header_mobile-nav--links" href="#">Categorias</a>
+                  <a class="header_mobile-nav--links" href="./category.html"
+                    >Categorias</a
+                  >
                 </li>
                 <li class="header_mobile-nav--item">
-                  <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+                  <a class="header_mobile-nav--links" href="./orders.html"
+                    >Meus Pedidos</a
+                  >
                 </li>
               </ul>
             </div>
@@ -505,7 +529,12 @@
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
                   </p>
-                  <button class="presentation_btn">Ver Ofertas</button>
+                  <button
+                    class="presentation_btn"
+                    onclick="window.open('tenis-nike-revolution.html', 'blank')"
+                  >
+                    Ver Ofertas
+                  </button>
                 </div>
                 <div class="swiper_presentation-content">
                   <img
@@ -534,7 +563,12 @@
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
                   </p>
-                  <button class="presentation_btn">Ver Ofertas</button>
+                  <button
+                    class="presentation_btn"
+                    onclick="window.open('tenis-nike-revolution.html', 'blank')"
+                  >
+                    Ver Ofertas
+                  </button>
                 </div>
                 <div class="swiper_presentation-content">
                   <img
@@ -564,7 +598,12 @@
                       Consequat culpa exercitation mollit nisi excepteur do do
                       tempor laboris eiusmod irure consectetur.
                     </p>
-                    <button class="presentation_btn">Ver Ofertas</button>
+                    <button
+                      class="presentation_btn"
+                      onclick="window.open('tenis-nike-revolution.html', 'blank')"
+                    >
+                      Ver Ofertas
+                    </button>
                   </div>
                   <div class="swiper_presentation-content">
                     <img
@@ -597,7 +636,12 @@
                       Consequat culpa exercitation mollit nisi excepteur do do
                       tempor laboris eiusmod irure consectetur.
                     </p>
-                    <button class="presentation_btn">Ver Ofertas</button>
+                    <button
+                      class="presentation_btn"
+                      onclick="window.open('tenis-nike-revolution.html', 'blank')"
+                    >
+                      Ver Ofertas
+                    </button>
                   </div>
                   <div class="swiper_presentation-content">
                     <img
@@ -634,7 +678,12 @@
                 <p class="collection_discount-card--text">30% OFF</p>
               </div>
               <h3 class="collection_discount-card--title">Novo drop Supreme</h3>
-              <button class="collection_discount-card--btn">Comprar</button>
+              <button
+                class="collection_discount-card--btn"
+                onclick="window.open('tenis-nike-revolution.html', 'blank')"
+              >
+                Comprar
+              </button>
             </div>
             <div
               class="collection_discount-card"
@@ -644,7 +693,12 @@
                 <p class="collection_discount-card--text">30% OFF</p>
               </div>
               <h3 class="collection_discount-card--title">Coleção Adidas</h3>
-              <button class="collection_discount-card--btn">Comprar</button>
+              <button
+                class="collection_discount-card--btn"
+                onclick="window.open('tenis-nike-revolution.html', 'blank')"
+              >
+                Comprar
+              </button>
             </div>
             <div
               class="collection_discount-card"
@@ -654,7 +708,12 @@
                 <p class="collection_discount-card--text">30% OFF</p>
               </div>
               <h3 class="collection_discount-card--title">Novo Beats Bass</h3>
-              <button class="collection_discount-card--btn">Comprar</button>
+              <button
+                class="collection_discount-card--btn"
+                onclick="window.open('tenis-nike-revolution.html', 'blank')"
+              >
+                Comprar
+              </button>
             </div>
           </div>
         </div>
@@ -1056,7 +1115,12 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip
             </p>
-            <button class="special_details-btn">Ver Oferta</button>
+            <button
+              class="special_details-btn"
+              onclick="window.open('tenis-nike-revolution.html', 'blank')"
+            >
+              Ver Oferta
+            </button>
           </div>
         </div>
       </div>

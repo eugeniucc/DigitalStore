@@ -48,12 +48,27 @@
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
+    <!-- Bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- My scripts -->
-    <script defer src="./js/burger-mobile.js"></script>
+    <script defer src="./js/swiper-presentation.js"></script>
     <script defer src="./js/nav-links-active.js"></script>
+    <script defer src="./js/burger-mobile.js"></script>
     <script defer src="./js/search-mobile.js"></script>
     <script defer src="./js/cart.js"></script>
     <!-- My styles -->
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
   </head>
@@ -76,7 +91,7 @@
             <input
               class="header_search-input"
               type="text"
-              placeholder="Pesquisar produto..."
+              placeholder="Tênis"
             />
             <button class="header_search-btn">
               <svg
@@ -107,13 +122,7 @@
               </svg>
             </button>
           </div>
-          <div class="header_profile">
-            <btn class="header_profile-register">Cadastre-se</btn>
-            <btn
-              class="header_profile-login"
-              onclick="window.open('login.html', '_blank')"
-              >Entrar</btn
-            >
+          <div class="header_profile track__box">
             <btn class="header_cart">
               <p class="header_cart-amount">2</p>
               <img
@@ -123,6 +132,23 @@
                 loading="eager"
               />
             </btn>
+            <div class="track__profile">
+              <span class="track__profile-svg"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <path
+                    d="M12.746 4.03142C11.1754 4.19454 9.74931 4.86099 8.59818 5.97018C6.6501 7.85302 5.97433 10.612 6.82719 13.1753C7.04158 13.8184 7.47966 14.6527 7.85716 15.128C7.93173 15.2212 7.99231 15.3191 7.99231 15.3471C7.99231 15.3704 7.84784 15.4776 7.6754 15.5801C7.23266 15.8457 6.62679 16.2978 6.09084 16.7685C3.91906 18.67 2.5349 21.6667 2.52091 24.4956C2.51625 25.2086 2.51625 25.2226 2.64209 25.4137C3.06619 26.0522 4.01227 26.0009 4.3618 25.3158C4.43171 25.1807 4.46433 24.9803 4.49696 24.4303C4.58084 23.0788 4.86047 21.9929 5.41507 20.879C6.23997 19.2386 7.6987 17.7705 9.32521 16.9503L9.6095 16.8058L10.2806 17.146C12.4804 18.2505 14.8665 18.1713 17.0103 16.913L17.2107 16.7965L17.5789 16.9782C19.1402 17.7705 20.501 19.122 21.3399 20.7253C21.9644 21.9137 22.258 22.9996 22.3466 24.4303C22.3792 24.9803 22.4118 25.1807 22.4817 25.3158C22.8266 25.9916 23.7494 26.0522 24.1875 25.4323C24.318 25.2459 24.3273 25.1946 24.3413 24.7752C24.3739 23.8664 24.1455 22.4776 23.7867 21.3917C23.5676 20.7299 22.9804 19.5135 22.5936 18.9216C22.1741 18.2832 21.6242 17.626 21.0137 17.0342C20.4078 16.4469 19.9791 16.1114 19.2753 15.664L18.8139 15.3704L19.0936 14.9789C19.6575 14.1913 20.1002 13.1287 20.282 12.1174C20.3892 11.5395 20.3845 10.3557 20.2773 9.76381C20.1748 9.20455 19.8952 8.35169 19.6528 7.867C18.9677 6.5108 17.728 5.29441 16.3765 4.66525C15.258 4.14328 13.9251 3.91025 12.746 4.03142ZM14.2187 6.05873C15.2766 6.24049 16.1714 6.70188 16.9218 7.45222C17.5649 8.0907 17.9937 8.85036 18.2593 9.81042C18.3386 10.0994 18.3526 10.2951 18.3572 10.9522C18.3572 11.656 18.3432 11.7911 18.236 12.1919C17.9937 13.0821 17.537 13.8697 16.8845 14.4989C15.9011 15.4496 14.7686 15.9156 13.4218 15.9156C12.0423 15.9156 10.8352 15.403 9.87048 14.4103C9.24132 13.7578 8.84518 13.0681 8.6075 12.1966C8.50031 11.7911 8.48632 11.6653 8.48632 10.9522C8.49098 10.2485 8.50031 10.1087 8.61216 9.70789C9.27394 7.22851 11.73 5.62997 14.2187 6.05873Z"
+                    fill="#C92071"
+                  />
+                </svg>
+              </span>
+              <button class="track__profile-name">Olá Francisco</button>
+            </div>
             <div class="header__cart-desktop">
               <p class="header__cart-title">Meu Carrinho</p>
               <div class="header__cart-wrapper">
@@ -191,10 +217,14 @@
               <span class="header_logo-span">Digital Store</span>
             </a>
             <div class="header_profile">
-              <btn class="header_profile-register">Cadastre-se</btn>
+              <btn
+                class="header_profile-register"
+                onclick="window.location.href='register.html'"
+                >Cadastre-se</btn
+              >
               <btn
                 class="header_profile-login"
-                onclick="window.open('login.html', '_blank')"
+                onclick="window.location.href='login.html'"
                 >Entrar</btn
               >
               <btn class="header_cart-tablet">
@@ -307,8 +337,12 @@
             <li>
               <a href="./products.html" class="header_nav-links">Produtos</a>
             </li>
-            <li><a href="#" class="header_nav-links">Categorias</a></li>
-            <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
+            <li>
+              <a href="./category.html" class="header_nav-links">Categorias</a>
+            </li>
+            <li>
+              <a href="./orders.html" class="header_nav-links">Meus Pedidos</a>
+            </li>
           </ul>
         </nav>
         <div class="header_mobile">
@@ -468,10 +502,14 @@
                   >
                 </li>
                 <li class="header_mobile-nav--item">
-                  <a class="header_mobile-nav--links" href="#">Categorias</a>
+                  <a class="header_mobile-nav--links" href="./category.html"
+                    >Categorias</a
+                  >
                 </li>
                 <li class="header_mobile-nav--item">
-                  <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+                  <a class="header_mobile-nav--links" href="./orders.html"
+                    >Meus Pedidos</a
+                  >
                 </li>
               </ul>
             </div>
@@ -484,448 +522,147 @@
       </div>
     </header>
     <main class="main">
-      <section class="order">
+      <section class="track">
         <div class="container">
-          <div class="order__cover">
-            <div class="order__wrapper">
-              <div class="order__content">
-                <div class="order__content-title">
-                  <p class="order__content-text">MEU CARRINHO</p>
-                </div>
-                <div class="order__content-sort">
-                  <p class="order__content-quantity">QUANTIDADE</p>
-                  <p class="order__content-price">UNITÁRIO</p>
-                  <p class="order__content-total">TOTAL</p>
-                </div>
-              </div>
-              <div class="order__descr">
-                <div class="order__box">
-                  <img
-                    class="order__img"
-                    src="./img/order-img.png"
-                    alt="Nike Revolution"
-                  />
-                  <img
-                    class="order__img-mobile"
-                    src="./img/order-img-mobile.png"
-                    alt="Nike Revolution"
-                  />
-                  <div class="order__title">
-                    <ul class="order__title-list">
-                      <li class="order__title-item">
-                        <p class="order__title-text">
+          <div class="track__wrapper">
+            <div class="track__info">
+              <ul class="track__info-list">
+                <li class="track__info-item">
+                  <a href="#" class="track__info-link track__info-link--actual"
+                    >Meu Perfil</a
+                  >
+                </li>
+                <li class="track__info-item">
+                  <a href="#" class="track__info-link">Meus Pedidos</a>
+                </li>
+                <li class="track__info-item">
+                  <a
+                    href="./orders-inner.html"
+                    class="track__info-link track__info-link--inner"
+                    >Minhas Informações</a
+                  >
+                </li>
+                <li class="track__info-item track__info-item--last">
+                  <a href="#" class="track__info-link">Métodos de Pagamento</a>
+                </li>
+              </ul>
+            </div>
+            <div class="track__descr">
+              <ul class="track__descr-list">
+                <li class="track__descr-item">
+                  <p class="track__descr-title">Meus Pedidos</p>
+                  <p class="track__descr-status">STATUS</p>
+                </li>
+                <li class="track__descr-item">
+                  <div class="track__descr-wrapper">
+                    <div class="track__descr-content">
+                      <img
+                        class="track__descr-img"
+                        src="./img/order-img-mobile.png"
+                        alt="Nike Revolution"
+                      />
+                      <div class="track__descr-box">
+                        <p class="track__descr-number">Pedido nº 2234981932</p>
+                        <p class="track__descr-name">
                           Tênis Nike Revolution 6 Next Nature Masculino
                         </p>
-                      </li>
-                      <li class="order__title-item">
-                        <p class="order__title-color">Cor:</p>
-                        <p class="order__title-colors">Vermelho / Branco</p>
-                      </li>
-                      <li class="order__title-item">
-                        <p class="order__title-size">Tamanho:</p>
-                        <p class="order__title-size--number">42</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="order__amount">
-                  <div class="order__items">
-                    <p class="order__single-mobile--text">QUANTIDADE</p>
-                    <div class="order__items-wrapper">
-                      <button class="order__items-less">
-                        <span class="order__items-less-span"
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="35"
-                            height="35"
-                            viewBox="0 0 35 35"
-                            fill="none"
-                          >
-                            <rect
-                              x="0.364583"
-                              y="0.364583"
-                              width="34.2708"
-                              height="34.2708"
-                              rx="2.55208"
-                              fill="white"
-                              stroke="#CCCCCC"
-                              stroke-width="0.729167"
-                            />
-                            <path
-                              d="M13.125 17.5H21.875"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                            <path
-                              d="M21.875 17.5L13.125 17.5"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                          </svg>
-                        </span>
-                        <span class="order__items-less-span--mobile"
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="80"
-                            height="35"
-                            viewBox="0 0 80 35"
-                            fill="none"
-                          >
-                            <rect
-                              x="0.364583"
-                              y="0.364583"
-                              width="79.2708"
-                              height="34.2708"
-                              rx="2.55208"
-                              fill="white"
-                              stroke="#CCCCCC"
-                              stroke-width="0.729167"
-                            />
-                            <path
-                              d="M36 17.5H44.75"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                            <path
-                              d="M44.75 17.5L36 17.5"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                          </svg>
-                        </span>
-                      </button>
-                      <p class="order__items-default">1</p>
-                      <button class="order__items-more">
-                        <span class="order__items-more-span"
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="36"
-                            height="35"
-                            viewBox="0 0 36 35"
-                            fill="none"
-                          >
-                            <rect
-                              x="0.657552"
-                              y="0.364583"
-                              width="34.2708"
-                              height="34.2708"
-                              rx="2.55208"
-                              fill="white"
-                              stroke="#CCCCCC"
-                              stroke-width="0.729167"
-                            />
-                            <path
-                              d="M13.418 17.5H22.168"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                            <path
-                              d="M17.793 13.125L17.793 21.875"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                          </svg>
-                        </span>
-                        <span class="order__items-more-span--mobile">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="80"
-                            height="35"
-                            viewBox="0 0 80 35"
-                            fill="none"
-                          >
-                            <rect
-                              x="0.364583"
-                              y="0.364583"
-                              width="79.2708"
-                              height="34.2708"
-                              rx="2.55208"
-                              fill="white"
-                              stroke="#CCCCCC"
-                              stroke-width="0.729167"
-                            />
-                            <path
-                              d="M36 17.5H44.75"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                            <path
-                              d="M40.375 13.125L40.375 21.875"
-                              stroke="#474747"
-                              stroke-width="1.45833"
-                            />
-                          </svg>
-                        </span>
-                      </button>
+                      </div>
                     </div>
-                    <button class="order__items-remove">Remover item</button>
+                    <div class="track__descr-cover">
+                      <p class="track__descr-status">status</p>
+                      <p class="track__descr-stage track__descr-stage--transit">
+                        Produto em trânsito
+                      </p>
+                    </div>
                   </div>
-                  <div class="order__single">
-                    <p class="order__single-mobile--text">UNITÁRIO</p>
-                    <p class="order__single-old">R$ 219,00</p>
-                    <p class="order__single-actual">R$ 219,00</p>
+                </li>
+                <li class="track__descr-item">
+                  <div class="track__descr-wrapper">
+                    <div class="track__descr-content">
+                      <img
+                        class="track__descr-img"
+                        src="./img/order-img-mobile.png"
+                        alt="Nike Revolution"
+                      />
+                      <div class="track__descr-box">
+                        <p class="track__descr-number">Pedido nº 2234981932</p>
+                        <p class="track__descr-name">
+                          Tênis Nike Revolution 6 Next Nature Masculino
+                        </p>
+                      </div>
+                    </div>
+                    <div class="track__descr-cover">
+                      <p class="track__descr-status">status</p>
+                      <p class="track__descr-stage">Finalizado</p>
+                    </div>
                   </div>
-                  <div class="order__total">
-                    <p class="order__single-mobile--text">TOTAL</p>
-                    <p class="order__total-old">R$ 219,00</p>
-                    <p class="order__total-actual">R$ 219,00</p>
+                </li>
+                <li class="track__descr-item">
+                  <div class="track__descr-wrapper">
+                    <div class="track__descr-content">
+                      <img
+                        class="track__descr-img"
+                        src="./img/order-img-mobile.png"
+                        alt="Nike Revolution"
+                      />
+                      <div class="track__descr-box">
+                        <p class="track__descr-number">Pedido nº 2234981932</p>
+                        <p class="track__descr-name">
+                          Tênis Nike Revolution 6 Next Nature Masculino
+                        </p>
+                      </div>
+                    </div>
+                    <div class="track__descr-cover">
+                      <p class="track__descr-status">status</p>
+                      <p class="track__descr-stage track__descr-stage--cancel">
+                        Cancelado
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="order__special">
-                <div class="order__coupon">
-                  <p class="order__coupon-text">Cupom de desconto</p>
-                  <div class="order__coupon-wrapper">
-                    <input
-                      class="order__coupon-input"
-                      type="text"
-                      placeholder="Insira seu código"
-                    />
-                    <button class="order__coupon-btn">ok</button>
+                </li>
+                <li class="track__descr-item">
+                  <div class="track__descr-wrapper">
+                    <div class="track__descr-content">
+                      <img
+                        class="track__descr-img"
+                        src="./img/order-img-mobile.png"
+                        alt="Nike Revolution"
+                      />
+                      <div class="track__descr-box">
+                        <p class="track__descr-number">Pedido nº 2234981932</p>
+                        <p class="track__descr-name">
+                          Tênis Nike Revolution 6 Next Nature Masculino
+                        </p>
+                      </div>
+                    </div>
+                    <div class="track__descr-cover">
+                      <p class="track__descr-status">status</p>
+                      <p class="track__descr-stage">Finalizado</p>
+                    </div>
                   </div>
-                </div>
-                <div class="order__taxes">
-                  <p class="order__taxes-text">Calcular frete</p>
-                  <div class="order__taxes-wrapper">
-                    <input
-                      class="order__taxes-input"
-                      type="text"
-                      placeholder="Insira seu CEP"
-                    />
-                    <button class="order__taxes-btn">ok</button>
+                </li>
+                <li class="track__descr-item track__descr-item--last">
+                  <div class="track__descr-wrapper">
+                    <div class="track__descr-content">
+                      <img
+                        class="track__descr-img"
+                        src="./img/order-img-mobile.png"
+                        alt="Nike Revolution"
+                      />
+                      <div class="track__descr-box">
+                        <p class="track__descr-number">Pedido nº 2234981932</p>
+                        <p class="track__descr-name">
+                          Tênis Nike Revolution 6 Next Nature Masculino
+                        </p>
+                      </div>
+                    </div>
+                    <div class="track__descr-cover">
+                      <p class="track__descr-status">status</p>
+                      <p class="track__descr-stage">Finalizado</p>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="order__summary">
-              <p class="order__summary-title">RESUMO</p>
-              <ul class="order__summary-list">
-                <li class="order__summary-item">
-                  <p class="order__summary-subtotal">Subtotal:</p>
-                  <p class="order__summary-subtotal--amount">R$ 219,00</p>
-                </li>
-
-                <li class="order__summary-item">
-                  <p class="order__summary-shipping">Frete:</p>
-                  <p class="order__summary-shipping--amount">R$ 0,00</p>
-                </li>
-                <li class="order__summary-item">
-                  <p class="order__summary-discount">Desconto:</p>
-                  <p class="order__summary-discount--amount">R$ 30,00</p>
-                </li>
-                <li class="order__summary-item">
-                  <p class="order__summary-total">Total</p>
-                  <p class="order__summary-total--amount">R$ 219,00</p>
-                </li>
-              </ul>
-              <p class="order__currency-info">ou 10x de R$ 21,00 sem juros</p>
-              <button
-                class="order__continue"
-                onclick="window.open('address.html', '_blank')"
-              >
-                Continuar
-              </button>
-            </div>
-            <div class="order__coupon-mobile">
-              <p class="order__coupon-text">Cupom de desconto</p>
-              <div class="order__coupon-wrapper">
-                <input
-                  class="order__coupon-input"
-                  type="text"
-                  placeholder="Insira seu código"
-                />
-                <button class="order__coupon-btn">ok</button>
-              </div>
-            </div>
-            <div class="order__taxes-mobile">
-              <p class="order__taxes-text">Calcular frete</p>
-              <div class="order__taxes-wrapper">
-                <input
-                  class="order__taxes-input"
-                  type="text"
-                  placeholder="Insira seu CEP"
-                />
-                <button class="order__taxes-btn">ok</button>
-              </div>
-            </div>
-            <div class="order__summary-mobile">
-              <p class="order__summary-title">RESUMO</p>
-              <ul class="order__summary-list">
-                <li class="order__summary-item">
-                  <p class="order__summary-subtotal">Subtotal:</p>
-                  <p class="order__summary-subtotal--amount">R$ 219,00</p>
-                </li>
-
-                <li class="order__summary-item">
-                  <p class="order__summary-shipping">Frete:</p>
-                  <p class="order__summary-shipping--amount">R$ 0,00</p>
-                </li>
-                <li class="order__summary-item">
-                  <p class="order__summary-discount">Desconto:</p>
-                  <p class="order__summary-discount--amount">R$ 30,00</p>
-                </li>
-                <li class="order__summary-item">
-                  <p class="order__summary-total">Total</p>
-                  <p class="order__summary-total--amount">R$ 219,00</p>
                 </li>
               </ul>
-              <p class="order__currency-info">ou 10x de R$ 21,00 sem juros</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="order__total-mobile">
-        <ul class="order__summary-list">
-          <li class="order__summary-item">
-            <p class="order__summary-total">Total</p>
-            <p class="order__summary-total--amount">R$ 219,00</p>
-          </li>
-        </ul>
-        <p class="order__currency-info">ou 10x de R$ 21,00 sem juros</p>
-        <button
-          class="order__continue"
-          onclick="window.open('address.html', '_blank')"
-        >
-          Continuar
-        </button>
-      </div>
-      <section class="relatives">
-        <div class="container">
-          <div class="relatives__content">
-            <div class="products_trending">
-              <h3 class="products_trending-text">Produtos Relacionados</h3>
-              <h3 class="products_trending-text--mobile">
-                Coleções em destaque
-              </h3>
-              <a class="products_trending-all" href="#" target="_blank"
-                ><span class="products_trending-all--span">Ver todos</span>
-                <span class="products_trending-all--svg"
-                  ><svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4"
-                      stroke="#C92071"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-              </a>
-            </div>
-            <div class="relatives_wrapper">
-              <div class="relatives_wrapper-card">
-                <a
-                  href="./tenis-nike-revolution.html"
-                  class="relatives_wrapper-card--link"
-                  target="_blank"
-                >
-                  <div class="relatives_wrapper-content">
-                    <p class="relatives_wrapper-card--discount">30% OFF</p>
-                    <img
-                      class="relatives_wrapper-img"
-                      src="./img/relatives-nike.png"
-                      alt="K-Swiss V8"
-                      loading="lazy"
-                    /></div
-                ></a>
-                <div class="relatives_wrapper-details">
-                  <p class="relatives_wrapper-card--category">Tênis</p>
-                  <p class="relatives_wrapper-card--name">
-                    K-Swiss V8 - Masculino
-                  </p>
-                  <div class="relatives_wrapper-price">
-                    <p class="relatives_wrapper-price--old">$200</p>
-                    <p class="relatives_wrapper-price--new">$100</p>
-                  </div>
-                </div>
-              </div>
-              <div class="relatives_wrapper-card">
-                <a
-                  href="./tenis-nike-revolution.html"
-                  class="relatives_wrapper-card--link"
-                  target="_blank"
-                >
-                  <div
-                    class="relatives_wrapper-content relatives_wrapper-no-discount"
-                  >
-                    <img
-                      class="relatives_wrapper-img"
-                      src="./img/relatives-nike.png"
-                      alt="K-Swiss V8"
-                      loading="lazy"
-                    /></div
-                ></a>
-                <div class="relatives_wrapper-details">
-                  <p class="relatives_wrapper-card--category">Tênis</p>
-                  <p class="relatives_wrapper-card--name">
-                    K-Swiss V8 - Masculino
-                  </p>
-                  <div class="relatives_wrapper-price">
-                    <p class="relatives_wrapper-price--old">$200</p>
-                    <p class="relatives_wrapper-price--new">$100</p>
-                  </div>
-                </div>
-              </div>
-              <div class="relatives_wrapper-card">
-                <a
-                  href="./tenis-nike-revolution.html"
-                  class="relatives_wrapper-card--link"
-                  target="_blank"
-                >
-                  <div
-                    class="relatives_wrapper-content relatives_wrapper-no-discount"
-                  >
-                    <img
-                      class="relatives_wrapper-img"
-                      src="./img/relatives-nike.png"
-                      alt="K-Swiss V8"
-                      loading="lazy"
-                    /></div
-                ></a>
-                <div class="relatives_wrapper-details">
-                  <p class="relatives_wrapper-card--category">Tênis</p>
-                  <p class="relatives_wrapper-card--name">
-                    K-Swiss V8 - Masculino
-                  </p>
-                  <div class="relatives_wrapper-price">
-                    <p class="relatives_wrapper-price--old">$200</p>
-                    <p class="relatives_wrapper-price--new">$100</p>
-                  </div>
-                </div>
-              </div>
-              <div class="relatives_wrapper-card">
-                <a
-                  href="./tenis-nike-revolution.html"
-                  class="relatives_wrapper-card--link"
-                  target="_blank"
-                >
-                  <div
-                    class="relatives_wrapper-content relatives_wrapper-no-discount"
-                  >
-                    <img
-                      class="relatives_wrapper-img"
-                      src="./img/relatives-nike.png"
-                      alt="K-Swiss V8"
-                      loading="lazy"
-                    /></div
-                ></a>
-                <div class="relatives_wrapper-details">
-                  <p class="relatives_wrapper-card--category">Tênis</p>
-                  <p class="relatives_wrapper-card--name">
-                    K-Swiss V8 - Masculino
-                  </p>
-                  <div class="relatives_wrapper-price">
-                    <p class="relatives_wrapper-price--old">$200</p>
-                    <p class="relatives_wrapper-price--new">$100</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

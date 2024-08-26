@@ -1,0 +1,141 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/btn.scss";
+@import "../scss/animations/btn";
+
+.login {
+  background: var(
+    --secondary-gradient,
+    linear-gradient(180deg, #b5b6f2 0%, #efefff 100%)
+  );
+  &__wrapper {
+    display: flex;
+    padding: 12rem 0rem 16rem 0rem;
+    gap: 4.4rem;
+  }
+  &__box {
+    display: flex;
+    &-img {
+      max-width: 100%;
+      width: 100%;
+      &-right {
+        margin-top: 17rem;
+      }
+      &-left {
+        margin-bottom: 17rem;
+      }
+    }
+  }
+  &__content {
+    max-width: 58.3rem;
+    width: 100%;
+    padding: 3rem;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 0.4rem;
+  }
+  &__title {
+    @include title-small-bold-h3;
+  }
+  &__register {
+    display: flex;
+    color: var(--dark-gray-2, #474747);
+    text-align: center;
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.75px;
+    &-link {
+      padding-left: 0.3rem;
+      color: var(--dark-gray-2, #474747);
+      text-align: center;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      letter-spacing: 0.75px;
+      text-decoration: underline;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &-title {
+      @include text-tinny-p-bold;
+    }
+  }
+  &__input {
+    padding: 1.6rem 0rem 1.6rem 1.2rem;
+    @include text-small-p;
+    color: $dark-gray3;
+    outline: none;
+    border: none;
+    border-radius: 0.8rem;
+    background: rgba(71, 71, 71, 0.04);
+  }
+  &__forgot-link {
+    color: var(--dark-gray-2, #474747);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: 0.25px;
+    text-decoration-line: underline;
+  }
+  &__btn {
+    max-width: 100%;
+    width: 100%;
+    min-height: 4.8rem;
+    background-color: $primary;
+    border: none;
+    border-radius: 0.8rem;
+    @include text-small-p-bold;
+    color: #fff;
+    cursor: pointer;
+    @include fuxia-btn;
+  }
+  &__another {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    &-text {
+      @include text-small-p;
+    }
+  }
+  &__platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    &-svg {
+      cursor: pointer;
+    }
+  }
+  &__check {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.header {
+  &__login {
+    margin: 2.5rem 0rem;
+  }
+}

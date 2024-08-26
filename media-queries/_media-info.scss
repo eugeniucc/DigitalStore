@@ -1,0 +1,26 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $sm) {
+  .info {
+    padding: 3.5rem 3rem 7rem 3rem;
+  }
+}
+@media (max-width: 416px) {
+  .info {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__list {
+      &-item {
+        flex-direction: column;
+      }
+      &-title {
+        text-align: center;
+      }
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General Metagraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DigitalStore" />
+    <meta property="og:url" content="www.digitalstore.com" />
+    <meta property="og:image" content="./icons/logo.svg" />
+    <meta property="og:description" content="Best shoes store in our city." />
+    <!-- Twitter Metagraph -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DigitalStore" />
+    <meta name="twitter:site" content="www.digitalstore.com" />
+    <meta name="twitter:description" content="Best shoes store in our city." />
+    <meta name="twitter:image" content="./icons/logo.svg" />
+    <!-- Icons in browser  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+    <!-- MsApp link ! -->
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+    <title>Digital Store</title>
+    <!-- Swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <!-- My scripts -->
+    <script defer src="./js/burger-mobile.js"></script>
+    <script defer src="./js/nav-links-active.js"></script>
+    <script defer src="./js/search-mobile.js"></script>
+    <script defer src="./js/cart.js"></script>
+    <!-- My styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/min_css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./logo/logo.svg"
+                alt="Digital Store"
+                loading="eager"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
+          </div>
+          <div class="header_search">
+            <input
+              class="header_search-input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="header_profile">
+            <btn class="header_profile-register">Cadastre-se</btn>
+            <btn
+              class="header_profile-login"
+              onclick="window.open('login.html', '_blank')"
+              >Entrar</btn
+            >
+            <btn class="header_cart">
+              <p class="header_cart-amount">2</p>
+              <img
+                class="header_cart-img"
+                src="./icons/cart.svg"
+                alt="cart"
+                loading="eager"
+              />
+            </btn>
+            <div class="header__cart-desktop">
+              <p class="header__cart-title">Meu Carrinho</p>
+              <div class="header__cart-wrapper">
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="header__cart-total">
+                <li class="header__cart-total--item">
+                  <p class="header__cart-total-text">Valor total:</p>
+                  <p class="header__cart-total-amount">R$ 219,00</p>
+                </li>
+                <li class="header__cart-total--item">
+                  <button class="header__cart-total--remove">Esvaziar</button>
+                  <button
+                    class="header__cart-total--check"
+                    onclick="window.open('nike-cart.html', '_blank')"
+                  >
+                    Ver Carrinho
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header_wrapper header_wrapper-tablet">
+          <div class="header_logo">
+            <a href="./index.html" class="header_logo-link">
+              <img
+                class="header_logo-img"
+                src="./logo/logo.svg"
+                alt="Digital Store"
+                loading="eager"
+              />
+              <span class="header_logo-span">Digital Store</span>
+            </a>
+            <div class="header_profile">
+              <btn class="header_profile-register">Cadastre-se</btn>
+              <btn
+                class="header_profile-login"
+                onclick="window.open('login.html', '_blank')"
+                >Entrar</btn
+              >
+              <btn class="header_cart-tablet">
+                <p class="header_cart-amount">2</p>
+                <img
+                  class="header_cart-img"
+                  src="./icons/cart.svg"
+                  alt="cart"
+                  loading="eager"
+                />
+              </btn>
+              <div class="header__cart-tablet">
+                <p class="header__cart-title">Meu Carrinho</p>
+                <div class="header__cart-wrapper">
+                  <div class="header__cart-box">
+                    <img
+                      class="header__cart-img"
+                      src="./img/order-img-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <div class="header__cart-content">
+                      <p class="header__cart-content-title">
+                        Tênis Nike Revolution 6 Next Nature Masculino
+                      </p>
+                      <div class="header__cart-block">
+                        <p class="header__cart-block--actual">R$ 219,00</p>
+                        <p class="header__cart-block--old">R$ 219,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__cart-box">
+                    <img
+                      class="header__cart-img"
+                      src="./img/order-img-mobile.png"
+                      alt="Nike Revolution"
+                      loading="lazy"
+                    />
+                    <div class="header__cart-content">
+                      <p class="header__cart-content-title">
+                        Tênis Nike Revolution 6 Next Nature Masculino
+                      </p>
+                      <div class="header__cart-block">
+                        <p class="header__cart-block--actual">R$ 219,00</p>
+                        <p class="header__cart-block--old">R$ 219,00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="header__cart-total">
+                  <li class="header__cart-total--item">
+                    <p class="header__cart-total-text">Valor total:</p>
+                    <p class="header__cart-total-amount">R$ 219,00</p>
+                  </li>
+                  <li class="header__cart-total--item">
+                    <button class="header__cart-total--remove">Esvaziar</button>
+                    <button
+                      class="header__cart-total--check"
+                      onclick="window.open('nike-cart.html', '_blank')"
+                    >
+                      Ver Carrinho
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="header_search">
+            <input
+              class="header_search-input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_search-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.5">
+                  <circle
+                    cx="11.7666"
+                    cy="11.7666"
+                    r="8.98856"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M18.0183 18.4852L21.5423 22.0001"
+                    stroke="#666666"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="header_nav">
+          <ul class="header_nav-list">
+            <li>
+              <a href="./index.html" class="header_nav-links">Home</a>
+            </li>
+            <li>
+              <a href="./products.html" class="header_nav-links">Produtos</a>
+            </li>
+            <li><a href="#" class="header_nav-links">Categorias</a></li>
+            <li><a href="#" class="header_nav-links">Meus Pedidos</a></li>
+          </ul>
+        </nav>
+        <div class="header_mobile">
+          <div class="header_mobile-content">
+            <div class="header_mobile-burger">
+              <span id="bar-1"></span>
+              <span id="bar-2"></span>
+              <span id="bar-3"></span>
+            </div>
+            <div class="header_mobile-wrapper">
+              <a class="header_mobile-wrapper--logo" href="./index.html">
+                <img
+                  class="header_mobile-wrapper--img"
+                  src="./logo/logo.svg"
+                  alt="Digital Store Logo"
+                />
+                <span class="header_mobile-wrapper--span">Digital Store</span>
+              </a>
+            </div>
+            <div class="header_mobile-cart">
+              <button class="header_mobile-cart--btn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="9.80547"
+                    cy="9.80553"
+                    r="7.49047"
+                    stroke="#CCCCCC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.0153 15.4043L17.9519 18.3334"
+                    stroke="#CCCCCC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <btn class="header_cart-mobile">
+                <p class="header_cart-amount">2</p>
+                <img
+                  class="header_cart-img"
+                  src="./icons/cart.svg"
+                  alt="cart"
+                  loading="eager"
+                />
+              </btn>
+            </div>
+            <div class="header__cart-mobile">
+              <p class="header__cart-title">Meu Carrinho</p>
+              <div class="header__cart-wrapper">
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__cart-box">
+                  <img
+                    class="header__cart-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <div class="header__cart-content">
+                    <p class="header__cart-content-title">
+                      Tênis Nike Revolution 6 Next Nature Masculino
+                    </p>
+                    <div class="header__cart-block">
+                      <p class="header__cart-block--actual">R$ 219,00</p>
+                      <p class="header__cart-block--old">R$ 219,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="header__cart-total">
+                <li class="header__cart-total--item">
+                  <p class="header__cart-total-text">Valor total:</p>
+                  <p class="header__cart-total-amount">R$ 219,00</p>
+                </li>
+                <li class="header__cart-total--item">
+                  <button class="header__cart-total--remove">Esvaziar</button>
+                  <button
+                    class="header__cart-total--check"
+                    onclick="window.open('nike-cart.html', '_blank')"
+                  >
+                    Ver Carrinho
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header_mobile-search">
+            <input
+              class="header_mobile-search--input"
+              type="text"
+              placeholder="Pesquisar produto..."
+            />
+            <button class="header_mobile-search--btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="9.80547"
+                  cy="9.80553"
+                  r="7.49047"
+                  stroke="#CCCCCC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.0153 15.4043L17.9519 18.3334"
+                  stroke="#CCCCCC"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav class="header_mobile-nav">
+            <div class="header_mobile-nav--wrapper">
+              <p class="header_mobile-nav--text">Páginas</p>
+              <ul class="header_mobile-nav--list">
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="./products.html"
+                    >Produtos</a
+                  >
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="#">Categorias</a>
+                </li>
+                <li class="header_mobile-nav--item">
+                  <a class="header_mobile-nav--links" href="#">Meus Pedidos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_mobile-nav--content">
+              <button class="header_mobile-nav--login">Entrar</button>
+              <button class="header_mobile-nav--register">Cadastre-se</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="success">
+        <div class="container">
+          <div class="success__wrapper">
+            <div class="success__purchase">
+              <p class="success__purchase-emoji">🎉</p>
+              <h1 class="success__purchase-title">
+                Compra Realizada com sucesso!
+              </h1>
+            </div>
+            <div class="success__personal">
+              <p class="success__title">Informações Pessoais</p>
+              <ul class="success__list">
+                <li class="success__item">
+                  <p class="success__text-gray">Nome:</p>
+                  <p class="success__text">Francisco Antonio Pereira</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">CPF:</p>
+                  <p class="success__text">123485913-35</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">Email</p>
+                  <p class="success__text">francisco@gmail.com</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">Celular</p>
+                  <p class="success__text">(85) 5555-5555</p>
+                </li>
+              </ul>
+            </div>
+            <div class="success__delivery">
+              <p class="success__title">Informações de Entrega</p>
+              <ul class="success__list">
+                <li class="success__item">
+                  <p class="success__text-gray">Endereço:</p>
+                  <p class="success__text">Rua João Pessoa, 333</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">Bairro:</p>
+                  <p class="success__text">Centro</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">Cidade:</p>
+                  <p class="success__text">Fortaleza, Ceará</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">CEP:</p>
+                  <p class="success__text">433-8800</p>
+                </li>
+              </ul>
+            </div>
+            <div class="success__payment">
+              <p class="success__title">Informações de Pagamento</p>
+              <ul class="success__list">
+                <li class="success__item">
+                  <p class="success__text-gray">Titular do Cartão:</p>
+                  <p class="success__text">FRANCISCO A P</p>
+                </li>
+                <li class="success__item">
+                  <p class="success__text-gray">Final</p>
+                  <p class="success__text">
+                    <span class="success__text-stars">************</span>
+                    2020
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="success__resume">
+              <p class="success__title">Informações de Pagamento</p>
+              <ul class="success__list">
+                <li class="success__item-resume">
+                  <img
+                    class="success__item-img"
+                    src="./img/order-img-mobile.png"
+                    alt="Nike Revolution"
+                    loading="lazy"
+                  />
+                  <p class="success__text-resume">
+                    Tênis Nike Revolution 6 Next Nature Masculino
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="success__total">
+              <div class="success__box">
+                <p class="success__total-text">Total</p>
+                <p class="success__total-price">R$ 219,00</p>
+              </div>
+              <p class="success__total-currency">
+                ou 10x de R$ 21,00 sem juros
+              </p>
+            </div>
+            <a class="success__receipt" href="#" target="_blanks"
+              >Imprimir Recibo</a
+            >
+          </div>
+          <div class="success__home">
+            <a href="./index.html" class="success__home-link" target="_blank"
+              >Voltar para Home</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_social">
+            <div class="footer_social-logo">
+              <img
+                class="footer_social-logo--img"
+                src="./logo/logo-white.svg"
+                alt="DigitalStore"
+              />
+              <span class="footer_social-logo--span">Digital Store</span>
+            </div>
+            <p class="footer_social-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="footer_social-wrapper">
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    width="24px"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    stroke="#000000"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-60.000000, -7521.000000)"
+                        fill="#ffffff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                            id="twitter-[#ffffff]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <p class="footer_info-name">Informação</p>
+            <ul class="footer_info-list">
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Sobre Drip Store</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Segurança</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Wishlist</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Trabalhe conosco</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Meus Pedidos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_category">
+            <p class="footer_category-name">Categorias</p>
+            <ul class="footer_category-list">
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Camisetas</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Calças</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Bonés</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Headphones</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Tênis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <p class="footer_contacts-name">Contato</p>
+            <p class="footer_contacts-address">
+              Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+              60150-161
+            </p>
+            <p class="footer_contacts-phone">(85) 3051-3411</p>
+          </div>
+        </div>
+        <p class="footer_copyrights">@ 2022 Digital College</p>
+      </div>
+    </footer>
+    <div class="header__mobile-nav--overlay"></div>
+  </body>
+</html>

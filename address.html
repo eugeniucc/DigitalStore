@@ -109,7 +109,11 @@
           </div>
           <div class="header_profile">
             <btn class="header_profile-register">Cadastre-se</btn>
-            <btn class="header_profile-login">Entrar</btn>
+            <btn
+              class="header_profile-login"
+              onclick="window.open('login.html', '_blank')"
+              >Entrar</btn
+            >
             <btn class="header_cart">
               <p class="header_cart-amount">2</p>
               <img
@@ -188,7 +192,11 @@
             </a>
             <div class="header_profile">
               <btn class="header_profile-register">Cadastre-se</btn>
-              <btn class="header_profile-login">Entrar</btn>
+              <btn
+                class="header_profile-login"
+                onclick="window.open('login.html', '_blank')"
+                >Entrar</btn
+              >
               <btn class="header_cart-tablet">
                 <p class="header_cart-amount">2</p>
                 <img
@@ -311,14 +319,14 @@
               <span id="bar-3"></span>
             </div>
             <div class="header_mobile-wrapper">
-              <div class="header_mobile-wrapper--logo">
+              <a class="header_mobile-wrapper--logo" href="./index.html">
                 <img
                   class="header_mobile-wrapper--img"
                   src="./logo/logo.svg"
                   alt="Digital Store Logo"
                 />
                 <span class="header_mobile-wrapper--span">Digital Store</span>
-              </div>
+              </a>
             </div>
             <div class="header_mobile-cart">
               <button class="header_mobile-cart--btn">
@@ -483,7 +491,7 @@
         <div class="container">
           <div class="final__content">
             <div class="final__wrapper">
-              <div class="final__personal">
+              <form action="#" class="final__personal">
                 <h2 class="final__personal-title">Informações Pessoais</h2>
                 <ul class="final__personal-list">
                   <li class="final__personal-item">
@@ -519,7 +527,7 @@
                     />
                   </li>
                 </ul>
-              </div>
+              </form>
               <div class="final__delivery">
                 <h2 class="final__delivery-title">Informações de Entrega</h2>
                 <ul class="final__delivery-list">
@@ -571,24 +579,24 @@
                   <p class="final__payment-text">Forma de Pagamento</p>
                   <div class="final__payment-option">
                     <div class="final__payment-card">
-                      <label>
-                        <input
-                          type="radio"
-                          name="payment-method"
-                          value="credit-card"
-                          class="final__payment-credit-card"
-                        />
+                      <input
+                        type="radio"
+                        name="payment-method"
+                        class="final__payment-card--input"
+                        id="card"
+                      />
+                      <label for="card" class="final__payment-card--label">
                         Cartão de Crédito
                       </label>
                     </div>
                     <div class="final__payment-bank">
-                      <label>
-                        <input
-                          type="radio"
-                          name="payment-method"
-                          value="boleto"
-                          class="final__payment-bank"
-                        />
+                      <input
+                        type="radio"
+                        name="payment-method"
+                        class="final__payment-bank--input"
+                        id="bank"
+                      />
+                      <label for="bank" class="final__payment-bank--label">
                         Boleto Bancário
                       </label>
                     </div>
@@ -697,6 +705,19 @@
           </div>
         </div>
       </section>
+      <div class="final__confirm-mobile">
+        <div class="final__confirm-wrapper">
+          <p class="final__confirm-total">Total</p>
+          <p class="final__confirm-price">R$ 219,00</p>
+        </div>
+        <p class="final__confirm-currency">ou 10x de R$ 21,00 sem juros</p>
+        <button
+          class="final__confirm-btn"
+          onclick="window.open('success.html', '_blank')"
+        >
+          Realizar Pagamento
+        </button>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">

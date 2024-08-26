@@ -1,5 +1,3 @@
-@import "../mixins/mixins";
-
 @mixin primaryButtonHover {
   @include text-xsmall-p-bold-inverted;
   text-align: center;
@@ -85,4 +83,18 @@
   border: none;
   background-color: $light-gray2;
   border-radius: 1rem;
+}
+
+@mixin yellow-btn {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #cf8900;
+  }
+}
+
+@mixin fuxia-btn {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $tertiary;
+  }
 }

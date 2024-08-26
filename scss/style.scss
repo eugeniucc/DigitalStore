@@ -13,6 +13,11 @@
 @import "../components/order";
 @import "../components/relatives";
 @import "../components/final";
+@import "../components/success";
+@import "../components/login";
+@import "../components/register-inner";
+@import "../components/track";
+@import "../components/info";
 
 // MEDIA
 @import "../media-queries/media-header";
@@ -29,6 +34,11 @@
 @import "../media-queries/media-order";
 @import "../media-queries/media-relatives";
 @import "../media-queries/media-final";
+@import "../media-queries/media-success";
+@import "../media-queries/media-login";
+@import "../media-queries/media-register-inner";
+@import "../media-queries/media-track";
+@import "../media-queries/media-info";
 
 // COMPONENT WITH MEDIA
 @import "../media-queries/media-header-mobile";
@@ -61,6 +71,15 @@ html {
 }
 body.freeze {
   overflow: hidden;
+}
+
+a,
+span,
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
 }
 
 .container {

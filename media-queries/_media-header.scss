@@ -80,3 +80,15 @@
     }
   }
 }
+@media (max-width: 360px) {
+  .header {
+    &__cart {
+      &-mobile {
+        max-width: 29.5rem;
+      }
+      &-block {
+        flex-direction: column;
+      }
+    }
+  }
+}

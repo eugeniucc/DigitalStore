@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General Metagraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DigitalStore" />
+    <meta property="og:url" content="www.digitalstore.com" />
+    <meta property="og:image" content="./icons/logo.svg" />
+    <meta property="og:description" content="Best shoes store in our city." />
+    <!-- Twitter Metagraph -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DigitalStore" />
+    <meta name="twitter:site" content="www.digitalstore.com" />
+    <meta name="twitter:description" content="Best shoes store in our city." />
+    <meta name="twitter:image" content="./icons/logo.svg" />
+    <!-- Icons in browser  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./logo/site.webmanifest" />
+    <!-- MsApp link ! -->
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-config" content="./logo/browserconfig.xml" />
+    <title>Digital Store</title>
+    <!-- My styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/min_css/style.min.css" />
+  </head>
+  <body>
+    <header class="header__login">
+      <div class="container">
+        <nav class="header__login-nav">
+          <a href="./index.html" class="header_logo-link header-logo-login">
+            <img
+              class="header_logo-img"
+              src="./logo/logo.svg"
+              alt="Digital Store"
+              loading="eager"
+            />
+            <span class="header_logo-span">Digital Store</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="register-inner">
+        <div class="container">
+          <h1 class="register-inner__title">Criar Conta</h1>
+          <div class="register-inner__wrapper">
+            <form action="#" class="final__wrapper">
+              <div class="final__personal">
+                <h2 class="final__personal-title">Informações Pessoais</h2>
+                <ul class="final__personal-list">
+                  <li class="final__personal-item">
+                    <p class="final__personal-text">Nome Completo *</p>
+                    <input
+                      class="final__personal-input"
+                      type="text"
+                      placeholder="Insira seu nome"
+                    />
+                  </li>
+                  <li class="final__personal-item">
+                    <p class="final__personal-text">CPF *</p>
+                    <input
+                      class="final__personal-input"
+                      type="text"
+                      placeholder="Insira seu CPF"
+                    />
+                  </li>
+                  <li class="final__personal-item">
+                    <p class="final__personal-text">E-mail *</p>
+                    <input
+                      class="final__personal-input"
+                      type="email"
+                      placeholder="Insira seu email"
+                    />
+                  </li>
+                  <li class="final__personal-item">
+                    <p class="final__personal-text">Celular *</p>
+                    <input
+                      class="final__personal-input"
+                      type="text"
+                      placeholder="Insira seu celular"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="final__delivery">
+                <h2 class="final__delivery-title">Informações de Entrega</h2>
+                <ul class="final__delivery-list">
+                  <li class="final__delivery-item">
+                    <p class="final__delivery-text">Endereço *</p>
+                    <input
+                      class="final__delivery-input"
+                      type="text"
+                      placeholder="Insira seu endereço"
+                    />
+                  </li>
+                  <li class="final__delivery-item">
+                    <p class="final__delivery-text">Bairro *</p>
+                    <input
+                      class="final__delivery-input"
+                      type="text"
+                      placeholder="Insira seu bairro"
+                    />
+                  </li>
+                  <li class="final__delivery-item">
+                    <p class="final__delivery-text">Cidade *</p>
+                    <input
+                      class="final__delivery-input"
+                      type="text"
+                      placeholder="Insira sua cidade"
+                    />
+                  </li>
+                  <li class="final__delivery-item">
+                    <p class="final__delivery-text">CEP *</p>
+                    <input
+                      class="final__delivery-input"
+                      type="text"
+                      placeholder="Insira seu CEP"
+                    />
+                  </li>
+                  <li class="final__delivery-item">
+                    <p class="final__delivery-text">Complemento</p>
+                    <input
+                      class="final__delivery-input"
+                      type="text"
+                      placeholder="Insira complemento"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="register-inner__subscription">
+                <input
+                  class="register-inner__checkbox"
+                  type="checkbox"
+                  id="subscription"
+                />
+                <label class="register-inner__label" for="subscription"
+                  >Quero receber por email ofertas e novidades das lojas da
+                  Digital Store. A frequência de envios pode variar de acordo
+                  com a interação do cliente.
+                  <span class="register-inner__span"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="21"
+                        height="21"
+                        rx="1.5"
+                        fill="#C92071"
+                        stroke="#C92071"
+                      />
+                      <path
+                        d="M4.5 11L9 15.5L18 6.5"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <button class="register-inner__btn">Criar Conta</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_social">
+            <div class="footer_social-logo">
+              <img
+                class="footer_social-logo--img"
+                src="./logo/logo-white.svg"
+                alt="DigitalStore"
+              />
+              <span class="footer_social-logo--span">Digital Store</span>
+            </div>
+            <p class="footer_social-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="footer_social-wrapper">
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    fill="#ffffff"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <a class="footer_social-wrapper--links" href="#" target="_blank">
+                <span class="footer_social-wrapper--svg"
+                  ><svg
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    width="24px"
+                    height="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    fill="#000000"
+                    stroke="#000000"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-60.000000, -7521.000000)"
+                        fill="#ffffff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                            id="twitter-[#ffffff]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <p class="footer_info-name">Informação</p>
+            <ul class="footer_info-list">
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Sobre Drip Store</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Segurança</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Wishlist</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Trabalhe conosco</a
+                >
+              </li>
+              <li>
+                <a class="footer_info-list--links" href="#" target="_blank"
+                  >Meus Pedidos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_category">
+            <p class="footer_category-name">Categorias</p>
+            <ul class="footer_category-list">
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Camisetas</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Calças</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Bonés</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Headphones</a
+                >
+              </li>
+              <li>
+                <a class="footer_category-list--links" href="#" target="_blank"
+                  >Tênis</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <p class="footer_contacts-name">Contato</p>
+            <p class="footer_contacts-address">
+              Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+              60150-161
+            </p>
+            <p class="footer_contacts-phone">(85) 3051-3411</p>
+          </div>
+        </div>
+        <p class="footer_copyrights">@ 2022 Digital College</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -198,6 +198,7 @@
     background-color: #ffb31f;
     @include text-small-p-bold;
     color: #fff;
+    @include yellow-btn;
   }
 }
 

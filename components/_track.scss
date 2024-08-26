@@ -1,0 +1,139 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.track {
+  padding: 8rem 0rem 14rem 0rem;
+  background: #f9f8fe;
+  &__box {
+    margin-left: auto;
+    display: flex;
+    gap: 3rem;
+    align-items: end;
+  }
+  &__profile {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+    &-name {
+      @include text-xsmall-p-bold;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 1.6rem;
+  }
+  &__info {
+    max-width: 33.4rem;
+    height: 100%;
+    &-link {
+      @include text-small-p;
+      &--actual {
+        @include text-small-p-bold;
+      }
+      &--inner {
+        @include text-small-p-bold;
+        color: $primary;
+      }
+    }
+  }
+  &__descr {
+    max-width: 89rem;
+    &-cover {
+      max-width: 15rem;
+      width: 100%;
+    }
+    &-status {
+      display: none;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      max-width: 100%;
+      width: 100%;
+    }
+    &-content {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+    }
+    &-title {
+      @include text-small-p-bold;
+    }
+    &-status {
+      @include text-xsmall-p;
+    }
+    &-number {
+      color: var(--light-gray, #8f8f8f);
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px; /* 220% */
+      letter-spacing: 1px;
+    }
+    &-name {
+      color: var(--dark-gray, #1f1f1f);
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 0.75px;
+    }
+    &-stage {
+      color: var(--light-gray, #8f8f8f);
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 0.75px;
+      text-align: right;
+      &--transit {
+        color: $warning;
+      }
+      &--cancel {
+        color: $error;
+      }
+    }
+  }
+  &__info,
+  &__descr {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    padding: 3rem;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-item {
+      padding-bottom: 2rem;
+      border-bottom: 0.1rem solid #ccc;
+    }
+  }
+}
+
+.track__descr-item--last,
+.track__info-item--last {
+  border: none;
+  padding-bottom: 0;
+}

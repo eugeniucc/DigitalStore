@@ -66,6 +66,49 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    &-option {
+      margin-top: 2rem;
+    }
+    &-card,
+    &-bank {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      @include text-xsmall-p;
+      &--input {
+        opacity: 0;
+      }
+      &--label {
+        display: block;
+        position: relative;
+        padding-left: 1rem;
+        &::before {
+          position: absolute;
+          content: "";
+          left: -1.5rem;
+          width: 1.6rem;
+          height: 1.6rem;
+          background-color: $primary;
+          border-radius: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: opacity 0.3s ease;
+          opacity: 0;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 2.2rem;
+          height: 2.2rem;
+          border-radius: 50%;
+          border: 0.1rem solid #ccc;
+          top: 50%;
+          left: -1.5rem;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
     &-title {
       margin-bottom: 0;
     }
@@ -117,6 +160,9 @@
     }
   }
   &__confirm {
+    &-mobile {
+      display: none;
+    }
     &-text {
       padding-bottom: 2rem;
       border-bottom: 0.1rem solid #ccc;
@@ -149,6 +195,7 @@
       width: 100%;
       min-height: 5rem;
       cursor: pointer;
+      @include yellow-btn;
     }
   }
   &__summary {
@@ -215,6 +262,20 @@
       color: $light-gray3;
       min-height: 5rem;
       border-radius: 0.8rem;
+      @include yellow-btn;
     }
   }
+}
+.final__payment-bank--input:checked + .final__payment-bank--label::before {
+  opacity: 1;
+}
+
+.final__payment-card--input:checked + .final__payment-card--label::before {
+  opacity: 1;
+}
+.final__payment-card--input:checked + .final__payment-card--label::after {
+  border: 0.1rem solid $primary;
+}
+.final__payment-bank--input:checked + .final__payment-bank--label::after {
+  border: 0.1rem solid $primary;
 }

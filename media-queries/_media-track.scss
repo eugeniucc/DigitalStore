@@ -1,0 +1,54 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+@media (max-width: $breakpoint-xl) {
+  .track {
+    &__wrapper {
+      padding: 0rem 3rem;
+    }
+  }
+}
+@media (max-width: 872px) {
+  .track {
+    &__descr {
+      &-wrapper {
+        flex-direction: column;
+      }
+      &-cover {
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .track {
+    padding: 6rem 0rem 9rem 0rem;
+    &__info {
+      display: none;
+    }
+    &__descr {
+      &-cover {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+      &-status {
+        @include text-tinny-p;
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 340px) {
+  .track {
+    &__descr {
+      &-cover {
+        flex-direction: column;
+        align-items: baseline;
+      }
+      
+    }
+  }
+}

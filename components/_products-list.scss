@@ -93,6 +93,11 @@
 
 .dropdown_store {
   padding: 1.2rem 1rem !important;
+  &-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .sidebar__box {

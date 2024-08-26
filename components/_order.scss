@@ -255,6 +255,7 @@
     cursor: pointer;
     border-radius: 0.8rem;
     padding: 0.8rem 0rem;
+    @include yellow-btn;
   }
   &__single-mobile--text {
     display: none;
