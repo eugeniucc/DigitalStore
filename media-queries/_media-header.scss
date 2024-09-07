@@ -64,6 +64,7 @@
 }
 @media (max-width: 472px) {
   .header {
+    z-index: 4;
     &_nav {
       &-list {
         gap: 1.6rem;
