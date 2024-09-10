@@ -158,8 +158,8 @@
     display: flex;
     gap: 1rem;
     &-btn {
-      width: 4.8rem;
-      height: 4.8rem;
+      width: 48px;
+      height: 48px;
       background-color: #fff;
       border-radius: 0.4rem;
       border: 0.1rem solid #ccc;
@@ -180,8 +180,8 @@
   &__colors {
     display: flex;
     &-btn {
-      width: 4rem;
-      height: 4rem;
+      width: 40px;
+      height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
