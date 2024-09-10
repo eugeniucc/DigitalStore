@@ -123,10 +123,6 @@ table {
   border-spacing: 0;
 }
 button {
-  -webkit-appearance: none; /* Отключаем стандартные стили Safari */
-  appearance: none;
-  padding: 10px 20px; /* Устанавливаем padding для кнопки */
-  font-size: 16px; /* Увеличиваем шрифт */
-  border: 1px solid #000; /* Устанавливаем границу */
-  background-color: #f1f1f1; /* Задаём фон */
+  -webkit-appearance: none !important; /* Отключаем стандартные стили Safari */
+  appearance: none !important;
 }
