@@ -123,6 +123,7 @@ table {
   border-spacing: 0;
 }
 button {
+  display: inline-block;
   -webkit-appearance: none !important; /* Отключаем стандартные стили Safari */
   appearance: none !important;
 }
