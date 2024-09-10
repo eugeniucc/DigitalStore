@@ -1773,6 +1773,9 @@
   gap: 1rem;
 }
 .nike__sizes-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   background-color: #fff;
@@ -1809,6 +1812,9 @@
   display: flex;
 }
 .nike__colors-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   display: flex;

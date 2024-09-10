@@ -158,6 +158,9 @@
     display: flex;
     gap: 1rem;
     &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 48px;
       height: 48px;
       background-color: #fff;
@@ -180,6 +183,9 @@
   &__colors {
     display: flex;
     &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 40px;
       height: 40px;
       display: flex;
