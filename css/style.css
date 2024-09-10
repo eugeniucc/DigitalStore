@@ -1815,8 +1815,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  max-width: 42px;
+  min-height: 40px;
+  max-height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
